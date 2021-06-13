@@ -1,0 +1,20 @@
+@use 'custom';
+
+/// include custom components
+
+@use './components/animations';
+@use './components/buttons';
+@use './components/mixins';
+@use './components/typography';
+
+// include sections
+
+@use "./sections/navbar";
+@use "./sections/intro";
+@use "./sections/companies";
+@use "./sections/services";
+@use "./sections/testimonials";
+@use "./sections/my_work";
+@use "./sections/faq";
+@use "./sections/hire_me";
+@use "./sections/footer";
