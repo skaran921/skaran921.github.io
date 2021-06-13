@@ -1,9 +1,12 @@
 // fonts
 
-@import url("https://fonts.googleapis.com/css2?family=Poppins:ital,wght@400;500;600;700;800;900&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Poppins:ital,wght@300,400;500;600;700;800;900&display=swap");
 
 * {
   font-family: "Poppins", sans-serif !important;
+}
+html {
+  scroll-behavior: smooth;
 }
 // portfolio theme colors
 $dark-purple: #9926f0 !default;
@@ -27,6 +30,8 @@ $primary: $dark-purple;
 $secondary: $pink;
 
 // bootstrap accordion override
+$accordion-padding-x: 1.5rem;
+$accordion-padding-y: 1.5rem;
 $accordion-icon-color: $primary;
 $accordion-icon-active-color: $secondary;
 $accordion-icon-width: 1.875rem;
