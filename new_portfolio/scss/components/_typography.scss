@@ -1,0 +1,41 @@
+@use "../custom" as *;
+
+.display-2 {
+  margin-bottom: 1rem;
+  text-transform: capitalize;
+
+  &--intro {
+    display: inline-block;
+    font-weight: 700;
+    color: $white;
+  }
+
+  &--description {
+    font-size: 1.5rem;
+    display: block;
+    color: $white;
+    margin-top: 1.2rem;
+    transform: none;
+  }
+}
+
+.display-3 {
+  font-family: "Poopins", sans-serif;
+  &--title {
+    font-size: 1.8rem;
+
+    text-transform: capitalize;
+    font-weight: 600;
+    font-family: "Poopins", sans-serif;
+    display: inline-block;
+    background-image: linear-gradient(to right, $primary, $secondary);
+    background-clip: text;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+  }
+}
+
+.border-right {
+  border-right: 0.1rem solid $gray-300;
+  height: 100%;
+}

@@ -1,0 +1,33 @@
+@use "../custom" as *;
+
+.services {
+  position: relative;
+  padding: 1rem 0;
+
+  h1 {
+    .fw-bold {
+      border: 1px dashed $primary;
+    }
+  }
+
+  &__content {
+    padding: 1rem;
+    margin-top: 1.5rem;
+
+    .icon {
+      font-size: 2.5rem;
+      color: $primary;
+    }
+  }
+  &__img {
+    margin-top: 40px;
+  }
+
+  @include media-breakpoint-down(sm) {
+    &__img {
+      margin: 0px;
+      width: 100%;
+      text-align: center;
+    }
+  }
+}
