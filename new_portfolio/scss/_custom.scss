@@ -2,18 +2,6 @@
 
 @import url("https://fonts.googleapis.com/css2?family=Poppins:ital,wght@300,400;500;600;700;800;900&display=swap");
 
-* {
-  font-family: "Poppins", sans-serif !important;
-}
-html {
-  scroll-behavior: smooth;
-}
-
-/* width */
-::-webkit-scrollbar {
-  width: 10px;
-}
-
 // portfolio theme colors
 $dark-purple: #0f23ca !default;
 $light-purple: #4da2ff !default;
@@ -46,6 +34,9 @@ $accordion-button-icon: url('data:image/svg+xml,<svg xmlns="http://www.w3.org/20
 
 $accordion-button-active-icon: url('data:image/svg+xml,<svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="#{$accordion-icon-active-color}" class="bi bi-dash-circle" viewBox="0 0 16 16"><path d="M8 15A7 7 0 1 1 8 1a7 7 0 0 1 0 14zm0 1A8 8 0 1 0 8 0a8 8 0 0 0 0 16z"/><path d="M4 8a.5.5 0 0 1 .5-.5h7a.5.5 0 0 1 0 1h-7A.5.5 0 0 1 4 8z"/></svg>');
 
+// import bootstrap 5
+@import "../node_modules/bootstrap/scss/bootstrap.scss";
+
 /* Track */
 ::-webkit-scrollbar-track {
   background: rgba($light-purple, $alpha: 0.4);
@@ -63,5 +54,14 @@ $accordion-button-active-icon: url('data:image/svg+xml,<svg xmlns="http://www.w3
   background: rgba($primary, $alpha: 0.7);
 }
 
-// import bootstrap 5
-@import "../node_modules/bootstrap/scss/bootstrap.scss";
+* {
+  font-family: "Poppins", sans-serif !important;
+}
+html {
+  scroll-behavior: smooth;
+}
+
+/* width */
+::-webkit-scrollbar {
+  width: 10px;
+}
