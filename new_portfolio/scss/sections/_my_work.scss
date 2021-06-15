@@ -2,7 +2,7 @@
 @use "../components/mixins" as *;
 
 .portfolio {
-  padding: 4rem 0;
+  // padding: 4rem 0;
   button {
     text-transform: capitalize;
   }
@@ -12,7 +12,8 @@
   padding: 0;
   margin: 0;
   position: relative;
-  height: 18.5rem;
+  height: 14.5rem;
+  margin-right: 1rem;
   overflow: hidden;
   margin-bottom: 1.2rem;
   border-top: 0.5rem solid $light-purple;

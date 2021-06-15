@@ -10,9 +10,13 @@
     />
     <link rel="stylesheet" href="./assets/css/style.css" />
     <link rel="stylesheet" href="./assets/fa/css/all.min.css" />
+    <link
+    rel="stylesheet"
+    href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"
+  />
     <title>Karan Soni - Developer - Portfolio</title>
   </head>
-  <body>
+  <body style="overflow-x: hidden;">
     <!-- ============================================================
                         Section 1: NavBar Section
      ============================================================ -->
@@ -49,22 +53,25 @@
               <a class="nav-link active" aria-current="page" href="#">Home</a>
             </li>
             <li class="nav-item">
-              <a class="nav-link" href="#">Services</a>
+              <a class="nav-link" href="#services">Services</a>
             </li>
             <li class="nav-item">
-              <a class="nav-link" href="#">Testimonials</a>
+              <a class="nav-link" href="#testimonials">Testimonials</a>
             </li>
             <li class="nav-item">
-              <a class="nav-link" href="#">Portfolio</a>
+              <a class="nav-link" href="#portfolio">Portfolio</a>
             </li>
             <li class="nav-item">
-              <a class="nav-link" href="#">Hire Me</a>
+              <a class="nav-link" href="#hire_me">Hire Me</a>
             </li>
             <li class="nav-item">
-              <a class="nav-link" href="#">FAQ</a>
+              <a class="nav-link" href="#faq">FAQ</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#footer">Contact</a>
             </li>
           </ul>
-          <button type="button" class="rounded-pill btn-rounded">
+          <button type="button" class="rounded-pill btn-rounded" onclick="window.open('mailto:skaran921@gmail.com');" >
             skaran921@gmail.com
             <span>
               <i class="fa fa-envelope call-icon"></i>
@@ -83,15 +90,13 @@
         <div class="row align-items-center text-white">
           <div class="col-md-6 intros">
             <h1 class="display-2">
-              <span class="display-2--intro">Hey!, I'm <br />Karan</span>
-              <span class="display-2--description lh-base">
-                Lorem ipsum dolor sit amet consectetur adipisicing elit. Vitae
-                provident omnis, in iusto vero inventore mollitia eaque, est vel
-                voluptatum voluptatibus. Adipisci esse perspiciatis vero
-                asperiores at labore laborum omnis!
+              <span class="display-2--intro animate__animated  animate__slideInDown">Hola!, I'm <br />Karan</span>
+              <span class="display-2--description lh-base animate__animated animate__zoomIn">
+                Freelancer<br/> Flutter & Web Developer
               </span>
             </h1>
-            <button type="button" class="rounded-pill btn-rounded">
+            <p  class="git-info animate__animated animate__zoomIn"> <i class="fab fa-github" style="font-size: 2.5rem;"></i> @skaran921</p>
+            <button type="button" class="rounded-pill btn-rounded" onclick="window.location.href='#footer'">
               Get in touch
               <span>
                 <i class="fa fa-arrow-right call-icon"></i>
@@ -118,7 +123,8 @@
          <div class="container">
              <div class="row text-center">
                  <h1 class="display-3 fw-bold">Our Services</h1>
-                 <h1 class="heading-line mb-5">Our Services</h1>
+                 <hr style="width:200px;height:3px;transition: 0.3s  ease-in-out;" class="mx-auto">
+                 <!-- <h1 class="heading-line mb-5">Our Services</h1> -->
              </div>
          </div>
 
@@ -153,7 +159,7 @@
                             <p class="lh-lg">
                                 Lorem ipsum dolor sit amet consectetur adipisicing elit. Itaque facilis quisquam delectus accusamus labore suscipit odit doloremque impedit et nihil quo maxime minima pariatur, corrupti porro ea sequi! Placeat, esse.
                             </p>
-                            <button type="button" class="rounded-pill btn-rounded border-primary">
+                            <button type="button" class="rounded-pill btn-rounded border-primary" onclick="window.open('https://flutter.dev/')" >
                                Learn More
                                 <span>
                                   <i class="fa fa-arrow-right call-icon"></i>
@@ -184,7 +190,7 @@
                             <p class="lh-lg">
                                 Lorem ipsum dolor sit amet consectetur adipisicing elit. Itaque facilis quisquam delectus accusamus labore suscipit odit doloremque impedit et nihil quo maxime minima pariatur, corrupti porro ea sequi! Placeat, esse.
                             </p>
-                            <button type="button" class="rounded-pill btn-rounded border-primary">
+                            <button type="button" class="rounded-pill btn-rounded border-primary" onclick="window.open('https://www.android.com/intl/en_in/')">
                                Learn More
                                 <span>
                                   <i class="fa fa-arrow-right call-icon"></i>
@@ -205,7 +211,7 @@
                             <p class="lh-lg">
                                 Lorem ipsum dolor sit amet consectetur adipisicing elit. Itaque facilis quisquam delectus accusamus labore suscipit odit doloremque impedit et nihil quo maxime minima pariatur, corrupti porro ea sequi! Placeat, esse.
                             </p>
-                            <button type="button" class="rounded-pill btn-rounded border-primary">
+                            <button type="button" class="rounded-pill btn-rounded border-primary" onclick="window.open('https://developer.apple.com/')">
                                Learn More
                                 <span>
                                   <i class="fa fa-arrow-right call-icon"></i>
@@ -237,7 +243,7 @@
                             <p class="lh-lg">
                                 Lorem ipsum dolor sit amet consectetur adipisicing elit. Itaque facilis quisquam delectus accusamus labore suscipit odit doloremque impedit et nihil quo maxime minima pariatur, corrupti porro ea sequi! Placeat, esse.
                             </p>
-                            <button type="button" class="rounded-pill btn-rounded border-primary">
+                            <button type="button" class="rounded-pill btn-rounded border-primary" onclick="window.open('https://www.w3schools.com/whatis/')">
                                Learn More
                                 <span>
                                   <i class="fa fa-arrow-right call-icon"></i>
@@ -351,6 +357,7 @@
              <div class="row text-center">
                  <h1 class="display-3 fw-bold text-uppercase">FAQ</h1>
                  <div class="heading-line"></div>
+                 <hr style="width:100px;height:3px" class="mx-auto">
                  <p class="lead">frequently asked questions, get knowledge before hand</p>
              </div>
 
@@ -396,12 +403,12 @@
                         </div>
 
                         <div class="accordion-item shadow mb-3">
-                            <h2 class="accordion-header" id="headingThree">
+                            <h2 class="accordion-header" id="headingFour">
                               <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseFour" aria-expanded="false" aria-controls="collapseFour">
                                 Can i get refunded if am not satisfied?
                               </button>
                             </h2>
-                            <div id="collapseThree" class="accordion-collapse collapse" aria-labelledby="headingFour" data-bs-parent="#accordionExample">
+                            <div id="collapseFour" class="accordion-collapse collapse" aria-labelledby="headingFour" data-bs-parent="#accordionExample">
                               <div class="accordion-body">
                                 <strong>This is the third item's accordion body.</strong> It is hidden by default, until the collapse plugin adds the appropriate classes that we use to style each element. These classes control the overall appearance, as well as the showing and hiding via CSS transitions. You can modify any of this with custom CSS or overriding our default variables. It's also worth noting that just about any HTML can go within the <code>.accordion-body</code>, though the transition does limit overflow.
                               </div>
@@ -436,39 +443,39 @@
          </div>
 
          <!-- btn items -->
-         <div class="row">
+         <div class="row p-4">
              <!-- portfolio 1 -->
-             <div class="col-xl-6 col-md-4 col-lg-4 col-sm-12 portfolio-box shadow">
+             <div class="col-xl-4 col-md-4 col-lg-4 col-sm-12 portfolio-box shadow web">
                  <img src="./assets/images/portfolio/p1.png" alt="portfolio-1" class="img-fluid">
 
                  <div class="portfolio-info">
                      <div class="caption">
-                         <h4>Project Name Goes here</h4>
-                         <p>Category Project</p>
+                         <h4> <i class="fa fa-code"></i> Debtor Book</h4>
+                         <p>Web</p>
                      </div>
                  </div>
              </div>
               <!-- portfolio 2 -->
-              <div class="col-xl-6 col-md-4 col-lg-4 col-sm-12 portfolio-box shadow">
+              <div class="col-xl-4 col-md-4 col-lg-4 col-sm-12 portfolio-box shadow web">
                 <img src="./assets/images/portfolio/p2.png" alt="portfolio-2" class="img-fluid">
 
                 <div class="portfolio-info">
                     <div class="caption">
-                        <h4>Project Name Goes here</h4>
-                        <p>Category Project</p>
+                        <h4><i class="fa fa-code"></i> Debtor Book</h4>
+                        <p>Web</p>
                     </div>
                 </div>
             </div>
 
 
             <!-- portfolio 3 -->
-            <div class="col-xl-6 col-md-4 col-lg-4 col-sm-12 portfolio-box shadow">
+            <div class="col-xl-3 col-md-4 col-lg-4 col-sm-12 portfolio-box shadow mobile">
                 <img src="./assets/images/portfolio/p3.jpg" height="300" alt="portfolio-3" class="img-fluid">
 
                 <div class="portfolio-info">
                     <div class="caption">
-                        <h4>Project Name Goes here</h4>
-                        <p>Category Project</p>
+                        <h4><i class="fa fa-mobile"></i> Gift Reminder </h4>
+                        <p>Android</p>
                     </div>
                 </div>
             </div>
@@ -483,7 +490,7 @@
        <!-- ============================================================
                         Section 7: contact me/hire-me
      ============================================================ -->
-      <section id="contact" class="hire-me">
+      <section id="hire_me" class="hire-me">
         <div class="container">
           <div class="row">
             <h1 class="display-3 fw-bold text-capitalize  text-center">Get Started</h1>
@@ -545,7 +552,7 @@
        <!-- ============================================================
                         Section 8: footer
      ============================================================ -->
-      <footer class="footer">
+      <footer id="footer" class="footer">
         <div class="container">
             <div class="row">
                 <div class="col-md-4 col-lg-4 contact-box pt-1  d-flex">
@@ -559,7 +566,7 @@
                   </div>
                   <div class="contact-box__info">
                     <a href="#" class="contact-box__info--title">+91 9466067763</a>
-                    <p class="contact-box__info--subtitle">Mon-Fri 9am-6pm</p>
+                    <p class="contact-box__info--subtitle">Mon-Sun 9am-6pm IST</p>
                   </div>
                 </div>
 
@@ -605,12 +612,37 @@
                   Connect with us social media
               </div>
               <div class="col-lg-7 col-md-6">
-                 <a href="#"> <i class="fab fa-github"></i> </a>
-                 <a href="#"> <i class="fab fa-twitter"></i> </a>
-                 <a href="#"> <i class="fab fa-linkedin"></i> </a>
+                 <a href="https://github.com/skaran921" target="blank"> <i class="fab fa-github"></i> </a>
+                 <a href="https://twitter.com/skaran921" target="blank"> <i class="fab fa-twitter"></i> </a>
+                 <a href="https://www.linkedin.com/in/karan-soni-92a20a121/" target="blank"> <i class="fab fa-linkedin"></i> </a>
               </div>
             </div>
           </div>
+     </div>
+
+     <div class="footer-copyright pt-4 pb-4">
+       <div class="row">
+         <div class="col-md-12">
+          <iframe style="filter: invert(100%)"  src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3474.1890801528652!2d74.66751921510125!3d29.45248858210156!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3916bcb156872d6d%3A0xa22daab1bfd85ddc!2sskaran921!5e0!3m2!1sen!2sin!4v1623723933924!5m2!1sen!2sin" width="100%" height="450" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
+         </div>
+       </div>
+       <div class="row text-center text-white">
+        <div class="col-md-12">
+          
+        
+          <div>
+            <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-code" width="44" height="44" viewBox="0 0 24 24" stroke-width="1.5" stroke="#fff" fill="none" stroke-linecap="round" stroke-linejoin="round">
+              <path stroke="none" d="M0 0h24v24H0z" fill="none"/>
+              <polyline points="7 8 3 12 7 16" />
+              <polyline points="17 8 21 12 17 16" />
+              <line x1="14" y1="4" x2="10" y2="20" />
+            </svg>  No © Copyright issues. <br/>
+            Feel free to copy. if you need any help, ping me!          
+          </div>
+
+        </div>
+               
+       </div>
      </div>
       </footer>
 
