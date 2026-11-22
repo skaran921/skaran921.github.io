@@ -480,7 +480,7 @@
 <body class="paper-texture selection:bg-blush-200 selection:text-plum-900">
 
   <!-- Optional Custom MP3 Chant Hook (Leave empty to use built-in Web Audio + Speech Engine) -->
-  <audio id="customChantAudio" preload="none"></audio>
+  <!-- <audio id="customChantAudio" preload="none"></audio> -->
 
   <!-- Diwali Twinkling Jhalar Fairy Lights -->
   <div id="jhalar-lights" class="jhalar-bar" aria-hidden="true"></div>
@@ -1656,29 +1656,29 @@
       }
 
       function startOmDrone() {
-        if (droneStarted || isMuted) return;
-        const ctx = ensureAudioContext();
-        if (!ctx) return;
-        try {
-          droneGain = ctx.createGain();
-          droneGain.gain.setValueAtTime(0.0001, ctx.currentTime);
-          droneGain.gain.exponentialRampToValueAtTime(0.028, ctx.currentTime + 2.2);
-          droneGain.connect(ctx.destination);
+        // if (droneStarted || isMuted) return;
+        // const ctx = ensureAudioContext();
+        // if (!ctx) return;
+        // try {
+        //   droneGain = ctx.createGain();
+        //   droneGain.gain.setValueAtTime(0.0001, ctx.currentTime);
+        //   droneGain.gain.exponentialRampToValueAtTime(0.028, ctx.currentTime + 2.2);
+        //   droneGain.connect(ctx.destination);
 
-          [136.1, 204.15, 272.2].forEach((freq, idx) => {
-            const osc = ctx.createOscillator();
-            const g = ctx.createGain();
-            osc.type = idx === 0 ? 'sine' : 'triangle';
-            osc.frequency.setValueAtTime(freq, ctx.currentTime);
-            g.gain.value = idx === 0 ? 0.6 : 0.18;
-            osc.connect(g);
-            g.connect(droneGain);
-            osc.start();
-          });
-          droneStarted = true;
-        } catch (err) {
-          // Graceful fallback if audio blocked
-        }
+        //   [136.1, 204.15, 272.2].forEach((freq, idx) => {
+        //     const osc = ctx.createOscillator();
+        //     const g = ctx.createGain();
+        //     osc.type = idx === 0 ? 'sine' : 'triangle';
+        //     osc.frequency.setValueAtTime(freq, ctx.currentTime);
+        //     g.gain.value = idx === 0 ? 0.6 : 0.18;
+        //     osc.connect(g);
+        //     g.connect(droneGain);
+        //     osc.start();
+        //   });
+        //   droneStarted = true;
+        // } catch (err) {
+        //   // Graceful fallback if audio blocked
+        // }
       }
 
       function playTempleBell(volume = 0.85) {
@@ -1827,33 +1827,33 @@
       }
 
       function playShivaChant() {
-        showMantraBanner();
-        triggerAuraRipple();
-        playTempleBell(0.95);
-        if (isMuted) return;
+        // showMantraBanner();
+        // triggerAuraRipple();
+        // playTempleBell(0.95);
+        // if (isMuted) return;
 
-        const customAudio = document.getElementById('customChantAudio');
-        if (customAudio && customAudio.getAttribute('src')) {
-          customAudio.currentTime = 0;
-          customAudio.play().catch(() => {});
-          return;
-        }
+        // const customAudio = document.getElementById('customChantAudio');
+        // if (customAudio && customAudio.getAttribute('src')) {
+        //   customAudio.currentTime = 0;
+        //   customAudio.play().catch(() => {});
+        //   return;
+        // }
 
-        if ('speechSynthesis' in window) {
-          try {
-            window.speechSynthesis.cancel();
-            isSpeakingInvite = false;
-            updateSpeakButtonsUI();
-            const utter = new SpeechSynthesisUtterance('ॐ नमः पार्वती पतये, हर हर महादेव');
-            utter.lang = 'hi-IN';
-            utter.rate = 0.78;
-            utter.pitch = 0.88;
-            const voices = window.speechSynthesis.getVoices();
-            const hiVoice = voices.find((v) => v.lang && v.lang.toLowerCase().includes('hi'));
-            if (hiVoice) utter.voice = hiVoice;
-            window.speechSynthesis.speak(utter);
-          } catch (err) {}
-        }
+        // if ('speechSynthesis' in window) {
+        //   try {
+        //     window.speechSynthesis.cancel();
+        //     isSpeakingInvite = false;
+        //     updateSpeakButtonsUI();
+        //     const utter = new SpeechSynthesisUtterance('ॐ नमः पार्वती पतये, हर हर महादेव');
+        //     utter.lang = 'hi-IN';
+        //     utter.rate = 0.78;
+        //     utter.pitch = 0.88;
+        //     const voices = window.speechSynthesis.getVoices();
+        //     const hiVoice = voices.find((v) => v.lang && v.lang.toLowerCase().includes('hi'));
+        //     if (hiVoice) utter.voice = hiVoice;
+        //     window.speechSynthesis.speak(utter);
+        //   } catch (err) {}
+        // }
       }
 
       /* --------------------------------------------------------------------- */
@@ -2335,7 +2335,7 @@
       document.getElementById('open-seal-btn').addEventListener('click', () => {
         ensureAudioContext();
         startOmDrone();
-        playShivaChant();
+        // playShivaChant();
         launchFireworksShow(6);
         triggerCelebration(window.innerWidth / 2, window.innerHeight / 2, 60, true);
 
@@ -2739,46 +2739,16 @@
       /* --------------------------------------------------------------------- */
       /* 12. INITIALIZE EVERYTHING ON LOAD                                     */
       /* --------------------------------------------------------------------- */
-      /* 3. SACRED AUDIO ENGINE (BELL, PAPER FOLD, FIREWORKS, CHANT)           */
-      /* --------------------------------------------------------------------- */
-      let audioCtx = null;
-
-      function ensureAudioContext() {
-        try {
-          if (!audioCtx) {
-            const AudioContextClass = window.AudioContext || window.webkitAudioContext;
-            if (!AudioContextClass) return null;
-            audioCtx = new AudioContextClass();
-          }
-          if (audioCtx.state === 'suspended') {
-            audioCtx.resume();
-          }
-          return audioCtx;
-        } catch (err) {
-          return null;
-        }
-      }
-
-      function playTempleBell(volume = 0.85) {
-// ... existing code ... -->
-      /* --------------------------------------------------------------------- */
-      /* 9. WAX SEAL GATE & PULL-TO-REVEAL DATE SCROLL (WITH FIREWORKS!)       */
-      /* --------------------------------------------------------------------- */
-      document.getElementById('open-seal-btn').addEventListener('click', () => {
-        ensureAudioContext();
-        playShivaChant();
-        launchFireworksShow(6);
-        triggerCelebration(window.innerWidth / 2, window.innerHeight / 2, 60, true);
-// ... existing code ... -->
-      document.getElementById('mute-btn').addEventListener('click', (e) => {
-        isMuted = !isMuted;
-        e.currentTarget.textContent = isMuted ? '🔇' : '🔈';
-        if (isMuted) {
-          if ('speechSynthesis' in window) window.speechSynthesis.cancel();
-          const customAudio = document.getElementById('customChantAudio');
-          if (customAudio) customAudio.pause();
-          isSpeakingInvite = false;
-          updateSpeakButtonsUI();
-        }
+      window.addEventListener('load', () => {
+        initJhalarAndAmbient();
+        generateQRCodes();
+        setLanguage('bg'); // Default Regional Rajasthani Bagdi
+        updatePageControls();
+        setupInteractiveCarousel('festivities-carousel', 'festivities-dots', 'fest-prev-btn', 'fest-next-btn');
+        setupInteractiveCarousel('story-carousel', 'story-dots', 'story-prev-btn', 'story-next-btn');
+        animateFx();
       });
-// ... existing code ... -->
+    })();
+  </script>
+</body>
+</html>
