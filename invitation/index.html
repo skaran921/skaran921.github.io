@@ -1827,33 +1827,33 @@
       }
 
       function playShivaChant() {
-        // showMantraBanner();
-        // triggerAuraRipple();
-        // playTempleBell(0.95);
-        // if (isMuted) return;
+        showMantraBanner();
+        triggerAuraRipple();
+        playTempleBell(0.95);
+        if (isMuted) return;
 
-        // const customAudio = document.getElementById('customChantAudio');
-        // if (customAudio && customAudio.getAttribute('src')) {
-        //   customAudio.currentTime = 0;
-        //   customAudio.play().catch(() => {});
-        //   return;
-        // }
+        const customAudio = document.getElementById('customChantAudio');
+        if (customAudio && customAudio.getAttribute('src')) {
+          customAudio.currentTime = 0;
+          customAudio.play().catch(() => {});
+          return;
+        }
 
-        // if ('speechSynthesis' in window) {
-        //   try {
-        //     window.speechSynthesis.cancel();
-        //     isSpeakingInvite = false;
-        //     updateSpeakButtonsUI();
-        //     const utter = new SpeechSynthesisUtterance('ॐ नमः पार्वती पतये, हर हर महादेव');
-        //     utter.lang = 'hi-IN';
-        //     utter.rate = 0.78;
-        //     utter.pitch = 0.88;
-        //     const voices = window.speechSynthesis.getVoices();
-        //     const hiVoice = voices.find((v) => v.lang && v.lang.toLowerCase().includes('hi'));
-        //     if (hiVoice) utter.voice = hiVoice;
-        //     window.speechSynthesis.speak(utter);
-        //   } catch (err) {}
-        // }
+        if ('speechSynthesis' in window) {
+          try {
+            window.speechSynthesis.cancel();
+            isSpeakingInvite = false;
+            updateSpeakButtonsUI();
+            const utter = new SpeechSynthesisUtterance('ॐ नमः पार्वती पतये, हर हर महादेव');
+            utter.lang = 'hi-IN';
+            utter.rate = 0.78;
+            utter.pitch = 0.88;
+            const voices = window.speechSynthesis.getVoices();
+            const hiVoice = voices.find((v) => v.lang && v.lang.toLowerCase().includes('hi'));
+            if (hiVoice) utter.voice = hiVoice;
+            window.speechSynthesis.speak(utter);
+          } catch (err) {}
+        }
       }
 
       /* --------------------------------------------------------------------- */
@@ -2739,16 +2739,46 @@
       /* --------------------------------------------------------------------- */
       /* 12. INITIALIZE EVERYTHING ON LOAD                                     */
       /* --------------------------------------------------------------------- */
-      window.addEventListener('load', () => {
-        initJhalarAndAmbient();
-        generateQRCodes();
-        setLanguage('bg'); // Default Regional Rajasthani Bagdi
-        updatePageControls();
-        setupInteractiveCarousel('festivities-carousel', 'festivities-dots', 'fest-prev-btn', 'fest-next-btn');
-        setupInteractiveCarousel('story-carousel', 'story-dots', 'story-prev-btn', 'story-next-btn');
-        animateFx();
+      /* 3. SACRED AUDIO ENGINE (BELL, PAPER FOLD, FIREWORKS, CHANT)           */
+      /* --------------------------------------------------------------------- */
+      let audioCtx = null;
+
+      function ensureAudioContext() {
+        try {
+          if (!audioCtx) {
+            const AudioContextClass = window.AudioContext || window.webkitAudioContext;
+            if (!AudioContextClass) return null;
+            audioCtx = new AudioContextClass();
+          }
+          if (audioCtx.state === 'suspended') {
+            audioCtx.resume();
+          }
+          return audioCtx;
+        } catch (err) {
+          return null;
+        }
+      }
+
+      function playTempleBell(volume = 0.85) {
+// ... existing code ... -->
+      /* --------------------------------------------------------------------- */
+      /* 9. WAX SEAL GATE & PULL-TO-REVEAL DATE SCROLL (WITH FIREWORKS!)       */
+      /* --------------------------------------------------------------------- */
+      document.getElementById('open-seal-btn').addEventListener('click', () => {
+        ensureAudioContext();
+        playShivaChant();
+        launchFireworksShow(6);
+        triggerCelebration(window.innerWidth / 2, window.innerHeight / 2, 60, true);
+// ... existing code ... -->
+      document.getElementById('mute-btn').addEventListener('click', (e) => {
+        isMuted = !isMuted;
+        e.currentTarget.textContent = isMuted ? '🔇' : '🔈';
+        if (isMuted) {
+          if ('speechSynthesis' in window) window.speechSynthesis.cancel();
+          const customAudio = document.getElementById('customChantAudio');
+          if (customAudio) customAudio.pause();
+          isSpeakingInvite = false;
+          updateSpeakButtonsUI();
+        }
       });
-    })();
-  </script>
-</body>
-</html>
+// ... existing code ... -->
