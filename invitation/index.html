@@ -1,0 +1,2872 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=5.0" />
+  <title>Soni Family | Karan weds Aarti — March 2027</title>
+
+  <!-- Google Fonts: Calligraphy, Editorial Serifs & Crisp Devanagari (Hindi & Rajasthani Bagdi) -->
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Alex+Brush&family=Cinzel:wght@400;500;600;700&family=Cormorant+Garamond:ital,wght@0,400;0,500;0,600;0,700;1,400;1,600&family=Great+Vibes&family=Noto+Sans+Devanagari:wght@400;500;600;700&family=Poppins:wght@300;400;500;600&family=Tiro+Devanagari+Hindi:ital@0;1&display=swap" rel="stylesheet" />
+
+  <!-- Tailwind CSS -->
+  <script src="https://cdn.tailwindcss.com"></script>
+  <!-- Lightweight QR Code Generator for Real Scannable Location & Contact vCard QR Codes -->
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/qrcode-generator/1.4.4/qrcode.min.js"></script>
+
+  <script>
+    tailwind.config = {
+      theme: {
+        extend: {
+          colors: {
+            blush: {
+              50: '#FFFBF8',
+              100: '#FDEEF2',
+              200: '#F8D7E0',
+              300: '#F3C4D3',
+            },
+            dusty: {
+              400: '#D48395',
+              500: '#C97A92',
+            },
+            foil: {
+              light: '#E8CFA6',
+              soft: '#D9A78B',
+              DEFAULT: '#C88A70',
+              dark: '#8E5640',
+            },
+            plum: {
+              700: '#6D324C',
+              800: '#5A253D',
+              900: '#4A1F33',
+            },
+          },
+          fontFamily: {
+            calligraphy: ['Great Vibes', 'Alex Brush', 'cursive'],
+            brush: ['Alex Brush', 'Great Vibes', 'cursive'],
+            cormorant: ['Cormorant Garamond', 'serif'],
+            cinzel: ['Cinzel', 'serif'],
+            poppins: ['Poppins', 'sans-serif'],
+            hindi: ['Tiro Devanagari Hindi', 'Noto Sans Devanagari', 'serif'],
+            hindiSans: ['Noto Sans Devanagari', 'Tiro Devanagari Hindi', 'sans-serif'],
+          },
+        },
+      },
+    };
+  </script>
+
+  <style>
+    /* ================================================================
+       BLUSH-PINK WATERCOLOR & ROSE-GOLD FOIL LUXURY STATIONERY THEME
+       ================================================================ */
+    :root {
+      --blush-1: #FDEEF2;
+      --blush-2: #F8D7E0;
+      --blush-3: #F3C4D3;
+      --dusty-rose: #C97A92;
+      --ivory-paper: #FFFBF8;
+      --rose-gold: #C88A70;
+      --rose-gold-soft: #D9A78B;
+      --plum-text: #4A1F33;
+    }
+
+    * {
+      box-sizing: border-box;
+      -webkit-tap-highlight-color: transparent;
+    }
+
+    body {
+      margin: 0;
+      min-height: 100vh;
+      overflow-x: hidden;
+      font-family: 'Poppins', sans-serif;
+      color: var(--plum-text);
+      background:
+        radial-gradient(circle at 12% 16%, rgba(253, 238, 242, 0.96) 0%, transparent 48%),
+        radial-gradient(circle at 88% 14%, rgba(248, 215, 224, 0.94) 0%, transparent 48%),
+        radial-gradient(circle at 50% 92%, rgba(217, 167, 139, 0.25) 0%, transparent 55%),
+        linear-gradient(155deg, #FBEAF0 0%, #F5D9E3 48%, #ECCED9 100%);
+    }
+
+    /* Devanagari Typography Refinements for Hindi (hi) & Rajasthani Bagdi (bg) */
+    body.lang-dev .i18n-serif {
+      font-family: 'Tiro Devanagari Hindi', 'Noto Sans Devanagari', serif !important;
+      letter-spacing: 0.01em !important;
+    }
+    body.lang-dev .i18n-calligraphy {
+      font-family: 'Tiro Devanagari Hindi', 'Noto Sans Devanagari', serif !important;
+      font-weight: 700;
+      letter-spacing: 0.02em !important;
+    }
+    body.lang-dev .i18n-body {
+      font-family: 'Noto Sans Devanagari', 'Tiro Devanagari Hindi', sans-serif !important;
+    }
+
+    /* Metallic Rose-Gold Foil Shimmer Text */
+    .foil-text {
+      background: linear-gradient(115deg, #8E5640 0%, #C88A70 25%, #F2D6BE 48%, #C97A92 72%, #8E5640 100%);
+      background-size: 220% auto;
+      -webkit-background-clip: text;
+      -webkit-text-fill-color: transparent;
+      animation: foilShimmer 6s linear infinite;
+    }
+
+    .foil-gold-text {
+      background: linear-gradient(120deg, #8E5640 0%, #C88A70 35%, #E8CFA6 55%, #A66A52 85%, #8E5640 100%);
+      background-size: 200% auto;
+      -webkit-background-clip: text;
+      -webkit-text-fill-color: transparent;
+      animation: foilShimmer 6.8s linear infinite;
+    }
+
+    @keyframes foilShimmer {
+      0% { background-position: 0% center; }
+      100% { background-position: 220% center; }
+    }
+
+    /* ================================================================
+       ROSE-GOLD WAX SEAL OPENING GATE OVERLAY
+       ================================================================ */
+    #wax-seal-gate {
+      position: fixed;
+      inset: 0;
+      z-index: 80;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      padding: 1rem;
+      background:
+        radial-gradient(circle at 50% 34%, rgba(255, 251, 248, 0.97) 0%, rgba(253, 238, 242, 0.98) 52%, rgba(243, 196, 211, 0.98) 100%);
+      transition: opacity 0.85s cubic-bezier(0.22, 1, 0.36, 1), transform 0.85s cubic-bezier(0.22, 1, 0.36, 1), visibility 0.85s;
+    }
+
+    #wax-seal-gate.gate-unlocked {
+      opacity: 0;
+      transform: scale(1.06);
+      visibility: hidden;
+      pointer-events: none;
+    }
+
+    .wax-seal-medallion {
+      position: relative;
+      width: 122px;
+      height: 122px;
+      border-radius: 9999px;
+      background: radial-gradient(circle at 32% 28%, #F4D8C2 0%, #D9A78B 36%, #C88A70 68%, #7C4050 100%);
+      box-shadow:
+        0 14px 32px -6px rgba(74, 31, 51, 0.42),
+        0 0 0 6px rgba(200, 138, 112, 0.28),
+        inset 0 3px 8px rgba(255, 251, 248, 0.65),
+        inset 0 -6px 14px rgba(74, 31, 51, 0.45);
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      transition: transform 0.35s cubic-bezier(0.22, 1, 0.36, 1), box-shadow 0.35s ease;
+    }
+
+    .wax-seal-medallion::before {
+      content: '';
+      position: absolute;
+      inset: 8px;
+      border-radius: 9999px;
+      border: 1.5px dashed rgba(255, 251, 248, 0.68);
+    }
+
+    .wax-seal-medallion:hover {
+      transform: scale(1.06) rotate(-2deg);
+      box-shadow:
+        0 18px 38px -6px rgba(74, 31, 51, 0.48),
+        0 0 28px rgba(200, 138, 112, 0.68),
+        inset 0 3px 10px rgba(255, 251, 248, 0.8);
+    }
+
+    /* Interactive Temple Bell (Ghanti) Swing Animation */
+    .bell-swing {
+      transform-origin: top center;
+      animation: bellSwingAnim 0.85s ease-in-out;
+    }
+
+    @keyframes bellSwingAnim {
+      0% { transform: rotate(0deg); }
+      15% { transform: rotate(24deg); }
+      35% { transform: rotate(-20deg); }
+      55% { transform: rotate(14deg); }
+      75% { transform: rotate(-8deg); }
+      100% { transform: rotate(0deg); }
+    }
+
+    /* Expanding Divine Aura Ripple Ring */
+    .aura-ripple-ring {
+      position: fixed;
+      top: 50%;
+      left: 50%;
+      width: 140px;
+      height: 140px;
+      margin: -70px 0 0 -70px;
+      border-radius: 9999px;
+      border: 2px solid rgba(200, 138, 112, 0.78);
+      box-shadow: 0 0 36px rgba(232, 207, 166, 0.68), inset 0 0 24px rgba(201, 122, 146, 0.36);
+      pointer-events: none;
+      z-index: 55;
+      opacity: 0;
+    }
+
+    .aura-ripple-ring.animate-ripple {
+      animation: divineRippleExpand 1.9s cubic-bezier(0.16, 1, 0.3, 1) forwards;
+    }
+
+    @keyframes divineRippleExpand {
+      0% { opacity: 0.92; transform: scale(0.4); }
+      100% { opacity: 0; transform: scale(6.5); }
+    }
+
+    /* Glowing Floating Mantra Banner */
+    #mantra-banner {
+      transition: all 0.5s cubic-bezier(0.22, 1, 0.36, 1);
+    }
+
+    /* ================================================================
+       REALISTIC 3D PHYSICAL PAPER-FOLD BOOK STAGE & CARDSTOCK
+       ================================================================ */
+    .book-stage {
+      perspective: 2400px;
+      perspective-origin: 50% 45%;
+      position: relative;
+      width: 100%;
+      max-width: 580px;
+      margin: 0 auto;
+    }
+
+    .card-stack-base {
+      position: relative;
+      border-radius: 22px;
+      box-shadow:
+        0 2px 0 0 #F4DCE3,
+        0 4px 0 0 #E6C7D1,
+        0 6px 0 0 #FBF2F5,
+        0 8px 0 0 #DFBCC7,
+        0 24px 55px -12px rgba(74, 31, 51, 0.28),
+        0 10px 24px -8px rgba(142, 86, 64, 0.18);
+      transform-style: preserve-3d;
+    }
+
+    .paper-page {
+      position: relative;
+      width: 100%;
+      min-height: 710px;
+      border-radius: 22px;
+      background-color: var(--blush-1);
+      border: 1px solid rgba(200, 138, 112, 0.48);
+      transform-style: preserve-3d;
+      backface-visibility: hidden;
+      display: none;
+      opacity: 0;
+      overflow: hidden;
+      will-change: transform, opacity;
+    }
+
+    .paper-blush {
+      background: radial-gradient(circle at 50% 18%, rgba(255, 251, 248, 0.94) 0%, rgba(253, 238, 242, 0.97) 52%, rgba(248, 215, 224, 0.98) 100%);
+    }
+
+    .paper-ivory {
+      background: radial-gradient(circle at 50% 0%, rgba(255, 251, 248, 0.98) 0%, rgba(253, 238, 242, 0.96) 72%, rgba(248, 215, 224, 0.95) 100%);
+    }
+
+    /* Tactile Vertical Paper-Fold Spine Crease */
+    .paper-crease-line {
+      position: absolute;
+      top: 0;
+      bottom: 0;
+      left: 16px;
+      width: 14px;
+      background: linear-gradient(
+        90deg,
+        rgba(74, 31, 51, 0.08) 0%,
+        rgba(255, 255, 255, 0.45) 35%,
+        rgba(74, 31, 51, 0.04) 65%,
+        transparent 100%
+      );
+      pointer-events: none;
+      z-index: 25;
+    }
+
+    /* Dynamic Moving Shadow & Specular Highlight Layer during Paper Fold */
+    .fold-lighting {
+      position: absolute;
+      inset: 0;
+      pointer-events: none;
+      z-index: 30;
+      opacity: 0;
+      border-radius: 22px;
+      background: linear-gradient(
+        105deg,
+        rgba(74, 31, 51, 0.36) 0%,
+        rgba(74, 31, 51, 0.12) 28%,
+        rgba(255, 251, 248, 0.46) 52%,
+        rgba(74, 31, 51, 0.16) 80%,
+        rgba(74, 31, 51, 0.28) 100%
+      );
+    }
+
+    .paper-page.active {
+      display: flex;
+      flex-direction: column;
+      opacity: 1;
+      z-index: 10;
+    }
+
+    .paper-page.fold-out-next {
+      display: flex;
+      flex-direction: column;
+      position: absolute;
+      inset: 0;
+      z-index: 20;
+      pointer-events: none;
+      transform-origin: left center;
+      animation: leafFoldOutNext 0.88s cubic-bezier(0.45, 0.05, 0.25, 1) forwards;
+    }
+    .paper-page.fold-out-next .fold-lighting {
+      animation: foldShadowDarken 0.88s ease-in-out forwards;
+    }
+
+    .paper-page.fold-in-next {
+      display: flex;
+      flex-direction: column;
+      z-index: 10;
+      transform-origin: left center;
+      animation: leafUnfoldInNext 0.88s cubic-bezier(0.22, 1, 0.36, 1) forwards;
+    }
+    .paper-page.fold-in-next .fold-lighting {
+      animation: foldShadowReveal 0.88s ease-out forwards;
+    }
+
+    .paper-page.fold-in-prev {
+      display: flex;
+      flex-direction: column;
+      z-index: 20;
+      transform-origin: left center;
+      animation: leafFoldInPrev 0.86s cubic-bezier(0.22, 1, 0.36, 1) forwards;
+    }
+    .paper-page.fold-in-prev .fold-lighting {
+      animation: foldShadowReveal 0.86s ease-out forwards;
+    }
+
+    .paper-page.fold-out-prev {
+      display: flex;
+      flex-direction: column;
+      position: absolute;
+      inset: 0;
+      z-index: 10;
+      pointer-events: none;
+      transform-origin: left center;
+      animation: leafRecedePrev 0.86s ease-in-out forwards;
+    }
+    .paper-page.fold-out-prev .fold-lighting {
+      animation: foldShadowDarken 0.86s ease-in-out forwards;
+    }
+
+    @keyframes leafFoldOutNext {
+      0% { opacity: 1; transform: rotateY(0deg) skewY(0deg) scale(1); box-shadow: 0 10px 25px rgba(74, 31, 51, 0.15); }
+      45% { opacity: 0.96; transform: rotateY(-64deg) skewY(-1.8deg) scale(0.985); box-shadow: 24px 18px 40px rgba(74, 31, 51, 0.32); }
+      100% { opacity: 0; transform: rotateY(-122deg) skewY(-2.5deg) scale(0.95); box-shadow: 40px 25px 50px rgba(74, 31, 51, 0.1); }
+    }
+    @keyframes leafUnfoldInNext {
+      0% { opacity: 0.65; transform: rotateY(14deg) scale(0.975); }
+      100% { opacity: 1; transform: rotateY(0deg) scale(1); }
+    }
+    @keyframes leafFoldInPrev {
+      0% { opacity: 0.25; transform: rotateY(-112deg) skewY(-2deg) scale(0.96); box-shadow: 30px 20px 45px rgba(74, 31, 51, 0.3); }
+      60% { opacity: 0.98; transform: rotateY(-24deg) skewY(-0.6deg) scale(0.99); }
+      100% { opacity: 1; transform: rotateY(0deg) skewY(0deg) scale(1); box-shadow: 0 0 0 rgba(74, 31, 51, 0); }
+    }
+    @keyframes leafRecedePrev {
+      0% { opacity: 1; transform: scale(1); }
+      100% { opacity: 0; transform: scale(0.97); }
+    }
+    @keyframes foldShadowDarken {
+      0% { opacity: 0; }
+      50% { opacity: 0.85; }
+      100% { opacity: 0.45; }
+    }
+    @keyframes foldShadowReveal {
+      0% { opacity: 0.7; }
+      100% { opacity: 0; }
+    }
+
+    /* ================================================================
+       ORNATE STATIONERY BORDERS, DRAPES, DIYA FLAME & TEJAS AURA
+       ================================================================ */
+    .gold-inner-frame {
+      position: absolute;
+      inset: 12px;
+      border: 1.5px solid rgba(200, 138, 112, 0.58);
+      border-radius: 15px;
+      pointer-events: none;
+      z-index: 4;
+    }
+    .gold-inner-frame::after {
+      content: '';
+      position: absolute;
+      inset: 4px;
+      border: 1px solid rgba(201, 122, 146, 0.26);
+      border-radius: 12px;
+    }
+
+    .mandap-ivory-panel {
+      background: linear-gradient(180deg, rgba(255, 251, 248, 0.97) 0%, rgba(255, 247, 245, 0.95) 100%);
+      border: 1.5px solid rgba(200, 138, 112, 0.65);
+      box-shadow:
+        0 10px 28px -8px rgba(74, 31, 51, 0.14),
+        inset 0 0 0 3px rgba(255, 251, 248, 0.9),
+        inset 0 0 0 4px rgba(200, 138, 112, 0.28);
+    }
+
+    .stationery-card {
+      background: rgba(255, 251, 248, 0.9);
+      border: 1px solid rgba(200, 138, 112, 0.5);
+      box-shadow: 0 6px 18px -6px rgba(74, 31, 51, 0.1);
+      transition: transform 0.25s ease, box-shadow 0.25s ease;
+    }
+    .stationery-card:hover {
+      transform: translateY(-2px);
+      box-shadow: 0 10px 22px -6px rgba(74, 31, 51, 0.16);
+    }
+
+    .foil-cta-btn {
+      background: linear-gradient(135deg, #C97A92 0%, #8E435A 52%, #6D324C 100%);
+      border: 1.5px solid #E8CFA6;
+      color: #FFFBF8;
+      box-shadow:
+        0 10px 24px -6px rgba(74, 31, 51, 0.35),
+        0 0 16px rgba(232, 207, 166, 0.42),
+        inset 0 1px 1px rgba(255, 255, 255, 0.35);
+      transition: all 0.3s cubic-bezier(0.22, 1, 0.36, 1);
+    }
+    .foil-cta-btn:hover {
+      transform: translateY(-2px) scale(1.015);
+      box-shadow: 0 14px 28px -6px rgba(74, 31, 51, 0.42), 0 0 22px rgba(200, 138, 112, 0.58);
+    }
+    .foil-cta-btn:active {
+      transform: scale(0.98);
+    }
+
+    /* Flickering Golden Diya Flame Animation */
+    .diya-flame {
+      transform-origin: center bottom;
+      opacity: 0;
+      transform: scale(0.2);
+      transition: opacity 0.5s ease, transform 0.5s ease;
+    }
+    .diya-lit .diya-flame {
+      opacity: 1;
+      animation: flameFlicker 1.5s ease-in-out infinite alternate;
+    }
+    .diya-lit .diya-glow {
+      opacity: 1;
+      animation: glowPulse 2.2s ease-in-out infinite;
+    }
+    .diya-glow {
+      opacity: 0;
+      transition: opacity 0.6s ease;
+    }
+
+    @keyframes flameFlicker {
+      0% { transform: scale(1) rotate(-2.5deg); }
+      35% { transform: scale(1.07, 0.95) rotate(2deg); }
+      70% { transform: scale(0.97, 1.08) rotate(-1.5deg); }
+      100% { transform: scale(1.04) rotate(1.5deg); }
+    }
+    @keyframes glowPulse {
+      0%, 100% { opacity: 0.68; transform: scale(1); }
+      50% { opacity: 1; transform: scale(1.14); }
+    }
+
+    /* Breathing Tejas (Divine Halo) & Sunburst */
+    .sunburst-spin {
+      animation: slowSpin 42s linear infinite;
+    }
+    .divine-aura-pulse {
+      animation: auraPulse 3.6s ease-in-out infinite;
+    }
+    @keyframes slowSpin {
+      from { transform: rotate(0deg); }
+      to { transform: rotate(360deg); }
+    }
+    @keyframes auraPulse {
+      0%, 100% {
+        filter: drop-shadow(0 0 8px rgba(200, 138, 112, 0.36));
+        transform: scale(1);
+      }
+      50% {
+        filter: drop-shadow(0 0 20px rgba(232, 207, 166, 0.88));
+        transform: scale(1.028);
+      }
+    }
+
+    /* QR Code Rose-Gold Frame */
+    .qr-gold-frame {
+      background: #FFFBF8;
+      padding: 8px;
+      border-radius: 12px;
+      border: 2px solid #C88A70;
+      box-shadow: inset 0 0 0 2px #F8D7E0, 0 6px 16px -4px rgba(74, 31, 51, 0.16);
+      display: inline-flex;
+      align-items: center;
+      justify-content: center;
+    }
+
+    #celebration-canvas {
+      position: fixed;
+      inset: 0;
+      width: 100%;
+      height: 100%;
+      pointer-events: none;
+      z-index: 65;
+    }
+
+    #blessing-toast {
+      transition: all 0.4s cubic-bezier(0.22, 1, 0.36, 1);
+    }
+
+    .paper-grain-overlay {
+      position: absolute;
+      inset: 0;
+      width: 100%;
+      height: 100%;
+      pointer-events: none;
+      z-index: 22;
+      opacity: 0.24;
+      mix-blend-mode: multiply;
+    }
+
+    /* Custom subtle scrollbar for Blessings Wall */
+    .blessings-scroll::-webkit-scrollbar {
+      width: 4px;
+    }
+    .blessings-scroll::-webkit-scrollbar-thumb {
+      background: rgba(200, 138, 112, 0.45);
+      border-radius: 9999px;
+    }
+
+    @media (max-width: 430px) {
+      .paper-page {
+        min-height: 660px;
+        border-radius: 18px;
+      }
+      .gold-inner-frame {
+        inset: 8px;
+        border-radius: 12px;
+      }
+    }
+  </style>
+</head>
+
+<body class="antialiased selection:bg-blush-200 selection:text-plum-900">
+
+  <!-- ================================================================
+       OPTIONAL STUDIO MP3 CHANT HOOK
+       To use a custom studio MP3 recording of 'ॐ नमः पार्वती पतये हर हर महादेव',
+       simply add src="your-chant.mp3" to the audio tag below.
+       When left empty, the invitation uses the built-in 100% self-contained
+       Web Audio 136.1 Hz Om/Tanpura drone + Brass Bell + Web Speech API chant!
+       ================================================================ -->
+  <audio id="customChantAudio" preload="auto"></audio>
+
+  <!-- Hidden SVG Filter Definition for Authentic Handmade Cotton Paper Grain -->
+  <svg class="hidden" aria-hidden="true">
+    <defs>
+      <filter id="cotton-paper-grain" x="0%" y="0%" width="100%" height="100%">
+        <feTurbulence type="fractalNoise" baseFrequency="0.82" numOctaves="3" stitchTiles="stitch" result="noise" />
+        <feColorMatrix type="matrix" values="
+          0 0 0 0 0.56
+          0 0 0 0 0.36
+          0 0 0 0 0.42
+          0 0 0 0.16 0" in="noise" result="coloredNoise" />
+      </filter>
+    </defs>
+  </svg>
+
+  <!-- Full-Screen Blush Rose Petals, Sacred Bilva Leaves & Golden Stardust Canvas -->
+  <canvas id="celebration-canvas" aria-hidden="true"></canvas>
+
+  <!-- Expanding Golden Aura Ripple Ring -->
+  <div id="aura-ripple" class="aura-ripple-ring" aria-hidden="true"></div>
+
+  <!-- ================================================================
+       1. EMBOSSED ROSE-GOLD WAX SEAL OPENING GATE
+       ================================================================ -->
+  <div id="wax-seal-gate" role="dialog" aria-modal="true" aria-label="Soni Family Sealed Wedding Invitation">
+    <div class="relative w-full max-w-md rounded-[28px] bg-gradient-to-b from-blush-50 via-blush-100 to-blush-200 border-2 border-foil/70 shadow-2xl px-6 py-8 sm:px-9 sm:py-10 text-center overflow-hidden">
+      <svg class="paper-grain-overlay" aria-hidden="true"><rect width="100%" height="100%" filter="url(#cotton-paper-grain)" /></svg>
+      <div class="gold-inner-frame"></div>
+
+      <!-- Subtle Envelope Flap Fold Lines -->
+      <svg class="absolute top-0 left-0 w-full h-36 pointer-events-none opacity-45" viewBox="0 0 400 140" preserveAspectRatio="none" aria-hidden="true">
+        <path d="M0,0 L200,122 L400,0" fill="none" stroke="#C88A70" stroke-width="1.5" />
+        <path d="M0,0 L200,122 L400,0 Z" fill="#F8D7E0" fill-opacity="0.35" />
+      </svg>
+
+      <div class="relative z-10 flex flex-col items-center space-y-3.5">
+        <!-- Mantra Preview Pill -->
+        <div class="px-4 py-1.5 rounded-full bg-blush-50/90 border border-foil/60 shadow-sm">
+          <p class="text-xs sm:text-sm font-bold foil-gold-text font-hindi tracking-wide">
+            ॥ ॐ नमः पार्वती पतये, हर हर महादेव ॥
+          </p>
+        </div>
+
+        <!-- Dynamic Personalized Guest Welcome Pill (visible if ?guest=Name is in URL) -->
+        <div id="gate-guest-pill" class="hidden px-4 py-1 rounded-full bg-plum-900/90 text-blush-50 border border-foil-light shadow-sm">
+          <p id="gate-guest-text" class="text-xs font-medium i18n-body"></p>
+        </div>
+
+        <div class="space-y-1">
+          <p class="text-[11px] font-cinzel tracking-[0.28em] text-plum-900 uppercase font-semibold i18n-serif"
+             data-en="SONI FAMILY INVITES YOU"
+             data-hi="सोनी परिवार का पावन निमंत्रण"
+             data-bg="घणी खम्मा • सोनी परिवार रो हिवड़े सूं निमंत्रण">
+            SONI FAMILY INVITES YOU
+          </p>
+          <h1 class="text-4xl sm:text-5xl font-calligraphy foil-text leading-tight i18n-calligraphy"
+              data-en="Karan weds Aarti"
+              data-hi="करण संग आरती"
+              data-bg="करण अर आरती रो शुभ ब्याह">
+            Karan weds Aarti
+          </h1>
+          <p class="text-xs font-cinzel tracking-[0.24em] text-plum-700 uppercase i18n-serif"
+             data-en="MARCH 2027 • LUDHIANA"
+             data-hi="मार्च 2027 • लुधियाना"
+             data-bg="मार्च 2027 • पधारो सा">
+            MARCH 2027 • LUDHIANA
+          </p>
+        </div>
+
+        <!-- Interactive Embossed Rose-Gold Om Wax Seal -->
+        <button id="wax-seal-btn" type="button" class="group focus:outline-none cursor-pointer my-1.5" aria-label="Tap Wax Seal to Open Invitation">
+          <div class="wax-seal-medallion divine-aura-pulse">
+            <div class="flex flex-col items-center justify-center text-blush-50">
+              <span class="text-4xl font-hindi leading-none drop-shadow">ॐ</span>
+              <span class="text-[9px] font-cinzel tracking-[0.22em] uppercase mt-1 opacity-90">SHUBH VIVAH</span>
+            </div>
+          </div>
+        </button>
+
+        <!-- Primary Tap to Open CTA -->
+        <button id="gate-open-btn" type="button"
+                class="foil-cta-btn inline-flex items-center justify-center gap-2 px-7 py-3 rounded-full text-xs sm:text-sm font-semibold tracking-wider cursor-pointer">
+          <span class="font-cinzel i18n-serif"
+                data-en="Tap Seal to Open"
+                data-hi="निमंत्रण खोलें"
+                data-bg="पधारो सा • पत्रिका खोलो">
+            Tap Seal to Open
+          </span>
+          <span class="opacity-75">✦</span>
+          <span class="font-hindi text-xs">पधारो सा</span>
+        </button>
+
+        <p class="text-[11px] text-plum-700/85 font-cormorant italic flex items-center justify-center gap-1.5">
+          <svg class="w-3.5 h-3.5 text-foil-dark shrink-0" fill="none" stroke="currentColor" stroke-width="1.8" viewBox="0 0 24 24">
+            <path stroke-linecap="round" stroke-linejoin="round" d="M11 5L6 9H2v6h4l5 4V5zM15.54 8.46a5 5 0 010 7.07" />
+          </svg>
+          <span class="i18n-body"
+                data-en="Opens with temple bell & Mahadev mantra"
+                data-hi="पावन मंदिर घंटी एवं महादेव मंत्र के साथ खुलेगा"
+                data-bg="मंदिर घंटी अर महादेव मंत्र रे साथे खुलसी">
+            Opens with temple bell &amp; Mahadev mantra
+          </span>
+        </p>
+      </div>
+    </div>
+  </div>
+
+  <!-- ================================================================
+       GLOWING MANTRA BANNER (Synchronized with Devotional Chant)
+       ================================================================ -->
+  <div id="mantra-banner"
+       class="fixed top-16 left-1/2 -translate-x-1/2 z-[70] pointer-events-none opacity-0 -translate-y-4 w-[92%] max-w-md">
+    <div class="rounded-2xl bg-gradient-to-r from-plum-900 via-[#5E283F] to-plum-900 border-2 border-foil-light px-5 py-3 shadow-2xl text-center">
+      <div class="flex items-center justify-center gap-2">
+        <span class="text-foil-light text-base animate-pulse">ॐ</span>
+        <p class="text-sm sm:text-base font-bold text-blush-50 font-hindi tracking-wide">
+          ॥ ॐ नमः पार्वती पतये, हर हर महादेव ॥
+        </p>
+        <span class="text-foil-light text-base animate-pulse">ॐ</span>
+      </div>
+      <p class="text-[10px] sm:text-[11px] text-foil-light/95 font-cormorant italic mt-0.5 i18n-body"
+         data-en="Om Namah Parvati Pataye, Har Har Mahadev"
+         data-hi="भगवान शिव एवं माता पार्वती का पावन आशीर्वाद"
+         data-bg="शिव-पार्वती रो पावन आशीर्वाद करण अर आरती पर बण्यो रहवे">
+        Om Namah Parvati Pataye, Har Har Mahadev
+      </p>
+    </div>
+  </div>
+
+  <!-- Floating Toast Message (Replaces alert) -->
+  <div id="blessing-toast"
+       class="fixed bottom-20 left-1/2 -translate-x-1/2 z-[70] pointer-events-none opacity-0 translate-y-4 w-[92%] max-w-sm">
+    <div class="bg-plum-900/95 text-blush-50 border border-foil-light px-5 py-3 rounded-2xl shadow-2xl backdrop-blur-md text-center">
+      <p id="toast-text" class="text-xs sm:text-sm font-medium i18n-body"></p>
+    </div>
+  </div>
+
+  <!-- ================================================================
+       FLOATING TOP SACRED CONTROL BAR
+       1) 3-way Language Switcher: EN | हिंदी | बागड़ी
+       2) One-tap Mantra Chant ("ॐ हर हर महादेव")
+       3) Interactive Temple Bell (Ghanti) with Swing & Sparkle
+       4) Sound Mute / Unmute Toggle
+       ================================================================ -->
+  <header class="relative z-40 w-full max-w-[580px] mx-auto px-2.5 sm:px-4 pt-3 pb-2">
+    <div class="flex flex-wrap items-center justify-between gap-2 p-1.5 rounded-2xl bg-blush-50/85 border border-foil/65 shadow-md backdrop-blur-md">
+
+      <!-- 1) 3-Way Language Switcher (EN | हिंदी | बागड़ी) -->
+      <div class="inline-flex items-center p-0.5 rounded-full bg-blush-100/95 border border-foil/45"
+           role="group" aria-label="3-Language Switcher">
+        <button id="btn-lang-en" type="button"
+                class="lang-btn px-2.5 py-1 rounded-full text-[11px] font-semibold transition-all duration-300 bg-gradient-to-r from-dusty-500 to-plum-900 text-blush-50 shadow-sm cursor-pointer">
+          EN
+        </button>
+        <button id="btn-lang-hi" type="button"
+                class="lang-btn px-2.5 py-1 rounded-full text-[11px] font-semibold transition-all duration-300 text-plum-900 hover:text-dusty-500 font-hindiSans cursor-pointer">
+          हिंदी
+        </button>
+        <button id="btn-lang-bg" type="button"
+                class="lang-btn px-2.5 py-1 rounded-full text-[11px] font-semibold transition-all duration-300 text-plum-900 hover:text-dusty-500 font-hindiSans cursor-pointer">
+          बागड़ी
+        </button>
+      </div>
+
+      <!-- Right Sacred Audio Controls -->
+      <div class="flex items-center gap-1.5">
+        <!-- 2) One-tap Mantra Chant Button -->
+        <button id="chant-trigger-btn" type="button"
+                class="inline-flex items-center gap-1 px-2.5 py-1 rounded-full bg-gradient-to-r from-foil-light/55 to-blush-200/85 hover:from-foil-light/80 hover:to-blush-200 border border-foil/60 text-plum-900 text-[10px] sm:text-xs font-bold font-hindiSans shadow-sm transition active:scale-95 cursor-pointer whitespace-nowrap"
+                title="Chant Om Namah Parvati Pataye Har Har Mahadev">
+          <span class="text-foil-dark">ॐ</span>
+          <span>हर हर महादेव</span>
+        </button>
+
+        <!-- 3) Interactive Temple Bell (Ghanti) Button -->
+        <button id="temple-bell-btn" type="button" aria-label="Ring Temple Bell"
+                class="p-1.5 rounded-full bg-blush-100/95 hover:bg-foil-light/45 border border-foil/60 text-foil-dark shadow-sm transition active:scale-90 cursor-pointer"
+                title="Ring Sacred Temple Bell (Ghanti)">
+          <svg id="temple-bell-svg" class="w-4 h-4" fill="none" stroke="currentColor" stroke-width="1.9" viewBox="0 0 24 24">
+            <path stroke-linecap="round" stroke-linejoin="round" d="M12 2v2m-5 9a5 5 0 0110 0c0 3 1.5 4.5 2 5H5c.5-.5 2-2 2-5z" />
+            <path stroke-linecap="round" stroke-linejoin="round" d="M10 18a2 2 0 104 0" />
+          </svg>
+        </button>
+
+        <!-- 4) Sound Mute / Unmute Toggle -->
+        <button id="sound-toggle" type="button" aria-label="Mute or Unmute Sound"
+                class="p-1.5 rounded-full bg-blush-100/95 hover:bg-blush-200/80 border border-foil/55 text-plum-900 transition cursor-pointer"
+                title="Mute / Unmute Sacred Soundscape">
+          <svg id="sound-icon-on" class="w-4 h-4" fill="none" stroke="currentColor" stroke-width="1.9" viewBox="0 0 24 24">
+            <path stroke-linecap="round" stroke-linejoin="round" d="M11 5L6 9H2v6h4l5 4V5z" />
+            <path stroke-linecap="round" stroke-linejoin="round" d="M15.54 8.46a5 5 0 010 7.07M19.07 4.93a10 10 0 010 14.14" />
+          </svg>
+          <svg id="sound-icon-off" class="w-4 h-4 hidden" fill="none" stroke="currentColor" stroke-width="1.9" viewBox="0 0 24 24">
+            <path stroke-linecap="round" stroke-linejoin="round" d="M11 5L6 9H2v6h4l5 4V5z" />
+            <path stroke-linecap="round" stroke-linejoin="round" d="M23 9l-6 6M17 9l6 6" />
+          </svg>
+        </button>
+      </div>
+    </div>
+  </header>
+
+  <!-- ================================================================
+       TOP CLICKABLE PAGE TABS (Cover | Blessings | Programs | Venue & QR)
+       ================================================================ -->
+  <div class="relative z-40 w-full max-w-[580px] mx-auto px-2.5 sm:px-4 pb-2.5">
+    <div class="grid grid-cols-4 gap-1.5 p-1 rounded-2xl bg-blush-50/75 border border-foil/50 backdrop-blur-md shadow-sm"
+         role="tablist" aria-label="Invitation Pages">
+      <button type="button" class="page-tab py-1.5 px-1 rounded-xl text-[11px] sm:text-xs font-medium transition-all cursor-pointer bg-plum-900 text-blush-50 shadow-sm i18n-body"
+              data-target="1" data-en="Cover" data-hi="मुख्य पृष्ठ" data-bg="मुख्य पन्नो">Cover</button>
+      <button type="button" class="page-tab py-1.5 px-1 rounded-xl text-[11px] sm:text-xs font-medium transition-all cursor-pointer text-plum-900/80 hover:bg-blush-100 i18n-body"
+              data-target="2" data-en="Blessings" data-hi="आशीर्वाद" data-bg="आशीष व दीवो">Blessings</button>
+      <button type="button" class="page-tab py-1.5 px-1 rounded-xl text-[11px] sm:text-xs font-medium transition-all cursor-pointer text-plum-900/80 hover:bg-blush-100 i18n-body"
+              data-target="3" data-en="Programs" data-hi="कार्यक्रम" data-bg="मंगल कार्यक्रम">Programs</button>
+      <button type="button" class="page-tab py-1.5 px-1 rounded-xl text-[11px] sm:text-xs font-medium transition-all cursor-pointer text-plum-900/80 hover:bg-blush-100 i18n-body"
+              data-target="4" data-en="Venue & QR" data-hi="स्थान व संपर्क" data-bg="ठिकाणो व बधाई">Venue &amp; QR</button>
+    </div>
+  </div>
+
+  <!-- ================================================================
+       MAIN 3D PAPER-FOLD INVITATION BOOK STAGE
+       ================================================================ -->
+  <main class="relative z-30 px-2.5 sm:px-4 pb-8 flex flex-col items-center">
+    <div id="book-stage" class="book-stage">
+      <div class="card-stack-base">
+
+        <!-- ============================================================
+             PAGE 1: COVER PAGE (WATERCOLOR FLORALS, GANESHA SUNBURST,
+                     SHIVA DIVINE AURA, GUEST RIBBON & SHIV-PARVATI UNION)
+             ============================================================ -->
+        <section id="page-1" class="paper-page paper-blush active" data-page="1" aria-label="Cover Page">
+          <svg class="paper-grain-overlay" aria-hidden="true"><rect width="100%" height="100%" filter="url(#cotton-paper-grain)" /></svg>
+          <div class="paper-crease-line"></div>
+          <div class="fold-lighting"></div>
+          <div class="gold-inner-frame"></div>
+
+          <!-- TOP WATERCOLOR BLUSH FLORAL CORNERS SVG -->
+          <svg class="absolute top-0 left-0 w-full h-36 pointer-events-none z-[2]" viewBox="0 0 580 140" preserveAspectRatio="none" aria-hidden="true">
+            <defs>
+              <radialGradient id="roseBlush1" cx="50%" cy="50%" r="50%">
+                <stop offset="0%" stop-color="#F8D7E0" />
+                <stop offset="65%" stop-color="#E8A5B8" />
+                <stop offset="100%" stop-color="#C97A92" stop-opacity="0.15" />
+              </radialGradient>
+              <radialGradient id="peachBloom1" cx="50%" cy="50%" r="50%">
+                <stop offset="0%" stop-color="#FFF2E8" />
+                <stop offset="65%" stop-color="#F4C2A8" />
+                <stop offset="100%" stop-color="#E8CFA6" stop-opacity="0.1" />
+              </radialGradient>
+            </defs>
+            <path d="M0,18 Q95,42 190,14 Q290,4 390,14 Q485,42 580,18" stroke="#C88A70" stroke-width="1.1" fill="none" opacity="0.55" />
+            <circle cx="38" cy="34" r="32" fill="url(#roseBlush1)" opacity="0.88" />
+            <circle cx="78" cy="24" r="24" fill="url(#peachBloom1)" opacity="0.9" />
+            <circle cx="22" cy="72" r="22" fill="url(#peachBloom1)" opacity="0.75" />
+            <circle cx="116" cy="18" r="18" fill="url(#roseBlush1)" opacity="0.7" />
+            <path d="M58,52 Q72,72 52,86 Q44,68 58,52 Z" fill="#B5C4B1" opacity="0.55" />
+            <circle cx="542" cy="34" r="32" fill="url(#roseBlush1)" opacity="0.88" />
+            <circle cx="502" cy="24" r="24" fill="url(#peachBloom1)" opacity="0.9" />
+            <circle cx="558" cy="72" r="22" fill="url(#peachBloom1)" opacity="0.75" />
+            <circle cx="464" cy="18" r="18" fill="url(#roseBlush1)" opacity="0.7" />
+            <path d="M522,52 Q508,72 528,86 Q536,68 522,52 Z" fill="#B5C4B1" opacity="0.55" />
+          </svg>
+
+          <!-- BOTTOM WATERCOLOR FLORAL GARLAND SVG -->
+          <svg class="absolute bottom-0 left-0 w-full h-32 pointer-events-none z-[2]" viewBox="0 0 580 130" preserveAspectRatio="none" aria-hidden="true">
+            <circle cx="34" cy="96" r="34" fill="url(#roseBlush1)" opacity="0.9" />
+            <circle cx="78" cy="108" r="26" fill="url(#peachBloom1)" opacity="0.9" />
+            <circle cx="122" cy="116" r="20" fill="url(#roseBlush1)" opacity="0.78" />
+            <circle cx="546" cy="96" r="34" fill="url(#roseBlush1)" opacity="0.9" />
+            <circle cx="502" cy="108" r="26" fill="url(#peachBloom1)" opacity="0.9" />
+            <circle cx="458" cy="116" r="20" fill="url(#roseBlush1)" opacity="0.78" />
+            <circle cx="290" cy="126" r="22" fill="url(#peachBloom1)" opacity="0.65" />
+          </svg>
+
+          <!-- COVER CONTENT -->
+          <div class="relative z-10 flex-1 flex flex-col items-center justify-between px-5 sm:px-9 py-7 text-center">
+
+            <!-- Dynamic ?guest= Welcome Ribbon on Cover -->
+            <div id="cover-guest-ribbon" class="hidden w-full max-w-xs mx-auto mb-1 px-4 py-1 rounded-full bg-gradient-to-r from-blush-200/90 via-blush-50 to-blush-200/90 border border-foil/70 shadow-sm">
+              <p id="cover-guest-text" class="text-[11px] sm:text-xs font-semibold text-plum-900 i18n-body"></p>
+            </div>
+
+            <!-- 1. TOP: GOLDEN SUNBURST GANESHA MEDALLION FLANKED BY SHUBH & LABH -->
+            <div class="w-full flex flex-col items-center">
+              <p class="text-[11px] sm:text-xs font-semibold tracking-[0.2em] text-foil-dark font-hindi mb-2"
+                 data-en="|| SHRI GANESHAYA NAMAH ||"
+                 data-hi="|| श्री गणेशाय नमः ||"
+                 data-bg="|| श्री गणेशाय नमः • घणी खम्मा ||">
+                || SHRI GANESHAYA NAMAH ||
+              </p>
+
+              <div class="flex items-center justify-center gap-4 sm:gap-7">
+                <div class="flex flex-col items-center">
+                  <span class="text-xl sm:text-2xl font-bold foil-gold-text font-hindi">शुभ</span>
+                  <span class="text-[9px] uppercase tracking-[0.22em] text-plum-700/80 font-cinzel mt-0.5 i18n-body"
+                        data-en="Shubh" data-hi="मंगलमय" data-bg="शुभ मंगल">Shubh</span>
+                </div>
+
+                <!-- Golden Sunburst Medallion -->
+                <div class="relative w-32 h-32 sm:w-36 sm:h-36 flex items-center justify-center">
+                  <svg class="absolute inset-0 w-full h-full sunburst-spin" viewBox="0 0 200 200" fill="none">
+                    <defs>
+                      <linearGradient id="sunGold" x1="0" y1="0" x2="200" y2="200" gradientUnits="userSpaceOnUse">
+                        <stop stop-color="#8E5640" />
+                        <stop offset="0.5" stop-color="#E8CFA6" />
+                        <stop offset="1" stop-color="#C88A70" />
+                      </linearGradient>
+                    </defs>
+                    <g stroke="url(#sunGold)" stroke-width="1.3" fill="#FDEEF2" fill-opacity="0.72">
+                      <path d="M100,8 L108,26 L92,26 Z" /><path d="M100,192 L108,174 L92,174 Z" />
+                      <path d="M8,100 L26,92 L26,108 Z" /><path d="M192,100 L174,92 L174,108 Z" />
+                      <path d="M35,35 L52,42 L42,52 Z" /><path d="M165,165 L148,158 L158,148 Z" />
+                      <path d="M165,35 L158,52 L148,42 Z" /><path d="M35,165 L42,148 L52,158 Z" />
+                      <path d="M64,15 L74,31 L59,35 Z" /><path d="M136,15 L141,35 L126,31 Z" />
+                      <path d="M64,185 L59,165 L74,169 Z" /><path d="M136,185 L126,169 L141,165 Z" />
+                      <path d="M15,64 L35,59 L31,74 Z" /><path d="M185,64 L169,74 L165,59 Z" />
+                      <path d="M15,136 L31,126 L35,141 Z" /><path d="M185,136 L165,141 L169,126 Z" />
+                    </g>
+                    <circle cx="100" cy="100" r="74" stroke="url(#sunGold)" stroke-width="2.2" fill="#FFFBF8" fill-opacity="0.94" />
+                    <circle cx="100" cy="100" r="67" stroke="#C88A70" stroke-width="1" stroke-dasharray="3 3" />
+                  </svg>
+
+                  <!-- Artistic Rose-Gold Lord Ganesha SVG -->
+                  <svg class="relative z-10 w-20 h-20 sm:w-22 sm:h-22 divine-aura-pulse" viewBox="0 0 120 120" fill="none">
+                    <defs>
+                      <linearGradient id="ganeshFoil" x1="20" y1="12" x2="100" y2="108" gradientUnits="userSpaceOnUse">
+                        <stop stop-color="#8E5640" />
+                        <stop offset="0.45" stop-color="#C88A70" />
+                        <stop offset="0.75" stop-color="#E8CFA6" />
+                        <stop offset="1" stop-color="#8E5640" />
+                      </linearGradient>
+                    </defs>
+                    <path d="M47,26 C52,15 68,15 73,26" stroke="url(#ganeshFoil)" stroke-width="3" stroke-linecap="round" />
+                    <circle cx="60" cy="14" r="3" fill="#C88A70" />
+                    <path d="M56,33 Q60,37 64,33" stroke="#C97A92" stroke-width="2.2" stroke-linecap="round" />
+                    <circle cx="60" cy="39" r="2" fill="#C97A92" />
+                    <path d="M45,35 C52,32 68,32 74,39 C78,45 73,56 64,61 C54,66 49,75 56,84 C62,90 72,86 70,79"
+                          stroke="url(#ganeshFoil)" stroke-width="4.2" stroke-linecap="round" />
+                    <path d="M42,46 C26,48 22,68 36,80 C44,86 48,76 46,66" stroke="url(#ganeshFoil)" stroke-width="3" fill="#F8D7E0" fill-opacity="0.55" stroke-linecap="round" />
+                    <path d="M78,46 C94,48 98,68 84,80 C76,86 72,76 74,66" stroke="url(#ganeshFoil)" stroke-width="3" fill="#F8D7E0" fill-opacity="0.55" stroke-linecap="round" />
+                    <circle cx="35" cy="64" r="1.6" fill="#C97A92" /><circle cx="40" cy="70" r="1.6" fill="#C97A92" />
+                    <circle cx="85" cy="64" r="1.6" fill="#C97A92" /><circle cx="80" cy="70" r="1.6" fill="#C97A92" />
+                    <path d="M46,98 C54,93 66,93 74,98 C66,105 54,105 46,98 Z" fill="#F8D7E0" stroke="#C88A70" stroke-width="1.5" />
+                  </svg>
+                </div>
+
+                <div class="flex flex-col items-center">
+                  <span class="text-xl sm:text-2xl font-bold foil-gold-text font-hindi">लाभ</span>
+                  <span class="text-[9px] uppercase tracking-[0.22em] text-plum-700/80 font-cinzel mt-0.5 i18n-body"
+                        data-en="Labh" data-hi="समृद्धि" data-bg="सुख समृद्धि">Labh</span>
+                </div>
+              </div>
+            </div>
+
+            <!-- 2. CENTER: SHIVA DIVINE AURA + SONI FAMILY + KARAN WEDS AARTI -->
+            <div class="my-1.5 w-full flex flex-col items-center">
+              <!-- Shiva Trishul, Damru & Crescent Moon Aura -->
+              <div class="flex items-center justify-center gap-3 mb-1.5">
+                <span class="h-[1px] w-10 bg-gradient-to-r from-transparent to-foil"></span>
+                <svg class="w-16 h-9 divine-aura-pulse" viewBox="0 0 90 48" fill="none" aria-label="Shiva Trishul and Crescent Moon">
+                  <path d="M54,10 A14,14 0 1,1 36,34 A11,11 0 1,0 54,10 Z" fill="#E8CFA6" fill-opacity="0.68" stroke="#C88A70" stroke-width="1" />
+                  <path d="M45,6 L45,42" stroke="#8E5640" stroke-width="2" stroke-linecap="round" />
+                  <path d="M35,16 C35,24 40,27 45,27 C50,27 55,24 55,16" stroke="#8E5640" stroke-width="1.9" stroke-linecap="round" />
+                  <path d="M45,3 L42.5,9 L47.5,9 Z" fill="#C88A70" />
+                  <path d="M40,31 L50,37 L50,31 L40,37 Z" fill="#C97A92" fill-opacity="0.78" stroke="#8E5640" stroke-width="0.9" />
+                  <circle cx="24" cy="24" r="1.5" fill="#C88A70" /><circle cx="66" cy="24" r="1.5" fill="#C88A70" />
+                </svg>
+                <span class="h-[1px] w-10 bg-gradient-to-l from-transparent to-foil"></span>
+              </div>
+
+              <p class="text-xs sm:text-sm font-cinzel font-semibold tracking-[0.28em] text-plum-900 uppercase i18n-serif"
+                 data-en="SONI FAMILY"
+                 data-hi="सोनी परिवार"
+                 data-bg="सोनी परिवार रो हिवड़े सूं निमंत्रण">
+                SONI FAMILY
+              </p>
+              <p class="text-xs sm:text-sm font-cormorant italic text-plum-700 mt-0.5 max-w-sm i18n-body"
+                 data-en="Blessed by Shiv-Parvati, cordially invites you to celebrate"
+                 data-hi="शिव-पार्वती की असीम कृपा से आपको सादर आमंत्रित करता है"
+                 data-bg="म्हारे लाडले बेटे करण अर आरती रे शुभ ब्याह में आप सपरिवार पधारजो सा!">
+                Blessed by Shiv-Parvati, cordially invites you to celebrate
+              </p>
+
+              <!-- KARAN weds AARTI Calligraphy -->
+              <div class="my-1.5 flex flex-col items-center">
+                <h1 class="text-5xl sm:text-[58px] leading-[1.06] font-calligraphy foil-text px-2 i18n-calligraphy"
+                    data-en="Karan" data-hi="करण" data-bg="करण">
+                  Karan
+                </h1>
+                <div class="flex items-center justify-center gap-3 -my-1">
+                  <span class="h-[1px] w-10 bg-gradient-to-r from-transparent to-dusty-400"></span>
+                  <span class="text-lg sm:text-xl font-cormorant italic font-semibold text-dusty-500 tracking-widest i18n-body"
+                        data-en="weds" data-hi="संग" data-bg="अर">
+                    weds
+                  </span>
+                  <span class="h-[1px] w-10 bg-gradient-to-l from-transparent to-dusty-400"></span>
+                </div>
+                <h1 class="text-5xl sm:text-[58px] leading-[1.06] font-calligraphy foil-text px-2 i18n-calligraphy"
+                    data-en="Aarti" data-hi="आरती" data-bg="आरती">
+                  Aarti
+                </h1>
+              </div>
+
+              <!-- March 2027 Date Pill -->
+              <div class="mt-1 inline-flex items-center gap-2.5 px-4 py-1 rounded-full bg-blush-50/90 border border-foil/55 shadow-sm">
+                <span class="text-foil text-xs">✦</span>
+                <span class="text-xs sm:text-sm font-cinzel font-semibold tracking-[0.22em] text-plum-900 uppercase i18n-serif"
+                      data-en="MARCH 2027 • LUDHIANA"
+                      data-hi="मार्च 2027 • लुधियाना"
+                      data-bg="मार्च 2027 • लुधियाना">
+                  MARCH 2027 • LUDHIANA
+                </span>
+                <span class="text-foil text-xs">✦</span>
+              </div>
+            </div>
+
+            <!-- 3. BOTTOM: GOLD & BLUSH SHIV-PARVATI WEDDING UNION SVG + CTA -->
+            <div class="w-full flex flex-col items-center mt-1">
+              <svg class="w-56 sm:w-64 h-28 sm:h-30 mb-2" viewBox="0 0 280 132" fill="none" aria-label="Lord Shiva and Goddess Parvati Wedding Union">
+                <defs>
+                  <linearGradient id="unionGold" x1="40" y1="10" x2="240" y2="120" gradientUnits="userSpaceOnUse">
+                    <stop stop-color="#8E5640" />
+                    <stop offset="0.5" stop-color="#C88A70" />
+                    <stop offset="1" stop-color="#C97A92" />
+                  </linearGradient>
+                  <radialGradient id="divineHalo" cx="50%" cy="50%" r="50%">
+                    <stop offset="0%" stop-color="#E8CFA6" stop-opacity="0.58" />
+                    <stop offset="100%" stop-color="#FDEEF2" stop-opacity="0" />
+                  </radialGradient>
+                </defs>
+                <circle cx="110" cy="48" r="34" fill="url(#divineHalo)" />
+                <circle cx="170" cy="52" r="30" fill="url(#divineHalo)" />
+                <path d="M52,118 L228,118 L220,126 L60,126 Z" fill="#F8D7E0" stroke="#C88A70" stroke-width="1.4" />
+                <line x1="68" y1="122" x2="212" y2="122" stroke="#C97A92" stroke-width="0.8" stroke-dasharray="4 4" />
+                <path d="M68,26 L68,112" stroke="#C88A70" stroke-width="1.6" stroke-linecap="round" />
+                <path d="M61,35 C61,42 64.5,45 68,45 C71.5,45 75,42 75,35" stroke="#C88A70" stroke-width="1.5" stroke-linecap="round" />
+                <!-- Lord Shiva -->
+                <path d="M100,24 C104,13 116,13 120,24" stroke="url(#unionGold)" stroke-width="2" fill="#FFFBF8" />
+                <path d="M119,17 A7,7 0 1,1 112,26" stroke="#C88A70" stroke-width="1.5" fill="none" />
+                <circle cx="110" cy="36" r="12" fill="#FFFBF8" stroke="url(#unionGold)" stroke-width="1.8" />
+                <path d="M107,33 L113,33 M107,35.5 L113,35.5" stroke="#C97A92" stroke-width="1" />
+                <path d="M90,62 C92,50 128,50 130,62 L134,116 L84,116 Z" fill="#FFFBF8" stroke="url(#unionGold)" stroke-width="1.7" />
+                <path d="M96,54 C104,68 116,68 124,54" stroke="#C88A70" stroke-width="1.4" stroke-dasharray="2 2" fill="none" />
+                <path d="M88,82 C102,78 120,84 134,92" stroke="#C97A92" stroke-width="2.2" fill="none" />
+                <path d="M126,64 C136,62 144,62 150,66" stroke="url(#unionGold)" stroke-width="2" stroke-linecap="round" />
+                <!-- Goddess Parvati -->
+                <path d="M161,28 C165,18 175,18 179,28" stroke="url(#unionGold)" stroke-width="1.8" fill="#E8CFA6" fill-opacity="0.35" />
+                <path d="M158,34 C156,24 186,24 188,52 L198,116 L150,116" stroke="#C97A92" stroke-width="1.5" fill="#FDEEF2" fill-opacity="0.7" />
+                <circle cx="170" cy="40" r="11" fill="#FFFBF8" stroke="url(#unionGold)" stroke-width="1.8" />
+                <circle cx="170" cy="37" r="1.4" fill="#C97A92" />
+                <path d="M152,65 C155,54 185,54 188,65 L196,116 L146,116 Z" fill="#F8D7E0" fill-opacity="0.75" stroke="url(#unionGold)" stroke-width="1.7" />
+                <path d="M159,58 C166,70 174,70 181,58" stroke="#C88A70" stroke-width="1.4" fill="none" />
+                <path d="M152,68 C146,72 142,74 138,72" stroke="url(#unionGold)" stroke-width="1.9" stroke-linecap="round" />
+                <!-- Floral Varmala -->
+                <path d="M132,68 Q140,80 150,70" stroke="#C97A92" stroke-width="2.2" stroke-dasharray="3 2" fill="none" />
+                <circle cx="141" cy="75" r="2.8" fill="#E8CFA6" />
+                <ellipse cx="140" cy="115" rx="14" ry="4" fill="#FFFBF8" stroke="#C88A70" stroke-width="1.2" />
+                <circle cx="136" cy="113" r="2.2" fill="#C97A92" /><circle cx="144" cy="113" r="2.2" fill="#E8CFA6" />
+              </svg>
+
+              <button id="open-invite-btn" type="button"
+                      class="foil-cta-btn group inline-flex items-center justify-center gap-2.5 px-7 py-2.5 rounded-full text-xs sm:text-sm font-semibold tracking-wider cursor-pointer">
+                <span class="i18n-serif font-cinzel"
+                      data-en="Turn Page for Blessings"
+                      data-hi="आशीर्वाद पृष्ठ देखें"
+                      data-bg="आगलो पन्नो पलटो सा">
+                  Turn Page for Blessings
+                </span>
+                <svg class="w-4 h-4 transition-transform duration-300 group-hover:translate-x-1" fill="none" stroke="currentColor" stroke-width="2.2" viewBox="0 0 24 24">
+                  <path stroke-linecap="round" stroke-linejoin="round" d="M13 7l5 5m0 0l-5 5m5-5H6" />
+                </svg>
+              </button>
+            </div>
+          </div>
+        </section>
+
+        <!-- ============================================================
+             PAGE 2: INNER DIVINE BLESSINGS & INTERACTIVE SACRED RITUALS
+             ============================================================ -->
+        <section id="page-2" class="paper-page paper-ivory" data-page="2" aria-label="Divine Blessings and Ritual Page">
+          <svg class="paper-grain-overlay" aria-hidden="true"><rect width="100%" height="100%" filter="url(#cotton-paper-grain)" /></svg>
+          <div class="paper-crease-line"></div>
+          <div class="fold-lighting"></div>
+          <div class="gold-inner-frame"></div>
+
+          <!-- DRAPED BLUSH-PINK MANDAP CURTAINS SVG -->
+          <svg class="absolute inset-0 w-full h-full pointer-events-none z-[1]" viewBox="0 0 580 710" preserveAspectRatio="none" aria-hidden="true">
+            <defs>
+              <linearGradient id="drapeLeft" x1="0%" y1="0%" x2="100%" y2="0%">
+                <stop offset="0%" stop-color="#C97A92" stop-opacity="0.55" />
+                <stop offset="50%" stop-color="#F8D7E0" stop-opacity="0.45" />
+                <stop offset="100%" stop-color="#FDEEF2" stop-opacity="0" />
+              </linearGradient>
+              <linearGradient id="drapeRight" x1="100%" y1="0%" x2="0%" y2="0%">
+                <stop offset="0%" stop-color="#C97A92" stop-opacity="0.55" />
+                <stop offset="50%" stop-color="#F8D7E0" stop-opacity="0.45" />
+                <stop offset="100%" stop-color="#FDEEF2" stop-opacity="0" />
+              </linearGradient>
+            </defs>
+            <path d="M0,0 L138,0 Q76,180 60,390 Q50,550 78,710 L0,710 Z" fill="url(#drapeLeft)" />
+            <path d="M580,0 L442,0 Q504,180 520,390 Q530,550 502,710 L580,710 Z" fill="url(#drapeRight)" />
+            <path d="M0,0 Q135,90 290,18 Q445,90 580,0" stroke="#C88A70" stroke-width="1.3" fill="#F8D7E0" fill-opacity="0.35" />
+            <path d="M0,26 Q135,110 290,38 Q445,110 580,26" stroke="#E8CFA6" stroke-width="0.9" stroke-dasharray="3 4" fill="none" />
+          </svg>
+
+          <!-- INNER PAGE CONTENT -->
+          <div class="relative z-10 flex-1 flex flex-col items-center justify-center px-4 sm:px-7 py-6 text-center">
+            <div class="mandap-ivory-panel w-full rounded-2xl px-4 sm:px-6 py-5 flex flex-col items-center justify-between space-y-3">
+
+              <div>
+                <p class="text-[11px] font-cinzel tracking-[0.2em] text-foil-dark uppercase font-semibold i18n-serif"
+                   data-en="Under the Divine Grace of Gauri-Shankar"
+                   data-hi="गौरी-शंकर एवं श्री गणेश परिवार के पावन आशीर्वाद से"
+                   data-bg="शिव-पार्वती अर गणेश जी री असीम कृपा सूं">
+                  Under the Divine Grace of Gauri-Shankar
+                </p>
+                <h2 class="text-2xl sm:text-3xl font-cormorant font-bold text-plum-900 mt-0.5 i18n-serif"
+                    data-en="Divine Blessings"
+                    data-hi="पावन विवाह निमंत्रण"
+                    data-bg="घणी खम्मा • पधारो सा">
+                  Divine Blessings
+                </h2>
+              </div>
+
+              <!-- Sacred Shiv-Parvati Shloka with Toggleable Meaning -->
+              <div class="w-full rounded-xl bg-blush-100/80 border border-foil/45 px-3.5 py-2.5 space-y-1">
+                <p class="text-xs sm:text-sm font-semibold text-plum-900 font-hindi leading-relaxed">
+                  “मंगलं भगवान शम्भुः, मंगलं वृषभध्वजः। मंगलं पार्वतीनाथो, मंगलायतनं हरः॥”
+                </p>
+                <button id="toggle-shloka-btn" type="button"
+                        class="text-[10px] font-semibold text-foil-dark hover:text-plum-900 underline underline-offset-2 cursor-pointer i18n-body"
+                        data-en="Show / Hide Sacred Meaning"
+                        data-hi="श्लोक का भावार्थ देखें / छिपाएँ"
+                        data-bg="श्लोक रो अर्थ देखो / छिपाओ">
+                  Show / Hide Sacred Meaning
+                </button>
+                <p id="shloka-meaning" class="text-[11px] italic font-cormorant text-plum-700 pt-0.5 i18n-body"
+                   data-en="May Lord Shiva & Goddess Parvati shower eternal auspiciousness upon Karan & Aarti’s sacred union."
+                   data-hi="भगवान शिव और माता पार्वती करण एवं आरती के इस पावन परिणय सूत्र को अनंत मंगलमय आशीर्वाद प्रदान करें।"
+                   data-bg="भोलेनाथ अर माता पार्वती करण अर आरती री जोड़ी ने सदा सुखी अर मंगलमय राखै।">
+                  May Lord Shiva &amp; Goddess Parvati shower eternal auspiciousness upon Karan &amp; Aarti’s sacred union.
+                </p>
+              </div>
+
+              <!-- Formal Soni Family Invitation Text -->
+              <div class="space-y-1">
+                <p class="text-xs sm:text-[13px] font-cormorant text-plum-800 leading-relaxed i18n-body"
+                   data-en="With the blessings of Lord Ganesha, Goddesses Riddhi & Siddhi, and Shubh-Labh, the Soni Family joyfully invites you to celebrate the wedding of"
+                   data-hi="श्री गणेश जी, माता रिद्धि-सिद्धि एवं शुभ-लाभ के मंगलमय आशीर्वाद से सोनी परिवार अपने सुपुत्र के शुभ विवाह में सपरिवार पधारने हेतु सादर आमंत्रित करता है"
+                   data-bg="गणेश जी, रिद्धि-सिद्धि अर शुभ-लाभ रे आशीर्वाद सूं सोनी परिवार आप सब ने हिवड़े सूं न्योतो देवे है — थे जरूर पधारजो सा!">
+                  With the blessings of Lord Ganesha, Goddesses Riddhi &amp; Siddhi, and Shubh-Labh, the Soni Family joyfully invites you to celebrate the wedding of
+                </p>
+
+                <div class="py-0.5 flex items-center justify-center gap-3 sm:gap-5">
+                  <div class="text-right">
+                    <span class="block text-2xl sm:text-3xl font-calligraphy foil-text leading-none i18n-calligraphy"
+                          data-en="Karan" data-hi="करण" data-bg="करण">Karan</span>
+                    <span class="block text-[9px] font-cinzel tracking-[0.16em] text-plum-700 uppercase mt-1 i18n-body"
+                          data-en="Soni Family" data-hi="सोनी परिवार" data-bg="सोनी परिवार">Soni Family</span>
+                  </div>
+                  <span class="text-2xl sm:text-3xl font-cormorant italic foil-gold-text">&amp;</span>
+                  <div class="text-left">
+                    <span class="block text-2xl sm:text-3xl font-calligraphy foil-text leading-none i18n-calligraphy"
+                          data-en="Aarti" data-hi="आरती" data-bg="आरती">Aarti</span>
+                    <span class="block text-[9px] font-cinzel tracking-[0.16em] text-plum-700 uppercase mt-1 i18n-body"
+                          data-en="Beloved Bride" data-hi="सौभाग्यकांक्षिणी" data-bg="लाडली वधू">Beloved Bride</span>
+                  </div>
+                </div>
+              </div>
+
+              <!-- INTERACTIVE SACRED RITUALS BOX: (a) TAP-TO-LIGHT DIYA & (b) OFFER PUSHPA & BILVA -->
+              <div class="w-full rounded-2xl bg-gradient-to-b from-blush-100/95 to-blush-200/55 border border-foil/60 px-3.5 py-3 flex flex-col items-center space-y-2.5">
+                <div class="flex items-center justify-center gap-3">
+                  <!-- Interactive Tap-to-Light Brass Diya SVG -->
+                  <button id="diya-svg-btn" type="button" class="focus:outline-none cursor-pointer group" aria-label="Tap Brass Diya to Light">
+                    <svg id="ritual-diya-svg" class="w-16 h-14 overflow-visible transition-transform group-hover:scale-105" viewBox="0 0 80 70" fill="none">
+                      <defs>
+                        <radialGradient id="flameGlow" cx="50%" cy="50%" r="50%">
+                          <stop offset="0%" stop-color="#FFE89E" stop-opacity="0.95" />
+                          <stop offset="55%" stop-color="#F5A623" stop-opacity="0.42" />
+                          <stop offset="100%" stop-color="#F5A623" stop-opacity="0" />
+                        </radialGradient>
+                        <linearGradient id="brassBowl" x1="15" y1="38" x2="65" y2="62" gradientUnits="userSpaceOnUse">
+                          <stop stop-color="#E8CFA6" />
+                          <stop offset="0.5" stop-color="#C88A70" />
+                          <stop offset="1" stop-color="#8E5640" />
+                        </linearGradient>
+                      </defs>
+                      <circle class="diya-glow" cx="40" cy="24" r="24" fill="url(#flameGlow)" />
+                      <path d="M40,38 L40,31" stroke="#6D324C" stroke-width="2" stroke-linecap="round" />
+                      <g class="diya-flame">
+                        <path d="M40,8 C46,18 48,26 40,34 C32,26 34,18 40,8 Z" fill="#F59E0B" />
+                        <path d="M40,14 C43.5,20 44.5,26 40,32 C35.5,26 36.5,20 40,14 Z" fill="#FEF08A" />
+                      </g>
+                      <path d="M14,39 C16,54 27,60 40,60 C53,60 64,54 66,39 C56,43 24,43 14,39 Z" fill="url(#brassBowl)" stroke="#8E5640" stroke-width="1.4" />
+                      <ellipse cx="40" cy="39" rx="26" ry="4.5" fill="#FDEEF2" stroke="#C88A70" stroke-width="1.2" />
+                      <path d="M28,60 L52,60 L49,64 L31,64 Z" fill="#8E5640" />
+                    </svg>
+                  </button>
+
+                  <div class="text-left">
+                    <p class="text-xs font-cinzel font-bold text-plum-900 i18n-serif"
+                       data-en="Sacred Diya & Pushpa Ritual"
+                       data-hi="पावन दीप प्रज्वलन एवं पुष्प अर्पण"
+                       data-bg="दीवो जलाओ अर फूल चढ़ाओ">
+                      Sacred Diya &amp; Pushpa Ritual
+                    </p>
+                    <p class="text-[11px] text-plum-700 font-cormorant italic i18n-body"
+                       data-en="Light the brass diya & offer rose petals and sacred Bilva leaves"
+                       data-hi="दीप प्रज्वलित करें और पुष्प व बिल्व पत्र अर्पित करें"
+                       data-bg="दीवो जलाकर गुलाब रे फूल अर बिल्व पत्र चढ़ाओ सा">
+                      Light the brass diya &amp; offer rose petals and sacred Bilva leaves
+                    </p>
+                  </div>
+                </div>
+
+                <!-- Two Dedicated Ritual Action Buttons -->
+                <div class="grid grid-cols-1 sm:grid-cols-2 gap-2 w-full">
+                  <button id="light-diya-btn" type="button"
+                          class="py-2 px-3 rounded-xl bg-blush-50 hover:bg-foil-light/35 border border-foil/70 text-plum-900 text-[11px] font-semibold flex items-center justify-center gap-1.5 shadow-sm active:scale-[0.98] transition cursor-pointer i18n-body">
+                    <span>🪔</span>
+                    <span id="diya-btn-label"
+                          data-en="Light Brass Diya"
+                          data-hi="पावन दीप जलाएँ"
+                          data-bg="दीवो जलाओ सा">
+                      Light Brass Diya
+                    </span>
+                  </button>
+
+                  <button id="offer-pushpa-btn" type="button"
+                          class="py-2 px-3 rounded-xl bg-gradient-to-r from-blush-200 via-foil-light/60 to-blush-200 hover:brightness-105 border border-foil text-plum-900 text-[11px] font-semibold flex items-center justify-center gap-1.5 shadow-sm active:scale-[0.98] transition cursor-pointer i18n-body">
+                    <span>🌸</span>
+                    <span data-en="Offer Pushpa & Bilva"
+                          data-hi="पुष्प व बिल्व पत्र चढ़ाएँ"
+                          data-bg="फूल अर बिल्व पत्र चढ़ाओ">
+                      Offer Pushpa &amp; Bilva
+                    </span>
+                    <span>🌿</span>
+                  </button>
+                </div>
+              </div>
+
+              <!-- Sacred Pillars: Shiv-Parvati, Riddhi-Siddhi, Shubh-Labh -->
+              <div class="grid grid-cols-3 gap-2 w-full">
+                <div class="rounded-xl bg-blush-100/75 border border-foil/40 py-2 px-1.5 flex flex-col items-center">
+                  <svg class="w-4 h-4 text-foil-dark mb-0.5" fill="none" stroke="currentColor" stroke-width="1.6" viewBox="0 0 24 24">
+                    <path stroke-linecap="round" stroke-linejoin="round" d="M12 3v18M7 7c0 3.5 2 5 5 5s5-1.5 5-5M12 3l-1.5 2.5h3L12 3z" />
+                  </svg>
+                  <span class="text-[10px] font-semibold text-plum-900 font-cinzel i18n-serif"
+                        data-en="Shiv-Parvati" data-hi="शिव-पार्वती" data-bg="शिव-पार्वती">Shiv-Parvati</span>
+                  <span class="text-[9px] text-plum-700 i18n-body"
+                        data-en="Eternal Devotion" data-hi="शाश्वत प्रेम" data-bg="अमर जोड़ी">Eternal Devotion</span>
+                </div>
+
+                <div class="rounded-xl bg-blush-100/75 border border-foil/40 py-2 px-1.5 flex flex-col items-center">
+                  <svg class="w-4 h-4 text-dusty-500 mb-0.5" fill="none" stroke="currentColor" stroke-width="1.6" viewBox="0 0 24 24">
+                    <path stroke-linecap="round" stroke-linejoin="round" d="M12 4c-2.5 3.5-2.5 7 0 10 2.5-3 2.5-6.5 0-10zM12 14c-4-1.5-7 0-8 3 3.5 1.5 6.5 1 8-3zm0 0c4-1.5 7 0 8 3-3.5 1.5-6.5 1-8-3zM5 19h14" />
+                  </svg>
+                  <span class="text-[10px] font-semibold text-plum-900 font-cinzel i18n-serif"
+                        data-en="Riddhi-Siddhi" data-hi="रिद्धि-सिद्धि" data-bg="रिद्धि-सिद्धि">Riddhi-Siddhi</span>
+                  <span class="text-[9px] text-plum-700 i18n-body"
+                        data-en="Grace & Wisdom" data-hi="बुद्धि व वैभव" data-bg="सुख व बुद्धि">Grace &amp; Wisdom</span>
+                </div>
+
+                <div class="rounded-xl bg-blush-100/75 border border-foil/40 py-2 px-1.5 flex flex-col items-center">
+                  <svg class="w-4 h-4 text-foil-dark mb-0.5" fill="none" stroke="currentColor" stroke-width="1.6" viewBox="0 0 24 24">
+                    <path stroke-linecap="round" stroke-linejoin="round" d="M12 4c1.5 2 2 3.8 0 5.5-2-1.7-1.5-3.5 0-5.5zM4 13c0 4 3.6 7 8 7s8-3 8-7H4z" />
+                  </svg>
+                  <span class="text-[10px] font-semibold text-plum-900 font-cinzel i18n-serif"
+                        data-en="Shubh-Labh" data-hi="शुभ-लाभ" data-bg="शुभ-लाभ">Shubh-Labh</span>
+                  <span class="text-[9px] text-plum-700 i18n-body"
+                        data-en="Prosperity" data-hi="मंगल व समृद्धि" data-bg="बरकत व मंगल">Prosperity</span>
+                </div>
+              </div>
+
+            </div>
+          </div>
+        </section>
+
+        <!-- ============================================================
+             PAGE 3: WEDDING PROGRAM DETAILS, DRESS CODE SWATCHES & .ICS
+             ============================================================ -->
+        <section id="page-3" class="paper-page paper-ivory" data-page="3" aria-label="Program Details Page">
+          <svg class="paper-grain-overlay" aria-hidden="true"><rect width="100%" height="100%" filter="url(#cotton-paper-grain)" /></svg>
+          <div class="paper-crease-line"></div>
+          <div class="fold-lighting"></div>
+          <div class="gold-inner-frame"></div>
+
+          <svg class="absolute top-0 left-0 w-full h-24 pointer-events-none z-[1] opacity-65" viewBox="0 0 580 96" preserveAspectRatio="none" aria-hidden="true">
+            <circle cx="32" cy="20" r="28" fill="url(#roseBlush1)" />
+            <circle cx="68" cy="14" r="18" fill="url(#peachBloom1)" />
+            <circle cx="548" cy="20" r="28" fill="url(#roseBlush1)" />
+            <circle cx="512" cy="14" r="18" fill="url(#peachBloom1)" />
+          </svg>
+
+          <div class="relative z-10 flex-1 flex flex-col items-center justify-between px-4 sm:px-7 py-6 text-center">
+
+            <div class="space-y-0.5">
+              <p class="text-[11px] font-hindi text-foil-dark tracking-[0.2em] uppercase"
+                 data-en="|| SHUBH VIVAH KARYAKRAM ||"
+                 data-hi="|| शुभ विवाह मांगलिक कार्यक्रम ||"
+                 data-bg="|| ब्याह रा मंगल कार्यक्रम ||">
+                || SHUBH VIVAH KARYAKRAM ||
+              </p>
+              <h2 class="text-2xl sm:text-3xl font-cormorant font-bold text-plum-900 i18n-serif"
+                  data-en="Wedding Celebrations"
+                  data-hi="मांगलिक कार्यक्रम विवरण"
+                  data-bg="मंगल कार्यक्रम">
+                Wedding Celebrations
+              </h2>
+              <p class="text-xs text-plum-700 i18n-body"
+                 data-en="March 2027 • The Royal Palace, Ludhiana"
+                 data-hi="मार्च 2027 • द रॉयल पैलेस, लुधियाना"
+                 data-bg="मार्च 2027 • द रॉयल पैलेस, लुधियाना">
+                March 2027 • The Royal Palace, Ludhiana
+              </p>
+            </div>
+
+            <!-- Live Animated Countdown Timer to March 14, 2027 -->
+            <div class="w-full my-2">
+              <div class="grid grid-cols-4 gap-2 max-w-sm mx-auto">
+                <div class="rounded-xl bg-gradient-to-b from-blush-50 to-blush-100 border border-foil/60 py-1.5 px-1 shadow-sm">
+                  <div id="cd-days" class="text-lg sm:text-xl font-cinzel font-bold text-plum-900">00</div>
+                  <div class="text-[9px] uppercase tracking-widest text-dusty-500 font-semibold i18n-body"
+                       data-en="Days" data-hi="दिन" data-bg="दिन">Days</div>
+                </div>
+                <div class="rounded-xl bg-gradient-to-b from-blush-50 to-blush-100 border border-foil/60 py-1.5 px-1 shadow-sm">
+                  <div id="cd-hours" class="text-lg sm:text-xl font-cinzel font-bold text-plum-900">00</div>
+                  <div class="text-[9px] uppercase tracking-widest text-dusty-500 font-semibold i18n-body"
+                       data-en="Hours" data-hi="घंटे" data-bg="घंटा">Hours</div>
+                </div>
+                <div class="rounded-xl bg-gradient-to-b from-blush-50 to-blush-100 border border-foil/60 py-1.5 px-1 shadow-sm">
+                  <div id="cd-mins" class="text-lg sm:text-xl font-cinzel font-bold text-plum-900">00</div>
+                  <div class="text-[9px] uppercase tracking-widest text-dusty-500 font-semibold i18n-body"
+                       data-en="Mins" data-hi="मिनट" data-bg="मिनट">Mins</div>
+                </div>
+                <div class="rounded-xl bg-gradient-to-b from-blush-50 to-blush-100 border border-foil/60 py-1.5 px-1 shadow-sm">
+                  <div id="cd-secs" class="text-lg sm:text-xl font-cinzel font-bold text-plum-900">00</div>
+                  <div class="text-[9px] uppercase tracking-widest text-dusty-500 font-semibold i18n-body"
+                       data-en="Secs" data-hi="सेकंड" data-bg="सेकंड">Secs</div>
+                </div>
+              </div>
+            </div>
+
+            <!-- 4 Ceremony Cards with Dress-Code Swatches & Working One-Tap .ics Calendar Buttons -->
+            <div class="w-full space-y-2 text-left my-1">
+
+              <!-- Event 1: Ganesh Sthapana & Haldi (12 March 2027, 10:00 AM) -->
+              <div class="stationery-card rounded-2xl p-2.5 sm:p-3 flex items-start gap-3">
+                <div class="w-10 h-10 shrink-0 rounded-xl bg-blush-100 border border-foil/55 flex items-center justify-center text-foil-dark mt-0.5">
+                  <svg class="w-5 h-5" fill="none" stroke="currentColor" stroke-width="1.6" viewBox="0 0 24 24">
+                    <path stroke-linecap="round" stroke-linejoin="round" d="M8 9h8l-1 2.2c1.8 1.2 2.5 3.2 2 5.3-.5 2.1-2.4 3.5-5 3.5s-4.5-1.4-5-3.5c-.5-2.1.2-4.1 2-5.3L8 9z" />
+                    <path stroke-linecap="round" stroke-linejoin="round" d="M12 9V5m0 0c-1.8 0-3-1-3-2 1.8 0 3 1 3 2zm0 0c1.8 0 3-1 3-2-1.8 0-3 1-3 2z" />
+                  </svg>
+                </div>
+                <div class="flex-1 min-w-0">
+                  <div class="flex items-center justify-between gap-2">
+                    <h3 class="text-xs sm:text-sm font-bold text-plum-900 font-cinzel i18n-serif truncate"
+                        data-en="Ganesh Sthapana & Haldi"
+                        data-hi="गणेश स्थापना एवं हल्दी"
+                        data-bg="गणेश थापणा अर हल्दी">
+                      Ganesh Sthapana &amp; Haldi
+                    </h3>
+                    <span class="text-[10px] font-semibold px-2 py-0.5 rounded-full bg-blush-200/80 text-plum-900 whitespace-nowrap i18n-body"
+                          data-en="12 Mar • 10:00 AM" data-hi="12 मार्च • प्रातः 10:00" data-bg="12 मार्च • सवेरे 10:00">
+                      12 Mar • 10:00 AM
+                    </span>
+                  </div>
+                  <div class="mt-1.5 flex flex-wrap items-center justify-between gap-2">
+                    <!-- Dress Code Swatches: Marigold & Ivory -->
+                    <div class="inline-flex items-center gap-1.5 text-[10px] text-plum-700 i18n-body">
+                      <span class="w-3 h-3 rounded-full border border-foil/60 inline-block" style="background:#F4B942;" title="Marigold"></span>
+                      <span class="w-3 h-3 rounded-full border border-foil/60 inline-block" style="background:#FFFBF0;" title="Ivory"></span>
+                      <span data-en="Marigold & Ivory" data-hi="पीला व हाथीदांत" data-bg="पीळो अर सफेद पहनावा">Marigold &amp; Ivory</span>
+                    </div>
+                    <button type="button" class="ics-btn inline-flex items-center gap-1 px-2.5 py-1 rounded-lg bg-blush-100 hover:bg-blush-200 border border-foil/55 text-[10px] font-semibold text-plum-900 transition cursor-pointer i18n-body"
+                            data-event="haldi">
+                      <svg class="w-3 h-3 text-foil-dark" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24">
+                        <rect x="3" y="4" width="18" height="18" rx="2" /><path d="M16 2v4M8 2v4M3 10h18" />
+                      </svg>
+                      <span data-en="Add to Calendar" data-hi="कैलेंडर में जोड़ें" data-bg="कैलेंडर में जोड़ो">Add to Calendar</span>
+                    </button>
+                  </div>
+                </div>
+              </div>
+
+              <!-- Event 2: Mehendi & Sangeet Sandhya (12 March 2027, 6:30 PM) -->
+              <div class="stationery-card rounded-2xl p-2.5 sm:p-3 flex items-start gap-3">
+                <div class="w-10 h-10 shrink-0 rounded-xl bg-blush-100 border border-foil/55 flex items-center justify-center text-dusty-500 mt-0.5">
+                  <svg class="w-5 h-5" fill="none" stroke="currentColor" stroke-width="1.6" viewBox="0 0 24 24">
+                    <ellipse cx="6" cy="12" rx="2.5" ry="5.5" /><ellipse cx="18" cy="12" rx="2.5" ry="5.5" />
+                    <path stroke-linecap="round" stroke-linejoin="round" d="M6 6.5c4-1 8-1 12 0M6 17.5c4 1 8 1 12 0M8.5 8.5l7 7M15.5 8.5l-7 7" />
+                  </svg>
+                </div>
+                <div class="flex-1 min-w-0">
+                  <div class="flex items-center justify-between gap-2">
+                    <h3 class="text-xs sm:text-sm font-bold text-plum-900 font-cinzel i18n-serif truncate"
+                        data-en="Mehendi & Sangeet Sandhya"
+                        data-hi="मेहंदी एवं संगीत संध्या"
+                        data-bg="मेहंदी अर गीत-संगीत संध्या">
+                      Mehendi &amp; Sangeet Sandhya
+                    </h3>
+                    <span class="text-[10px] font-semibold px-2 py-0.5 rounded-full bg-blush-200/80 text-plum-900 whitespace-nowrap i18n-body"
+                          data-en="12 Mar • 6:30 PM" data-hi="12 मार्च • सायं 6:30" data-bg="12 मार्च • सांझ 6:30">
+                      12 Mar • 6:30 PM
+                    </span>
+                  </div>
+                  <div class="mt-1.5 flex flex-wrap items-center justify-between gap-2">
+                    <!-- Dress Code Swatches: Sage & Rose -->
+                    <div class="inline-flex items-center gap-1.5 text-[10px] text-plum-700 i18n-body">
+                      <span class="w-3 h-3 rounded-full border border-foil/60 inline-block" style="background:#9BB59B;" title="Sage"></span>
+                      <span class="w-3 h-3 rounded-full border border-foil/60 inline-block" style="background:#DF94A8;" title="Rose"></span>
+                      <span data-en="Sage & Rose" data-hi="हल्का हरा व गुलाबी" data-bg="हरियो अर गुलाबी">Sage &amp; Rose</span>
+                    </div>
+                    <button type="button" class="ics-btn inline-flex items-center gap-1 px-2.5 py-1 rounded-lg bg-blush-100 hover:bg-blush-200 border border-foil/55 text-[10px] font-semibold text-plum-900 transition cursor-pointer i18n-body"
+                            data-event="sangeet">
+                      <svg class="w-3 h-3 text-foil-dark" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24">
+                        <rect x="3" y="4" width="18" height="18" rx="2" /><path d="M16 2v4M8 2v4M3 10h18" />
+                      </svg>
+                      <span data-en="Add to Calendar" data-hi="कैलेंडर में जोड़ें" data-bg="कैलेंडर में जोड़ो">Add to Calendar</span>
+                    </button>
+                  </div>
+                </div>
+              </div>
+
+              <!-- Event 3: Baraat Swagat & Varmala (14 March 2027, 7:00 PM) -->
+              <div class="stationery-card rounded-2xl p-2.5 sm:p-3 flex items-start gap-3">
+                <div class="w-10 h-10 shrink-0 rounded-xl bg-blush-100 border border-foil/55 flex items-center justify-center text-foil-dark mt-0.5">
+                  <svg class="w-5 h-5" fill="none" stroke="currentColor" stroke-width="1.6" viewBox="0 0 24 24">
+                    <circle cx="9.5" cy="13.5" r="5" /><circle cx="15" cy="13.5" r="5" />
+                    <path stroke-linecap="round" stroke-linejoin="round" d="M9.5 6.5l1.5 2h-3l1.5-2z" />
+                  </svg>
+                </div>
+                <div class="flex-1 min-w-0">
+                  <div class="flex items-center justify-between gap-2">
+                    <h3 class="text-xs sm:text-sm font-bold text-plum-900 font-cinzel i18n-serif truncate"
+                        data-en="Baraat Swagat & Varmala"
+                        data-hi="बारात स्वागत एवं वरमाला"
+                        data-bg="जान स्वागत अर वरमाला">
+                      Baraat Swagat &amp; Varmala
+                    </h3>
+                    <span class="text-[10px] font-semibold px-2 py-0.5 rounded-full bg-blush-200/80 text-plum-900 whitespace-nowrap i18n-body"
+                          data-en="14 Mar • 7:00 PM" data-hi="14 मार्च • सायं 7:00" data-bg="14 मार्च • सांझ 7:00">
+                      14 Mar • 7:00 PM
+                    </span>
+                  </div>
+                  <div class="mt-1.5 flex flex-wrap items-center justify-between gap-2">
+                    <!-- Dress Code Swatches: Blush & Rose-Gold -->
+                    <div class="inline-flex items-center gap-1.5 text-[10px] text-plum-700 i18n-body">
+                      <span class="w-3 h-3 rounded-full border border-foil/60 inline-block" style="background:#F8D7E0;" title="Blush"></span>
+                      <span class="w-3 h-3 rounded-full border border-foil/60 inline-block" style="background:#C88A70;" title="Rose-Gold"></span>
+                      <span data-en="Blush & Rose-Gold" data-hi="ब्लश व रोज़-गोल्ड" data-bg="गुलाबी अर सुनहरी">Blush &amp; Rose-Gold</span>
+                    </div>
+                    <button type="button" class="ics-btn inline-flex items-center gap-1 px-2.5 py-1 rounded-lg bg-blush-100 hover:bg-blush-200 border border-foil/55 text-[10px] font-semibold text-plum-900 transition cursor-pointer i18n-body"
+                            data-event="baraat">
+                      <svg class="w-3 h-3 text-foil-dark" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24">
+                        <rect x="3" y="4" width="18" height="18" rx="2" /><path d="M16 2v4M8 2v4M3 10h18" />
+                      </svg>
+                      <span data-en="Add to Calendar" data-hi="कैलेंडर में जोड़ें" data-bg="कैलेंडर में जोड़ो">Add to Calendar</span>
+                    </button>
+                  </div>
+                </div>
+              </div>
+
+              <!-- Event 4: Shubh Vivah & Pheras (14 March 2027, 9:30 PM) -->
+              <div class="stationery-card rounded-2xl p-2.5 sm:p-3 flex items-start gap-3 border-foil bg-gradient-to-r from-blush-50 to-blush-100/95">
+                <div class="w-10 h-10 shrink-0 rounded-xl bg-gradient-to-br from-dusty-500 to-plum-900 border border-foil-light flex items-center justify-center text-blush-50 shadow-sm mt-0.5">
+                  <svg class="w-5 h-5" fill="none" stroke="currentColor" stroke-width="1.6" viewBox="0 0 24 24">
+                    <path stroke-linecap="round" stroke-linejoin="round" d="M12 3.5c2 2.5 2.5 4.5 0 6.8-2.5-2.3-2-4.3 0-6.8z" />
+                    <path stroke-linecap="round" stroke-linejoin="round" d="M4 13.5c0 3.8 3.6 6.5 8 6.5s8-2.7 8-6.5H4z" />
+                  </svg>
+                </div>
+                <div class="flex-1 min-w-0">
+                  <div class="flex items-center justify-between gap-2">
+                    <h3 class="text-xs sm:text-sm font-bold text-plum-900 font-cinzel i18n-serif truncate"
+                        data-en="Shubh Vivah & Pheras"
+                        data-hi="शुभ विवाह एवं फेरे"
+                        data-bg="शुभ ब्याह अर फेरा">
+                      Shubh Vivah &amp; Pheras
+                    </h3>
+                    <span class="text-[10px] font-semibold px-2 py-0.5 rounded-full bg-plum-900 text-blush-50 whitespace-nowrap i18n-body"
+                          data-en="14 Mar • 9:30 PM" data-hi="14 मार्च • रात्रि 9:30" data-bg="14 मार्च • रात 9:30">
+                      14 Mar • 9:30 PM
+                    </span>
+                  </div>
+                  <div class="mt-1.5 flex flex-wrap items-center justify-between gap-2">
+                    <!-- Dress Code Swatches: Crimson & Gold -->
+                    <div class="inline-flex items-center gap-1.5 text-[10px] text-plum-800 font-medium i18n-body">
+                      <span class="w-3 h-3 rounded-full border border-foil/60 inline-block" style="background:#A32842;" title="Crimson"></span>
+                      <span class="w-3 h-3 rounded-full border border-foil/60 inline-block" style="background:#D8A858;" title="Gold"></span>
+                      <span data-en="Crimson & Gold" data-hi="लाल व सुनहरा" data-bg="लाल अर सोनेरी">Crimson &amp; Gold</span>
+                    </div>
+                    <button type="button" class="ics-btn inline-flex items-center gap-1 px-2.5 py-1 rounded-lg bg-plum-900/90 hover:bg-plum-900 text-blush-50 border border-foil-light/70 text-[10px] font-semibold transition cursor-pointer i18n-body"
+                            data-event="vivah">
+                      <svg class="w-3 h-3 text-foil-light" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24">
+                        <rect x="3" y="4" width="18" height="18" rx="2" /><path d="M16 2v4M8 2v4M3 10h18" />
+                      </svg>
+                      <span data-en="Add to Calendar" data-hi="कैलेंडर में जोड़ें" data-bg="कैलेंडर में जोड़ो">Add to Calendar</span>
+                    </button>
+                  </div>
+                </div>
+              </div>
+
+            </div>
+
+            <p class="text-[11px] italic font-cormorant text-plum-700 pt-1 i18n-body"
+               data-en="“Your gracious presence and heartfelt blessings are our most cherished gift.”"
+               data-hi="“आपकी स्नेहमयी उपस्थिति एवं शुभाशीष ही हमारे लिए अमूल्य उपहार है।”"
+               data-bg="“थे जरूर पधारजो सा! आपरो स्नेह अर आशीर्वाद ही म्हारे खातिर सबसूं बड़ो उपहार है।”">
+              “Your gracious presence and heartfelt blessings are our most cherished gift.”
+            </p>
+          </div>
+        </section>
+
+        <!-- ============================================================
+             PAGE 4: VENUE, SCANNABLE QR CODES, BLESSINGS WALL,
+                     WHATSAPP RSVP & PERSONALIZED GUEST LINK HELPER
+             ============================================================ -->
+        <section id="page-4" class="paper-page paper-ivory" data-page="4" aria-label="Venue, QR Codes, Blessings Wall and RSVP">
+          <svg class="paper-grain-overlay" aria-hidden="true"><rect width="100%" height="100%" filter="url(#cotton-paper-grain)" /></svg>
+          <div class="paper-crease-line"></div>
+          <div class="fold-lighting"></div>
+          <div class="gold-inner-frame"></div>
+
+          <div class="relative z-10 flex-1 flex flex-col items-center justify-between px-4 sm:px-6 py-6 text-center space-y-3">
+
+            <!-- Header -->
+            <div class="space-y-0.5">
+              <p class="text-[10px] font-cinzel tracking-[0.24em] text-foil-dark uppercase font-semibold i18n-serif"
+                 data-en="Venue • QR Codes • Blessings • RSVP"
+                 data-hi="विवाह स्थल • क्यूआर • आशीर्वाद • संपर्क"
+                 data-bg="ठिकाणो • क्यूआर • आशीर्वाद • पधारजो सा">
+                Venue • QR Codes • Blessings • RSVP
+              </p>
+              <h2 class="text-2xl sm:text-[26px] font-cormorant font-bold text-plum-900 i18n-serif"
+                  data-en="Location, Blessings & RSVP"
+                  data-hi="स्थान, आशीर्वाद एवं उपस्थिति"
+                  data-bg="ठिकाणो, बधाई अर संपर्क">
+                Location, Blessings &amp; RSVP
+              </h2>
+            </div>
+
+            <!-- 1) TWO REAL SCANNABLE QR PANELS: LOCATION & CONTACT -->
+            <div class="grid grid-cols-1 sm:grid-cols-2 gap-2.5 w-full text-left">
+              <!-- Venue + Google Maps QR -->
+              <div class="stationery-card rounded-2xl p-3 flex flex-col justify-between">
+                <div>
+                  <div class="flex items-center gap-1.5 mb-1">
+                    <svg class="w-4 h-4 text-dusty-500 shrink-0" fill="none" stroke="currentColor" stroke-width="1.9" viewBox="0 0 24 24">
+                      <path stroke-linecap="round" stroke-linejoin="round" d="M12 21s-6.5-5.6-6.5-11a6.5 6.5 0 1113 0c0 5.4-6.5 11-6.5 11z" />
+                      <circle cx="12" cy="10" r="2.2" />
+                    </svg>
+                    <h3 class="text-[11px] font-cinzel font-bold text-plum-900 uppercase tracking-wider i18n-serif"
+                        data-en="Wedding Venue" data-hi="विवाह स्थल" data-bg="ब्याह रो ठिकाणो">
+                      Wedding Venue
+                    </h3>
+                  </div>
+                  <p class="text-xs font-semibold text-plum-900 leading-snug i18n-body"
+                     data-en="The Royal Palace, Ludhiana, Punjab"
+                     data-hi="द रॉयल पैलेस, लुधियाना, पंजाब"
+                     data-bg="द रॉयल पैलेस, लुधियाना, पंजाब">
+                    The Royal Palace, Ludhiana, Punjab
+                  </p>
+                </div>
+
+                <div class="my-2 flex flex-col items-center">
+                  <div class="qr-gold-frame">
+                    <canvas id="qr-location" width="84" height="84" aria-label="Google Maps Location QR Code"></canvas>
+                  </div>
+                  <span class="text-[9px] text-foil-dark font-medium mt-1 i18n-body"
+                        data-en="Scan for Google Maps" data-hi="लोकेशन हेतु स्कैन करें" data-bg="रस्तो देखण खातिर स्कैन करो">
+                    Scan for Google Maps
+                  </span>
+                </div>
+
+                <a href="https://maps.google.com/?q=The+Royal+Palace+Ludhiana+Punjab" target="_blank" rel="noopener noreferrer"
+                   class="w-full py-1.5 px-2.5 rounded-xl bg-blush-100 hover:bg-blush-200/80 border border-foil/60 text-plum-900 text-[11px] font-semibold flex items-center justify-center gap-1.5 transition i18n-body">
+                  <svg class="w-3.5 h-3.5 text-dusty-500" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24">
+                    <path stroke-linecap="round" stroke-linejoin="round" d="M17.657 16.657L13.414 20.9a2 2 0 01-2.828 0l-4.243-4.243a8 8 0 1111.314 0z" />
+                  </svg>
+                  <span data-en="Open Google Maps" data-hi="गूगल मैप्स खोलें" data-bg="गूगल मैप्स खोलो">Open Google Maps</span>
+                </a>
+              </div>
+
+              <!-- Soni Family Contact + vCard QR -->
+              <div class="stationery-card rounded-2xl p-3 flex flex-col justify-between">
+                <div>
+                  <div class="flex items-center gap-1.5 mb-1">
+                    <svg class="w-4 h-4 text-dusty-500 shrink-0" fill="none" stroke="currentColor" stroke-width="1.9" viewBox="0 0 24 24">
+                      <path stroke-linecap="round" stroke-linejoin="round" d="M3 5a2 2 0 012-2h2.28a1 1 0 01.95.68l1.1 3.3a1 1 0 01-.24 1.02l-1.38 1.38a14.05 14.05 0 006.31 6.31l1.38-1.38a1 1 0 011.02-.24l3.3 1.1a1 1 0 01.68.95V19a2 2 0 01-2 2h-1C9.72 21 3 14.28 3 6V5z" />
+                    </svg>
+                    <h3 class="text-[11px] font-cinzel font-bold text-plum-900 uppercase tracking-wider i18n-serif"
+                        data-en="Soni Family Contact" data-hi="सोनी परिवार संपर्क" data-bg="सोनी परिवार सूं बात">
+                      Soni Family Contact
+                    </h3>
+                  </div>
+                  <p class="text-[11px] text-plum-800 font-medium leading-snug">
+                    +91 98765 43210 • +91 98123 45678
+                  </p>
+                </div>
+
+                <div class="my-2 flex flex-col items-center">
+                  <div class="qr-gold-frame">
+                    <canvas id="qr-contact" width="84" height="84" aria-label="Soni Family Contact vCard QR Code"></canvas>
+                  </div>
+                  <span class="text-[9px] text-foil-dark font-medium mt-1 i18n-body"
+                        data-en="Scan to Save Contact" data-hi="नंबर सेव हेतु स्कैन करें" data-bg="नंबर सेव करण खातिर स्कैन करो">
+                    Scan to Save Contact
+                  </span>
+                </div>
+
+                <div class="grid grid-cols-2 gap-1.5">
+                  <a href="tel:+919876543210"
+                     class="py-1.5 px-2 rounded-xl bg-blush-100 hover:bg-blush-200/80 border border-foil/60 text-plum-900 text-[11px] font-semibold flex items-center justify-center gap-1 transition i18n-body">
+                    <svg class="w-3.5 h-3.5 text-foil-dark" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24">
+                      <path stroke-linecap="round" stroke-linejoin="round" d="M3 5a2 2 0 012-2h2.28a1 1 0 01.95.68l1.1 3.3a1 1 0 01-.24 1.02l-1.38 1.38a14.05 14.05 0 006.31 6.31l1.38-1.38a1 1 0 011.02-.24l3.3 1.1a1 1 0 01.68.95V19a2 2 0 01-2 2h-1C9.72 21 3 14.28 3 6V5z" />
+                    </svg>
+                    <span data-en="Call" data-hi="कॉल" data-bg="फोन करो">Call</span>
+                  </a>
+                  <a href="https://wa.me/919876543210?text=Har%20Har%20Mahadev!%20Namaste%20Soni%20Family%2C%20sending%20heartfelt%20blessings%20for%20Karan%20%26%20Aarti."
+                     target="_blank" rel="noopener noreferrer"
+                     class="py-1.5 px-2 rounded-xl bg-blush-100 hover:bg-blush-200/80 border border-foil/60 text-plum-900 text-[11px] font-semibold flex items-center justify-center gap-1 transition i18n-body">
+                    <svg class="w-3.5 h-3.5 text-emerald-700" fill="none" stroke="currentColor" stroke-width="1.9" viewBox="0 0 24 24">
+                      <path stroke-linecap="round" stroke-linejoin="round" d="M21 11.5a8.38 8.38 0 01-.9 3.8 8.5 8.5 0 01-7.6 4.7 8.38 8.38 0 01-3.8-.9L3 21l1.9-5.7a8.38 8.38 0 01-.9-3.8 8.5 8.5 0 014.7-7.6 8.38 8.38 0 013.8-.9h.5a8.48 8.48 0 018 8v.5z" />
+                    </svg>
+                    <span data-en="WhatsApp" data-hi="व्हाट्सएप" data-bg="व्हाट्सएप">WhatsApp</span>
+                  </a>
+                </div>
+              </div>
+            </div>
+
+            <!-- 2) INTERACTIVE BLESSINGS WALL (आशीर्वाद पुस्तिका) -->
+            <div class="w-full stationery-card rounded-2xl p-3 text-left space-y-2">
+              <div class="flex items-center justify-between">
+                <h3 class="text-xs font-cinzel font-bold text-plum-900 flex items-center gap-1.5 i18n-serif"
+                    data-en="Blessings Wall • आशीर्वाद पुस्तिका"
+                    data-hi="आशीर्वाद पुस्तिका"
+                    data-bg="आशीर्वाद पुस्तिका • बधाई लिखो सा">
+                  Blessings Wall • आशीर्वाद पुस्तिका
+                </h3>
+                <span id="blessing-count" class="text-[10px] px-2 py-0.5 rounded-full bg-blush-200/80 text-plum-900 font-semibold">3</span>
+              </div>
+
+              <!-- Quick Regional / Divine Blessing Chips -->
+              <div class="flex flex-wrap gap-1.5">
+                <button type="button" class="blessing-chip px-2.5 py-1 rounded-full bg-blush-100 hover:bg-blush-200 border border-foil/55 text-[10px] font-semibold text-plum-900 font-hindiSans transition cursor-pointer">
+                  हर हर महादेव 🙏
+                </button>
+                <button type="button" class="blessing-chip px-2.5 py-1 rounded-full bg-blush-100 hover:bg-blush-200 border border-foil/55 text-[10px] font-semibold text-plum-900 font-hindiSans transition cursor-pointer">
+                  घणी बधाई सा 🌸
+                </button>
+                <button type="button" class="blessing-chip px-2.5 py-1 rounded-full bg-blush-100 hover:bg-blush-200 border border-foil/55 text-[10px] font-semibold text-plum-900 font-hindiSans transition cursor-pointer">
+                  सदा खुश रहो ✨
+                </button>
+                <button type="button" class="blessing-chip px-2.5 py-1 rounded-full bg-blush-100 hover:bg-blush-200 border border-foil/55 text-[10px] font-semibold text-plum-900 font-hindiSans transition cursor-pointer">
+                  शुभ विवाह 🪔
+                </button>
+              </div>
+
+              <!-- Custom Blessing Input -->
+              <form id="blessing-form" class="flex gap-1.5" novalidate>
+                <input id="blessing-input" type="text" maxlength="100"
+                       placeholder="Write a blessing for Karan & Aarti..."
+                       data-placeholder-en="Write a blessing for Karan & Aarti..."
+                       data-placeholder-hi="करण एवं आरती के लिए आशीर्वाद लिखें..."
+                       data-placeholder-bg="करण अर आरती खातिर बधाई लिखो सा..."
+                       class="flex-1 px-3 py-1.5 rounded-xl bg-blush-50 border border-foil/55 text-xs text-plum-900 placeholder:text-plum-700/50 focus:outline-none focus:ring-2 focus:ring-dusty-400/50" />
+                <button type="submit"
+                        class="px-3.5 py-1.5 rounded-xl bg-gradient-to-r from-foil to-dusty-500 text-blush-50 text-xs font-semibold shadow-sm hover:brightness-105 active:scale-95 transition cursor-pointer i18n-body"
+                        data-en="Post" data-hi="भेजें" data-bg="लिखो">
+                  Post
+                </button>
+              </form>
+
+              <!-- Live Posted Blessings List -->
+              <div id="blessings-list" class="blessings-scroll max-h-24 overflow-y-auto space-y-1.5 pr-1">
+                <div class="rounded-xl bg-blush-100/75 border border-foil/35 px-2.5 py-1.5 text-[11px] text-plum-900 flex items-center justify-between gap-2">
+                  <span class="font-hindiSans">“घणी बधाई सा! शिव-पार्वती री कृपा सदा बणी रहवे।”</span>
+                  <span class="text-[9px] text-foil-dark whitespace-nowrap">— Sharma Ji</span>
+                </div>
+                <div class="rounded-xl bg-blush-100/75 border border-foil/35 px-2.5 py-1.5 text-[11px] text-plum-900 flex items-center justify-between gap-2">
+                  <span class="font-hindiSans">“हर हर महादेव! Wishing Karan &amp; Aarti eternal joy.”</span>
+                  <span class="text-[9px] text-foil-dark whitespace-nowrap">— Verma Family</span>
+                </div>
+                <div class="rounded-xl bg-blush-100/75 border border-foil/35 px-2.5 py-1.5 text-[11px] text-plum-900 flex items-center justify-between gap-2">
+                  <span class="font-hindiSans">“शुभ विवाह! आप दोनों सदा खुश रहो।”</span>
+                  <span class="text-[9px] text-foil-dark whitespace-nowrap">— Gupta Parivar</span>
+                </div>
+              </div>
+            </div>
+
+            <!-- 3) INTERACTIVE RSVP + PRE-FILLED WHATSAPP RSVP (EN / HI / BAGDI) -->
+            <div class="w-full stationery-card rounded-2xl p-3 text-left space-y-2">
+              <h3 class="text-xs font-cinzel font-bold text-plum-900 i18n-serif"
+                  data-en="Kindly Respond (RSVP)"
+                  data-hi="उपस्थिति की पुष्टि (RSVP)"
+                  data-bg="पधारवा री सूचना (RSVP)">
+                Kindly Respond (RSVP)
+              </h3>
+
+              <form id="rsvp-form" class="space-y-2" novalidate>
+                <div class="grid grid-cols-12 gap-1.5">
+                  <input id="guest-name" type="text" required
+                         placeholder="Your Name / Family"
+                         data-placeholder-en="Your Name / Family"
+                         data-placeholder-hi="आपका शुभ नाम / परिवार"
+                         data-placeholder-bg="थांको शुभ नाम / परिवार"
+                         class="col-span-6 px-2.5 py-1.5 rounded-xl bg-blush-50 border border-foil/55 text-xs text-plum-900 placeholder:text-plum-700/50 focus:outline-none focus:ring-2 focus:ring-dusty-400/50" />
+
+                  <select id="guest-count" aria-label="Number of Guests"
+                          class="col-span-3 px-1.5 py-1.5 rounded-xl bg-blush-50 border border-foil/55 text-xs text-plum-900 focus:outline-none">
+                    <option value="1">1</option>
+                    <option value="2" selected>2</option>
+                    <option value="3">3</option>
+                    <option value="4">4</option>
+                    <option value="5+">5+</option>
+                  </select>
+
+                  <select id="guest-status" aria-label="Attendance"
+                          class="col-span-3 px-1.5 py-1.5 rounded-xl bg-blush-50 border border-foil/55 text-xs text-plum-900 focus:outline-none i18n-body">
+                    <option value="yes" data-en="Attending" data-hi="पधारेंगे" data-bg="पधारसां">Attending</option>
+                    <option value="blessings" data-en="Blessings" data-hi="आशीर्वाद" data-bg="आशीष">Blessings</option>
+                  </select>
+                </div>
+
+                <div class="grid grid-cols-2 gap-2">
+                  <button type="submit"
+                          class="foil-cta-btn py-2 px-3 rounded-xl text-xs font-semibold tracking-wide cursor-pointer i18n-body"
+                          data-en="Confirm RSVP" data-hi="पुष्टि करें" data-bg="पुष्टि करो सा">
+                    Confirm RSVP
+                  </button>
+                  <button id="whatsapp-rsvp-btn" type="button"
+                          class="py-2 px-3 rounded-xl bg-emerald-700 hover:bg-emerald-800 text-blush-50 border border-foil-light/60 text-xs font-semibold flex items-center justify-center gap-1.5 shadow-sm transition cursor-pointer i18n-body">
+                    <svg class="w-3.5 h-3.5" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24">
+                      <path stroke-linecap="round" stroke-linejoin="round" d="M21 11.5a8.38 8.38 0 01-.9 3.8 8.5 8.5 0 01-7.6 4.7 8.38 8.38 0 01-3.8-.9L3 21l1.9-5.7a8.38 8.38 0 01-.9-3.8 8.5 8.5 0 014.7-7.6 8.38 8.38 0 013.8-.9h.5a8.48 8.48 0 018 8v.5z" />
+                    </svg>
+                    <span data-en="Send via WhatsApp" data-hi="व्हाट्सएप पर भेजें" data-bg="व्हाट्सएप माथे भेजो">Send via WhatsApp</span>
+                  </button>
+                </div>
+              </form>
+
+              <div id="rsvp-confirmed" class="hidden rounded-xl bg-blush-100 border border-foil/60 px-3 py-1.5 text-center">
+                <p id="rsvp-confirmed-text" class="text-[11px] font-medium text-plum-900 i18n-body"></p>
+              </div>
+            </div>
+
+            <!-- 4) COMPACT PERSONALIZED GUEST LINK HELPER FOR SONI FAMILY -->
+            <div class="w-full rounded-2xl bg-blush-100/75 border border-dashed border-foil/70 p-2.5 text-left space-y-1.5">
+              <p class="text-[10px] font-cinzel font-bold text-plum-900 uppercase tracking-wider i18n-serif"
+                 data-en="Create Personalized Guest Link (?guest=...)"
+                 data-hi="मेहमान के नाम से पर्सनल लिंक बनाएँ"
+                 data-bg="पाहुणां रे नाम सूं पर्सनल लिंक बणाओ">
+                Create Personalized Guest Link (?guest=...)
+              </p>
+              <div class="flex gap-1.5">
+                <input id="share-guest-input" type="text"
+                       placeholder="e.g. Sharma Family"
+                       data-placeholder-en="e.g. Sharma Family"
+                       data-placeholder-hi="जैसे: शर्मा परिवार"
+                       data-placeholder-bg="जियां: शर्मा परिवार"
+                       class="flex-1 px-2.5 py-1.5 rounded-lg bg-blush-50 border border-foil/55 text-[11px] text-plum-900 placeholder:text-plum-700/45 focus:outline-none" />
+                <button id="copy-guest-link-btn" type="button"
+                        class="px-3 py-1.5 rounded-lg bg-plum-900 hover:bg-plum-800 text-blush-50 text-[11px] font-semibold transition cursor-pointer whitespace-nowrap i18n-body"
+                        data-en="Copy Link" data-hi="लिंक कॉपी करें" data-bg="लिंक कॉपी करो">
+                  Copy Link
+                </button>
+              </div>
+              <p id="generated-link-preview" class="hidden text-[10px] text-foil-dark truncate font-mono"></p>
+            </div>
+
+          </div>
+        </section>
+
+      </div>
+    </div>
+
+    <!-- ================================================================
+         BOTTOM PAPER-TURN NAVIGATION BAR (Previous, Dots, Next Page)
+         ================================================================ -->
+    <nav class="relative z-40 w-full max-w-[580px] mt-5 px-1 flex items-center justify-between gap-2"
+         aria-label="Page Fold Navigation">
+      <button id="prev-btn" type="button"
+              class="inline-flex items-center gap-1.5 px-4 py-2.5 rounded-full bg-blush-50/90 hover:bg-blush-50 disabled:opacity-40 disabled:pointer-events-none text-plum-900 border border-foil/65 shadow-sm text-xs sm:text-sm font-medium transition cursor-pointer">
+        <svg class="w-4 h-4 text-dusty-500" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24">
+          <path stroke-linecap="round" stroke-linejoin="round" d="M15 19l-7-7 7-7" />
+        </svg>
+        <span class="i18n-body" data-en="Previous" data-hi="पिछला" data-bg="पाछलो">Previous</span>
+      </button>
+
+      <div class="flex items-center gap-2">
+        <button type="button" class="page-dot w-7 h-2.5 rounded-full bg-dusty-500 transition-all duration-300 cursor-pointer" data-target="1" aria-label="Cover Page"></button>
+        <button type="button" class="page-dot w-2.5 h-2.5 rounded-full bg-plum-900/25 hover:bg-dusty-400 transition-all duration-300 cursor-pointer" data-target="2" aria-label="Blessings Page"></button>
+        <button type="button" class="page-dot w-2.5 h-2.5 rounded-full bg-plum-900/25 hover:bg-dusty-400 transition-all duration-300 cursor-pointer" data-target="3" aria-label="Programs Page"></button>
+        <button type="button" class="page-dot w-2.5 h-2.5 rounded-full bg-plum-900/25 hover:bg-dusty-400 transition-all duration-300 cursor-pointer" data-target="4" aria-label="Venue and Contact Page"></button>
+      </div>
+
+      <button id="next-btn" type="button"
+              class="foil-cta-btn inline-flex items-center gap-1.5 px-4 py-2.5 rounded-full disabled:opacity-40 disabled:pointer-events-none text-xs sm:text-sm font-semibold cursor-pointer">
+        <span class="i18n-body" data-en="Next Page" data-hi="अगला पृष्ठ" data-bg="आगलो पन्नो">Next Page</span>
+        <svg class="w-4 h-4" fill="none" stroke="currentColor" stroke-width="2.2" viewBox="0 0 24 24">
+          <path stroke-linecap="round" stroke-linejoin="round" d="M9 5l7 7-7 7" />
+        </svg>
+      </button>
+    </nav>
+
+    <p class="mt-2 text-[11px] text-plum-700/75 text-center i18n-body"
+       data-en="Swipe left/right or use arrow keys to fold through the invitation"
+       data-hi="निमंत्रण पत्रिका पलटने के लिए स्वाइप करें या एरो कुंजी का उपयोग करें"
+       data-bg="पत्रिका पलटण खातिर स्वाइप करो या एरो बटन दबाओ सा">
+      Swipe left/right or use arrow keys to fold through the invitation
+    </p>
+  </main>
+
+  <!-- ================================================================
+       JAVASCRIPT: 3-LANGUAGE ENGINE (EN/HI/BAGDI), SACRED AUDIO & CHANT,
+                   3D PAPER FOLD, DIYA/BILVA RITUALS, .ICS CALENDAR,
+                   REAL QR CODES, BLESSINGS WALL & GUEST LINK GENERATOR
+       ================================================================ -->
+  <script>
+    (function () {
+      'use strict';
+
+      /* ---------------------------------------------------------------
+         1. STATE & DOM REFERENCES
+         --------------------------------------------------------------- */
+      const totalPages = 4;
+      let currentPage = 1;
+      let isFolding = false;
+      let currentLang = 'en'; // 'en' | 'hi' | 'bg' (Rajasthani Bagdi)
+      let soundEnabled = true;
+      let diyaLit = false;
+      let personalizedGuest = '';
+
+      const waxGate = document.getElementById('wax-seal-gate');
+      const waxSealBtn = document.getElementById('wax-seal-btn');
+      const gateOpenBtn = document.getElementById('gate-open-btn');
+      const gateGuestPill = document.getElementById('gate-guest-pill');
+      const gateGuestText = document.getElementById('gate-guest-text');
+      const coverGuestRibbon = document.getElementById('cover-guest-ribbon');
+      const coverGuestText = document.getElementById('cover-guest-text');
+
+      const bookStage = document.getElementById('book-stage');
+      const pages = Array.from(document.querySelectorAll('.paper-page'));
+      const dots = Array.from(document.querySelectorAll('.page-dot'));
+      const tabs = Array.from(document.querySelectorAll('.page-tab'));
+      const prevBtn = document.getElementById('prev-btn');
+      const nextBtn = document.getElementById('next-btn');
+      const openInviteBtn = document.getElementById('open-invite-btn');
+
+      const btnLangEn = document.getElementById('btn-lang-en');
+      const btnLangHi = document.getElementById('btn-lang-hi');
+      const btnLangBg = document.getElementById('btn-lang-bg');
+      const chantTriggerBtn = document.getElementById('chant-trigger-btn');
+      const templeBellBtn = document.getElementById('temple-bell-btn');
+      const templeBellSvg = document.getElementById('temple-bell-svg');
+      const soundToggle = document.getElementById('sound-toggle');
+      const soundIconOn = document.getElementById('sound-icon-on');
+      const soundIconOff = document.getElementById('sound-icon-off');
+
+      const toggleShlokaBtn = document.getElementById('toggle-shloka-btn');
+      const shlokaMeaning = document.getElementById('shloka-meaning');
+      const diyaSvgBtn = document.getElementById('diya-svg-btn');
+      const lightDiyaBtn = document.getElementById('light-diya-btn');
+      const diyaBtnLabel = document.getElementById('diya-btn-label');
+      const ritualDiyaSvg = document.getElementById('ritual-diya-svg');
+      const offerPushpaBtn = document.getElementById('offer-pushpa-btn');
+
+      const auraRipple = document.getElementById('aura-ripple');
+      const mantraBanner = document.getElementById('mantra-banner');
+      const toastEl = document.getElementById('blessing-toast');
+      const toastText = document.getElementById('toast-text');
+      const customChantAudio = document.getElementById('customChantAudio');
+
+      let toastTimer = null;
+      let mantraTimer = null;
+
+      /* ---------------------------------------------------------------
+         2. PERSONALIZED ?guest= URL PARAMETER DETECTION
+         --------------------------------------------------------------- */
+      function initGuestPersonalization() {
+        try {
+          const params = new URLSearchParams(window.location.search);
+          const raw = (params.get('guest') || '').trim();
+          if (raw) {
+            personalizedGuest = raw.slice(0, 60);
+            updateGuestGreetingTexts();
+            gateGuestPill.classList.remove('hidden');
+            coverGuestRibbon.classList.remove('hidden');
+            // Pre-fill RSVP name input for convenience
+            const guestNameInput = document.getElementById('guest-name');
+            if (guestNameInput) guestNameInput.value = personalizedGuest;
+          }
+        } catch (err) {}
+      }
+
+      function updateGuestGreetingTexts() {
+        if (!personalizedGuest) return;
+        const greetMap = {
+          en: `Cordially Inviting ${personalizedGuest}`,
+          hi: `${personalizedGuest} को सादर आमंत्रण`,
+          bg: `घणी खम्मा ${personalizedGuest}, पधारजो सा!`,
+        };
+        gateGuestText.textContent = greetMap[currentLang];
+        coverGuestText.textContent = `✦ ${greetMap[currentLang]} ✦`;
+      }
+
+      /* ---------------------------------------------------------------
+         3. SACRED AUDIO ENGINE (WEB AUDIO API + DEVOTIONAL CHANT)
+         --------------------------------------------------------------- */
+      let audioCtx = null;
+      let masterGain = null;
+      let droneGain = null;
+      let droneStarted = false;
+
+      function ensureAudioContext() {
+        try {
+          const AudioContextClass = window.AudioContext || window.webkitAudioContext;
+          if (!AudioContextClass) return null;
+          if (!audioCtx) {
+            audioCtx = new AudioContextClass();
+            masterGain = audioCtx.createGain();
+            masterGain.gain.value = soundEnabled ? 1.0 : 0.0;
+            masterGain.connect(audioCtx.destination);
+          }
+          if (audioCtx.state === 'suspended') {
+            audioCtx.resume();
+          }
+          return audioCtx;
+        } catch (err) {
+          return null;
+        }
+      }
+
+      /* 136.1 Hz Om / Tanpura Ambient Drone */
+      function startSacredDrone() {
+        if (droneStarted) return;
+        const ctxA = ensureAudioContext();
+        if (!ctxA || !masterGain) return;
+
+        try {
+          droneGain = ctxA.createGain();
+          droneGain.gain.setValueAtTime(0.0001, ctxA.currentTime);
+          droneGain.gain.exponentialRampToValueAtTime(0.046, ctxA.currentTime + 2.8);
+
+          const lpFilter = ctxA.createBiquadFilter();
+          lpFilter.type = 'lowpass';
+          lpFilter.frequency.setValueAtTime(600, ctxA.currentTime);
+          droneGain.connect(lpFilter);
+          lpFilter.connect(masterGain);
+
+          const lfo = ctxA.createOscillator();
+          const lfoGain = ctxA.createGain();
+          lfo.frequency.setValueAtTime(0.14, ctxA.currentTime);
+          lfoGain.gain.setValueAtTime(0.011, ctxA.currentTime);
+          lfo.connect(lfoGain);
+          lfoGain.connect(droneGain.gain);
+          lfo.start();
+
+          const partials = [
+            { freq: 68.05, type: 'sine', amp: 0.3 },
+            { freq: 136.1, type: 'sine', amp: 0.48 },
+            { freq: 136.45, type: 'triangle', amp: 0.14 },
+            { freq: 204.15, type: 'sine', amp: 0.22 },
+            { freq: 272.2, type: 'sine', amp: 0.12 },
+          ];
+
+          partials.forEach((p) => {
+            const osc = ctxA.createOscillator();
+            const g = ctxA.createGain();
+            osc.type = p.type;
+            osc.frequency.setValueAtTime(p.freq, ctxA.currentTime);
+            g.gain.setValueAtTime(p.amp, ctxA.currentTime);
+            osc.connect(g);
+            g.connect(droneGain);
+            osc.start();
+          });
+
+          droneStarted = true;
+        } catch (err) {}
+      }
+
+      /* Resonant Brass Temple Bell (Ghanti) */
+      function playTempleBell(intensity = 1.0) {
+        if (!soundEnabled) return;
+        const ctxA = ensureAudioContext();
+        if (!ctxA || !masterGain) return;
+
+        try {
+          const now = ctxA.currentTime;
+          const baseFreq = 544.4;
+          const bellPartials = [
+            { ratio: 1.0, amp: 0.14, decay: 3.4 },
+            { ratio: 2.0, amp: 0.08, decay: 2.5 },
+            { ratio: 2.756, amp: 0.055, decay: 2.0 },
+            { ratio: 4.07, amp: 0.035, decay: 1.5 },
+            { ratio: 5.404, amp: 0.02, decay: 1.1 },
+          ];
+
+          bellPartials.forEach((bp) => {
+            const osc = ctxA.createOscillator();
+            const g = ctxA.createGain();
+            osc.type = 'sine';
+            osc.frequency.setValueAtTime(baseFreq * bp.ratio, now);
+            g.gain.setValueAtTime(0.0001, now);
+            g.gain.exponentialRampToValueAtTime(bp.amp * intensity, now + 0.012);
+            g.gain.exponentialRampToValueAtTime(0.0001, now + bp.decay);
+            osc.connect(g);
+            g.connect(masterGain);
+            osc.start(now);
+            osc.stop(now + bp.decay + 0.05);
+          });
+        } catch (err) {}
+      }
+
+      /* Tactile Cardstock Paper-Fold Rustle Sound */
+      function playPaperFoldSound() {
+        if (!soundEnabled) return;
+        const ctxA = ensureAudioContext();
+        if (!ctxA || !masterGain) return;
+
+        try {
+          const duration = 0.42;
+          const bufferSize = Math.floor(ctxA.sampleRate * duration);
+          const buffer = ctxA.createBuffer(1, bufferSize, ctxA.sampleRate);
+          const data = buffer.getChannelData(0);
+          for (let i = 0; i < bufferSize; i++) {
+            data[i] = (Math.random() * 2 - 1) * 0.7;
+          }
+          const noise = ctxA.createBufferSource();
+          noise.buffer = buffer;
+
+          const bandpass = ctxA.createBiquadFilter();
+          bandpass.type = 'bandpass';
+          bandpass.frequency.setValueAtTime(950, ctxA.currentTime);
+          bandpass.frequency.exponentialRampToValueAtTime(2200, ctxA.currentTime + 0.22);
+          bandpass.Q.setValueAtTime(1.4, ctxA.currentTime);
+
+          const gain = ctxA.createGain();
+          const now = ctxA.currentTime;
+          gain.gain.setValueAtTime(0.0001, now);
+          gain.gain.exponentialRampToValueAtTime(0.075, now + 0.08);
+          gain.gain.exponentialRampToValueAtTime(0.0001, now + duration);
+
+          noise.connect(bandpass);
+          bandpass.connect(gain);
+          gain.connect(masterGain);
+          noise.start(now);
+          noise.stop(now + duration + 0.02);
+        } catch (err) {}
+      }
+
+      /* Visual Aura Ripple + Glowing Mantra Banner */
+      function triggerAuraAndMantraBanner(durationMs = 5200) {
+        auraRipple.classList.remove('animate-ripple');
+        void auraRipple.offsetWidth;
+        auraRipple.classList.add('animate-ripple');
+
+        mantraBanner.classList.remove('opacity-0', '-translate-y-4');
+        mantraBanner.classList.add('opacity-100', 'translate-y-0');
+
+        clearTimeout(mantraTimer);
+        mantraTimer = setTimeout(() => {
+          mantraBanner.classList.add('opacity-0', '-translate-y-4');
+          mantraBanner.classList.remove('opacity-100', 'translate-y-0');
+        }, durationMs);
+      }
+
+      /* Devotional Chant: 'ॐ नमः पार्वती पतये, हर हर महादेव' */
+      let cachedHindiVoice = null;
+      function findBestHindiVoice() {
+        if (!('speechSynthesis' in window)) return null;
+        const voices = window.speechSynthesis.getVoices() || [];
+        return (
+          voices.find((v) => v.lang && v.lang.toLowerCase() === 'hi-in') ||
+          voices.find((v) => v.lang && v.lang.toLowerCase().startsWith('hi')) ||
+          voices.find((v) => v.lang && v.lang.toLowerCase().includes('in')) ||
+          null
+        );
+      }
+      if ('speechSynthesis' in window) {
+        window.speechSynthesis.onvoiceschanged = () => { cachedHindiVoice = findBestHindiVoice(); };
+        cachedHindiVoice = findBestHindiVoice();
+      }
+
+      function performMahadevChant(shortPhrase = false) {
+        triggerAuraAndMantraBanner(shortPhrase ? 3800 : 5400);
+        playTempleBell(1.0);
+        startSacredDrone();
+        if (!soundEnabled) return;
+
+        if (customChantAudio && customChantAudio.getAttribute('src')) {
+          try {
+            customChantAudio.currentTime = 0;
+            const p = customChantAudio.play();
+            if (p && typeof p.catch === 'function') p.catch(() => speakDevotionalMantra(shortPhrase));
+            return;
+          } catch (err) {}
+        }
+        speakDevotionalMantra(shortPhrase);
+      }
+
+      function speakDevotionalMantra(shortPhrase = false) {
+        if (!('speechSynthesis' in window)) return;
+        try {
+          window.speechSynthesis.cancel();
+          const utter = new SpeechSynthesisUtterance(
+            shortPhrase ? 'हर हर महादेव' : 'ॐ नमः पार्वती पतये, हर हर महादेव'
+          );
+          const voice = cachedHindiVoice || findBestHindiVoice();
+          if (voice) {
+            utter.voice = voice;
+            utter.lang = voice.lang;
+          } else {
+            utter.lang = 'hi-IN';
+          }
+          utter.rate = 0.72;
+          utter.pitch = 0.82;
+          utter.volume = 0.95;
+          window.speechSynthesis.speak(utter);
+        } catch (err) {}
+      }
+
+      /* Top Bar Controls: Chant, Interactive Temple Bell, Sound Toggle */
+      chantTriggerBtn.addEventListener('click', (e) => {
+        const rect = e.currentTarget.getBoundingClientRect();
+        performMahadevChant(false);
+        triggerCelebration(rect.left + rect.width / 2, rect.bottom + 8, 70, true);
+      });
+
+      templeBellBtn.addEventListener('click', (e) => {
+        const rect = e.currentTarget.getBoundingClientRect();
+        templeBellSvg.classList.remove('bell-swing');
+        void templeBellSvg.offsetWidth;
+        templeBellSvg.classList.add('bell-swing');
+        ensureAudioContext();
+        startSacredDrone();
+        playTempleBell(1.1);
+        triggerCelebration(rect.left + rect.width / 2, rect.bottom + 6, 35, false);
+      });
+
+      soundToggle.addEventListener('click', () => {
+        soundEnabled = !soundEnabled;
+        soundIconOn.classList.toggle('hidden', !soundEnabled);
+        soundIconOff.classList.toggle('hidden', soundEnabled);
+        if (masterGain && audioCtx) {
+          masterGain.gain.setTargetAtTime(soundEnabled ? 1.0 : 0.0, audioCtx.currentTime, 0.15);
+        }
+        if (!soundEnabled) {
+          if ('speechSynthesis' in window) window.speechSynthesis.cancel();
+          if (customChantAudio && !customChantAudio.paused) customChantAudio.pause();
+        } else {
+          ensureAudioContext();
+          startSacredDrone();
+          playTempleBell(0.7);
+        }
+      });
+
+      /* ---------------------------------------------------------------
+         4. WAX SEAL GATE UNLOCK
+         --------------------------------------------------------------- */
+      function unlockWaxSealGate() {
+        if (waxGate.classList.contains('gate-unlocked')) return;
+        waxGate.classList.add('gate-unlocked');
+        ensureAudioContext();
+        startSacredDrone();
+        performMahadevChant(false);
+        triggerCelebration(window.innerWidth / 2, window.innerHeight * 0.44, 95, true);
+        setTimeout(() => {
+          triggerCelebration(window.innerWidth * 0.25, window.innerHeight * 0.3, 35, false);
+          triggerCelebration(window.innerWidth * 0.75, window.innerHeight * 0.3, 35, false);
+        }, 320);
+      }
+      waxSealBtn.addEventListener('click', unlockWaxSealGate);
+      gateOpenBtn.addEventListener('click', unlockWaxSealGate);
+
+      /* ---------------------------------------------------------------
+         5. TOAST HELPER (3-LANGUAGE AWARE)
+         --------------------------------------------------------------- */
+      function showToast(enMsg, hiMsg, bgMsg) {
+        const map = { en: enMsg, hi: hiMsg, bg: bgMsg || hiMsg };
+        toastText.textContent = map[currentLang];
+        toastEl.classList.remove('opacity-0', 'translate-y-4');
+        toastEl.classList.add('opacity-100', 'translate-y-0');
+        clearTimeout(toastTimer);
+        toastTimer = setTimeout(() => {
+          toastEl.classList.add('opacity-0', 'translate-y-4');
+          toastEl.classList.remove('opacity-100', 'translate-y-0');
+        }, 3800);
+      }
+
+      /* ---------------------------------------------------------------
+         6. 3-LANGUAGE SWITCHER (EN | हिंदी | बागड़ी)
+         --------------------------------------------------------------- */
+      function setLanguage(lang) {
+        currentLang = lang;
+        document.documentElement.lang = lang === 'en' ? 'en' : 'hi';
+        document.body.classList.toggle('lang-dev', lang !== 'en');
+
+        const activeCls = 'lang-btn px-2.5 py-1 rounded-full text-[11px] font-semibold transition-all duration-300 bg-gradient-to-r from-dusty-500 to-plum-900 text-blush-50 shadow-sm cursor-pointer';
+        const idleCls = 'lang-btn px-2.5 py-1 rounded-full text-[11px] font-semibold transition-all duration-300 text-plum-900 hover:text-dusty-500 cursor-pointer';
+
+        btnLangEn.className = lang === 'en' ? activeCls : idleCls;
+        btnLangHi.className = (lang === 'hi' ? activeCls : idleCls) + ' font-hindiSans';
+        btnLangBg.className = (lang === 'bg' ? activeCls : idleCls) + ' font-hindiSans';
+
+        const attr = `data-${lang}`;
+        document.querySelectorAll('[data-en][data-hi]').forEach((el) => {
+          const val = el.getAttribute(attr) || el.getAttribute('data-hi') || el.getAttribute('data-en');
+          if (val !== null) el.textContent = val;
+        });
+
+        const phAttr = `data-placeholder-${lang}`;
+        document.querySelectorAll('[data-placeholder-en]').forEach((el) => {
+          const val = el.getAttribute(phAttr) || el.getAttribute('data-placeholder-hi') || el.getAttribute('data-placeholder-en');
+          if (val !== null) el.placeholder = val;
+        });
+
+        updateGuestGreetingTexts();
+        playTempleBell(0.45);
+      }
+
+      btnLangEn.addEventListener('click', () => setLanguage('en'));
+      btnLangHi.addEventListener('click', () => setLanguage('hi'));
+      btnLangBg.addEventListener('click', () => setLanguage('bg'));
+
+      /* ---------------------------------------------------------------
+         7. REALISTIC 3D PAPER-FOLD PAGE NAVIGATION
+         --------------------------------------------------------------- */
+      function updateControls() {
+        prevBtn.disabled = currentPage === 1;
+        nextBtn.disabled = currentPage === totalPages;
+
+        dots.forEach((dot) => {
+          const active = Number(dot.dataset.target) === currentPage;
+          dot.classList.toggle('w-7', active);
+          dot.classList.toggle('bg-dusty-500', active);
+          dot.classList.toggle('w-2.5', !active);
+          dot.classList.toggle('bg-plum-900/25', !active);
+        });
+
+        tabs.forEach((tab) => {
+          const active = Number(tab.dataset.target) === currentPage;
+          tab.classList.toggle('bg-plum-900', active);
+          tab.classList.toggle('text-blush-50', active);
+          tab.classList.toggle('shadow-sm', active);
+          tab.classList.toggle('text-plum-900/80', !active);
+        });
+      }
+
+      function foldToPage(targetPage, burst = true) {
+        if (isFolding || targetPage === currentPage || targetPage < 1 || targetPage > totalPages) return;
+        isFolding = true;
+
+        const goingForward = targetPage > currentPage;
+        const oldEl = pages[currentPage - 1];
+        const newEl = pages[targetPage - 1];
+
+        [oldEl, newEl].forEach((el) => {
+          el.classList.remove('fold-out-next', 'fold-in-next', 'fold-out-prev', 'fold-in-prev');
+        });
+
+        oldEl.classList.remove('active');
+        oldEl.classList.add(goingForward ? 'fold-out-next' : 'fold-out-prev');
+        newEl.classList.add('active', goingForward ? 'fold-in-next' : 'fold-in-prev');
+
+        currentPage = targetPage;
+        updateControls();
+        playPaperFoldSound();
+
+        if (burst) {
+          triggerCelebration(window.innerWidth / 2, window.innerHeight * 0.42, 24, false);
+        }
+        window.scrollTo({ top: 0, behavior: 'smooth' });
+
+        setTimeout(() => {
+          oldEl.classList.remove('fold-out-next', 'fold-out-prev');
+          newEl.classList.remove('fold-in-next', 'fold-in-prev');
+          isFolding = false;
+        }, 880);
+      }
+
+      prevBtn.addEventListener('click', () => foldToPage(currentPage - 1));
+      nextBtn.addEventListener('click', () => foldToPage(currentPage + 1));
+      dots.forEach((dot) => dot.addEventListener('click', () => foldToPage(Number(dot.dataset.target))));
+      tabs.forEach((tab) => tab.addEventListener('click', () => foldToPage(Number(tab.dataset.target))));
+
+      openInviteBtn.addEventListener('click', (e) => {
+        const rect = e.currentTarget.getBoundingClientRect();
+        triggerCelebration(rect.left + rect.width / 2, rect.top + rect.height / 2, 50, false);
+        foldToPage(2, false);
+      });
+
+      document.addEventListener('keydown', (e) => {
+        if (!waxGate.classList.contains('gate-unlocked')) return;
+        if (['INPUT', 'TEXTAREA', 'SELECT'].includes(document.activeElement.tagName)) return;
+        if (e.key === 'ArrowRight') foldToPage(currentPage + 1);
+        if (e.key === 'ArrowLeft') foldToPage(currentPage - 1);
+      });
+
+      let touchStartX = 0;
+      let touchStartY = 0;
+      bookStage.addEventListener('touchstart', (e) => {
+        touchStartX = e.changedTouches[0].screenX;
+        touchStartY = e.changedTouches[0].screenY;
+      }, { passive: true });
+      bookStage.addEventListener('touchend', (e) => {
+        const dx = e.changedTouches[0].screenX - touchStartX;
+        const dy = e.changedTouches[0].screenY - touchStartY;
+        if (Math.abs(dx) > 55 && Math.abs(dx) > Math.abs(dy) * 1.2) {
+          if (dx < 0) foldToPage(currentPage + 1);
+          else foldToPage(currentPage - 1);
+        }
+      }, { passive: true });
+
+      /* ---------------------------------------------------------------
+         8. PAGE 2 INTERACTIVE RITUALS: SHLOKA TOGGLE, DIYA & PUSHPA-BILVA
+         --------------------------------------------------------------- */
+      toggleShlokaBtn.addEventListener('click', () => {
+        shlokaMeaning.classList.toggle('hidden');
+      });
+
+      function igniteBrassDiya(originEl) {
+        diyaLit = true;
+        ritualDiyaSvg.classList.add('diya-lit');
+        diyaBtnLabel.setAttribute('data-en', 'Diya Lit ✨');
+        diyaBtnLabel.setAttribute('data-hi', 'दीप प्रज्वलित ✨');
+        diyaBtnLabel.setAttribute('data-bg', 'दीवो जल गयो ✨');
+        diyaBtnLabel.textContent = diyaBtnLabel.getAttribute(`data-${currentLang}`);
+
+        const rect = originEl.getBoundingClientRect();
+        playTempleBell(0.95);
+        triggerCelebration(rect.left + rect.width / 2, rect.top, 45, false);
+        showToast(
+          '🪔 Sacred Brass Diya lit! May divine light bless Karan & Aarti.',
+          '🪔 पावन दीप प्रज्वलित हुआ! करण एवं आरती का जीवन सदैव आलोकित रहे।',
+          '🪔 पावन दीवो जल गयो सा! करण अर आरती री जोड़ी सदा जगमगाती रहवे।'
+        );
+      }
+
+      diyaSvgBtn.addEventListener('click', (e) => igniteBrassDiya(e.currentTarget));
+      lightDiyaBtn.addEventListener('click', (e) => igniteBrassDiya(e.currentTarget));
+
+      offerPushpaBtn.addEventListener('click', (e) => {
+        const rect = e.currentTarget.getBoundingClientRect();
+        performMahadevChant(true);
+        triggerCelebration(rect.left + rect.width / 2, rect.top - 10, 95, true);
+        setTimeout(() => triggerCelebration(window.innerWidth * 0.25, window.innerHeight * 0.3, 40, true), 200);
+        setTimeout(() => triggerCelebration(window.innerWidth * 0.75, window.innerHeight * 0.3, 40, true), 340);
+        showToast(
+          '🌸 Rose petals & sacred Bilva leaves offered for Karan & Aarti! Har Har Mahadev!',
+          '🌸 करण एवं आरती हेतु पावन पुष्प व बिल्व पत्र अर्पित! हर हर महादेव!',
+          '🌸 गुलाब रे फूल अर बिल्व पत्र चढ़ाया गया सा! हर हर महादेव!'
+        );
+      });
+
+      /* ---------------------------------------------------------------
+         9. PAGE 3: LIVE COUNTDOWN & ONE-TAP .ICS CALENDAR DOWNLOADS
+         --------------------------------------------------------------- */
+      const weddingTarget = new Date('2027-03-14T19:00:00+05:30').getTime();
+      const cdDays = document.getElementById('cd-days');
+      const cdHours = document.getElementById('cd-hours');
+      const cdMins = document.getElementById('cd-mins');
+      const cdSecs = document.getElementById('cd-secs');
+
+      function updateCountdown() {
+        const diff = Math.max(0, weddingTarget - Date.now());
+        cdDays.textContent = String(Math.floor(diff / 86400000)).padStart(2, '0');
+        cdHours.textContent = String(Math.floor((diff / 3600000) % 24)).padStart(2, '0');
+        cdMins.textContent = String(Math.floor((diff / 60000) % 60)).padStart(2, '0');
+        cdSecs.textContent = String(Math.floor((diff / 1000) % 60)).padStart(2, '0');
+      }
+      updateCountdown();
+      setInterval(updateCountdown, 1000);
+
+      const icsEvents = {
+        haldi: {
+          title: 'Ganesh Sthapana & Haldi — Karan weds Aarti (Soni Family)',
+          start: '20270312T100000',
+          end: '20270312T130000',
+          location: 'Soni Residence, Ludhiana, Punjab',
+          desc: 'Auspicious Ganesh Sthapana & Marigold Haldi ceremony. Dress Code: Marigold & Ivory.',
+          file: 'Soni-Family-Haldi-March2027.ics',
+        },
+        sangeet: {
+          title: 'Mehendi & Sangeet Sandhya — Karan weds Aarti',
+          start: '20270312T183000',
+          end: '20270312T223000',
+          location: 'The Royal Palace, Ludhiana, Punjab',
+          desc: 'Evening of folk melodies, dance & royal sattvic dinner. Dress Code: Sage & Rose.',
+          file: 'Soni-Family-Sangeet-March2027.ics',
+        },
+        baraat: {
+          title: 'Baraat Swagat & Varmala — Karan weds Aarti',
+          start: '20270314T190000',
+          end: '20270314T213000',
+          location: 'The Royal Palace, Ludhiana, Punjab',
+          desc: 'Grand Baraat welcome & floral Varmala exchange. Dress Code: Blush & Rose-Gold.',
+          file: 'Soni-Family-Baraat-March2027.ics',
+        },
+        vivah: {
+          title: 'Shubh Vivah & Pheras — Karan weds Aarti (Soni Family)',
+          start: '20270314T213000',
+          end: '20270315T010000',
+          location: 'The Royal Palace, Ludhiana, Punjab',
+          desc: 'Sacred Vedic Pheras & Aashirwad. Dress Code: Crimson & Gold. Har Har Mahadev!',
+          file: 'Soni-Family-Shubh-Vivah-March2027.ics',
+        },
+      };
+
+      function downloadICS(eventKey) {
+        const ev = icsEvents[eventKey];
+        if (!ev) return;
+        const icsContent = [
+          'BEGIN:VCALENDAR',
+          'VERSION:2.0',
+          'PRODID:-//Soni Family Wedding//Karan weds Aarti//EN',
+          'BEGIN:VEVENT',
+          `DTSTART:${ev.start}`,
+          `DTEND:${ev.end}`,
+          `SUMMARY:${ev.title}`,
+          `LOCATION:${ev.location}`,
+          `DESCRIPTION:${ev.desc}`,
+          'END:VEVENT',
+          'END:VCALENDAR',
+        ].join('\r\n');
+
+        const blob = new Blob([icsContent], { type: 'text/calendar;charset=utf-8' });
+        const url = URL.createObjectURL(blob);
+        const link = document.createElement('a');
+        link.href = url;
+        link.download = ev.file;
+        document.body.appendChild(link);
+        link.click();
+        document.body.removeChild(link);
+        URL.revokeObjectURL(url);
+
+        playTempleBell(0.55);
+        showToast(
+          '📅 Calendar reminder (.ics) downloaded!',
+          '📅 कैलेंडर रिमाइंडर (.ics) डाउनलोड हो गया!',
+          '📅 कैलेंडर रिमाइंडर सेव हो गयो सा!'
+        );
+      }
+
+      document.querySelectorAll('.ics-btn').forEach((btn) => {
+        btn.addEventListener('click', () => downloadICS(btn.dataset.event));
+      });
+
+      /* ---------------------------------------------------------------
+         10. PAGE 4: REAL SCANNABLE QR CODES (PLUM & IVORY, ROSE-GOLD FRAME)
+         --------------------------------------------------------------- */
+      function renderLuxuryQR(canvasId, textPayload) {
+        const qrCanvas = document.getElementById(canvasId);
+        if (!qrCanvas) return;
+        const qCtx = qrCanvas.getContext('2d');
+        const size = qrCanvas.width;
+        qCtx.clearRect(0, 0, size, size);
+        qCtx.fillStyle = '#FFFBF8';
+        qCtx.fillRect(0, 0, size, size);
+
+        try {
+          if (typeof window.qrcode === 'function') {
+            const qr = window.qrcode(0, 'M');
+            qr.addData(textPayload);
+            qr.make();
+            const count = qr.getModuleCount();
+            const cell = size / count;
+            for (let r = 0; r < count; r++) {
+              for (let c = 0; c < count; c++) {
+                if (qr.isDark(r, c)) {
+                  const isFinder = (r < 7 && c < 7) || (r < 7 && c >= count - 7) || (r >= count - 7 && c < 7);
+                  qCtx.fillStyle = isFinder ? '#8E5640' : '#4A1F33';
+                  qCtx.fillRect(Math.floor(c * cell), Math.floor(r * cell), Math.ceil(cell), Math.ceil(cell));
+                }
+              }
+            }
+            return;
+          }
+        } catch (err) {}
+
+        // Crisp Deterministic Fallback QR Matrix
+        const modules = 21;
+        const cell = size / modules;
+        const drawFinder = (sr, sc) => {
+          for (let r = 0; r < 7; r++) {
+            for (let c = 0; c < 7; c++) {
+              if (r === 0 || r === 6 || c === 0 || c === 6 || (r >= 2 && r <= 4 && c >= 2 && c <= 4)) {
+                qCtx.fillStyle = '#8E5640';
+                qCtx.fillRect((sc + c) * cell, (sr + r) * cell, Math.ceil(cell), Math.ceil(cell));
+              }
+            }
+          }
+        };
+        drawFinder(0, 0);
+        drawFinder(0, modules - 7);
+        drawFinder(modules - 7, 0);
+        qCtx.fillStyle = '#4A1F33';
+        let seed = textPayload.length * 37;
+        for (let r = 0; r < modules; r++) {
+          for (let c = 0; c < modules; c++) {
+            const inFinder = (r < 8 && c < 8) || (r < 8 && c >= modules - 8) || (r >= modules - 8 && c < 8);
+            if (!inFinder) {
+              seed = (seed * 1103515245 + 12345) & 0x7fffffff;
+              if ((seed % 100) < 46) {
+                qCtx.fillRect(c * cell, r * cell, Math.ceil(cell), Math.ceil(cell));
+              }
+            }
+          }
+        }
+      }
+
+      function initQRCodes() {
+        const mapsUrl = 'https://maps.google.com/?q=The+Royal+Palace+Ludhiana+Punjab';
+        const vCardData = [
+          'BEGIN:VCARD',
+          'VERSION:3.0',
+          'N:Family;Soni;;;',
+          'FN:Soni Family - Karan weds Aarti',
+          'TEL;TYPE=CELL:+919876543210',
+          'NOTE:Wedding Invitation - March 14, 2027 at The Royal Palace, Ludhiana, Punjab',
+          'END:VCARD',
+        ].join('\n');
+        renderLuxuryQR('qr-location', mapsUrl);
+        renderLuxuryQR('qr-contact', vCardData);
+      }
+
+      /* ---------------------------------------------------------------
+         11. PAGE 4: INTERACTIVE BLESSINGS WALL (आशीर्वाद पुस्तिका)
+         --------------------------------------------------------------- */
+      const blessingForm = document.getElementById('blessing-form');
+      const blessingInput = document.getElementById('blessing-input');
+      const blessingsList = document.getElementById('blessings-list');
+      const blessingCount = document.getElementById('blessing-count');
+
+      function addBlessingCard(messageText, originX, originY) {
+        const cleanMsg = messageText.trim();
+        if (!cleanMsg) return;
+
+        const author = personalizedGuest || document.getElementById('guest-name').value.trim() || (
+          currentLang === 'bg' ? 'स्नेही पाहुणा' : currentLang === 'hi' ? 'शुभचिंतक' : 'Well-Wisher'
+        );
+
+        const item = document.createElement('div');
+        item.className = 'rounded-xl bg-blush-50 border border-foil/60 px-2.5 py-1.5 text-[11px] text-plum-900 flex items-center justify-between gap-2 shadow-sm';
+        const msgSpan = document.createElement('span');
+        msgSpan.className = 'font-hindiSans';
+        msgSpan.textContent = `“${cleanMsg}”`;
+        const authSpan = document.createElement('span');
+        authSpan.className = 'text-[9px] text-foil-dark whitespace-nowrap';
+        authSpan.textContent = `— ${author}`;
+        item.appendChild(msgSpan);
+        item.appendChild(authSpan);
+
+        blessingsList.prepend(item);
+        blessingCount.textContent = String(blessingsList.children.length);
+
+        playTempleBell(0.75);
+        triggerCelebration(originX, originY, 65, true);
+        showToast(
+          '🌸 Your blessing has been added to Karan & Aarti’s Blessings Wall!',
+          '🌸 आपका पावन आशीर्वाद आशीर्वाद पुस्तिका में जुड़ गया है!',
+          '🌸 थांकी बधाई आशीर्वाद पुस्तिका में लिख दी गई है सा!'
+        );
+      }
+
+      document.querySelectorAll('.blessing-chip').forEach((chip) => {
+        chip.addEventListener('click', (e) => {
+          const rect = e.currentTarget.getBoundingClientRect();
+          addBlessingCard(chip.textContent.trim(), rect.left + rect.width / 2, rect.top);
+        });
+      });
+
+      blessingForm.addEventListener('submit', (e) => {
+        e.preventDefault();
+        if (!blessingInput.value.trim()) {
+          blessingInput.focus();
+          return;
+        }
+        const rect = blessingForm.getBoundingClientRect();
+        addBlessingCard(blessingInput.value, rect.left + rect.width / 2, rect.top);
+        blessingInput.value = '';
+      });
+
+      /* ---------------------------------------------------------------
+         12. PAGE 4: INTERACTIVE RSVP + PRE-FILLED WHATSAPP RSVP
+         --------------------------------------------------------------- */
+      const rsvpForm = document.getElementById('rsvp-form');
+      const rsvpConfirmed = document.getElementById('rsvp-confirmed');
+      const rsvpConfirmedText = document.getElementById('rsvp-confirmed-text');
+      const whatsappRsvpBtn = document.getElementById('whatsapp-rsvp-btn');
+
+      rsvpForm.addEventListener('submit', (e) => {
+        e.preventDefault();
+        const nameInput = document.getElementById('guest-name');
+        const guestName = nameInput.value.trim();
+        const count = document.getElementById('guest-count').value;
+        const status = document.getElementById('guest-status').value;
+
+        if (!guestName) {
+          nameInput.focus();
+          showToast(
+            'Please enter your name or family name to confirm RSVP.',
+            'कृपया पुष्टि करने हेतु अपना या परिवार का शुभ नाम लिखें।',
+            'कृपया थांको या परिवार रो नाम लिखो सा।'
+          );
+          return;
+        }
+
+        const msgs = {
+          en: status === 'yes'
+            ? `Thank you, ${guestName} (${count} guests)! The Soni Family eagerly awaits your presence in March 2027.`
+            : `Thank you, ${guestName}, for sending your warm blessings to Karan & Aarti!`,
+          hi: status === 'yes'
+            ? `धन्यवाद ${guestName} जी (${count} सदस्य)! मार्च 2027 में सोनी परिवार आपके स्वागत हेतु उत्सुक है।`
+            : `धन्यवाद ${guestName} जी! करण और आरती के लिए आपके स्नेहिल आशीर्वाद हेतु आभार।`,
+          bg: status === 'yes'
+            ? `घणो धन्यवाद ${guestName} सा (${count} जणा)! मार्च 2027 में सोनी परिवार थांको हिवड़े सूं स्वागत करसी।`
+            : `घणो धन्यवाद ${guestName} सा! करण अर आरती खातिर थांका आशीर्वाद खातिर आभार।`,
+        };
+
+        rsvpConfirmedText.setAttribute('data-en', msgs.en);
+        rsvpConfirmedText.setAttribute('data-hi', msgs.hi);
+        rsvpConfirmedText.setAttribute('data-bg', msgs.bg);
+        rsvpConfirmedText.textContent = msgs[currentLang];
+        rsvpConfirmed.classList.remove('hidden');
+
+        playTempleBell(0.95);
+        triggerCelebration(window.innerWidth / 2, window.innerHeight * 0.48, 85, true);
+        showToast(
+          '✨ Your RSVP has been confirmed with love!',
+          '✨ आपकी उपस्थिति सस्नेह दर्ज हो गई है!',
+          '✨ थांकी सूचना सस्नेह मिल गई है सा!'
+        );
+      });
+
+      whatsappRsvpBtn.addEventListener('click', () => {
+        const guestName = document.getElementById('guest-name').value.trim() || (
+          currentLang === 'bg' ? 'सोनी परिवार रा स्नेही' : currentLang === 'hi' ? 'शुभचिंतक' : 'Guest'
+        );
+        const count = document.getElementById('guest-count').value;
+        const status = document.getElementById('guest-status').value;
+
+        let waText = '';
+        if (currentLang === 'bg') {
+          waText = status === 'yes'
+            ? `घणी खम्मा सोनी परिवार! हर हर महादेव। मैं ${guestName} (${count} जणा) करण अर आरती रे शुभ ब्याह में जरूर पधारसां सा!`
+            : `घणी खम्मा सोनी परिवार! हर हर महादेव। ${guestName} री तरफ सूं करण अर आरती ने ब्याह री घणी बधाई अर आशीर्वाद सा!`;
+        } else if (currentLang === 'hi') {
+          waText = status === 'yes'
+            ? `नमस्ते सोनी परिवार! हर हर महादेव। मैं ${guestName} (${count} सदस्य) करण एवं आरती के शुभ विवाह में सपरिवार अवश्य पधारूँगा/पधारूँगी।`
+            : `नमस्ते सोनी परिवार! हर हर महादेव। ${guestName} की ओर से करण एवं आरती को शुभ विवाह की हार्दिक शुभकामनाएँ एवं आशीर्वाद।`;
+        } else {
+          waText = status === 'yes'
+            ? `Har Har Mahadev! Namaste Soni Family, ${guestName} (${count} guests) will joyfully attend Karan & Aarti's wedding in March 2027!`
+            : `Har Har Mahadev! Namaste Soni Family, ${guestName} is sending heartfelt blessings for Karan & Aarti's wedding!`;
+        }
+
+        const waUrl = `https://wa.me/919876543210?text=${encodeURIComponent(waText)}`;
+        window.open(waUrl, '_blank', 'noopener,noreferrer');
+      });
+
+      /* ---------------------------------------------------------------
+         13. PERSONALIZED GUEST LINK CREATOR (?guest=...) WITH IFRAME-SAFE COPY
+         --------------------------------------------------------------- */
+      const shareGuestInput = document.getElementById('share-guest-input');
+      const copyGuestLinkBtn = document.getElementById('copy-guest-link-btn');
+      const generatedLinkPreview = document.getElementById('generated-link-preview');
+
+      copyGuestLinkBtn.addEventListener('click', () => {
+        const guestVal = shareGuestInput.value.trim();
+        if (!guestVal) {
+          shareGuestInput.focus();
+          showToast(
+            'Enter a guest or family name to create a personalized link.',
+            'कृपया पर्सनल लिंक बनाने हेतु मेहमान का नाम लिखें।',
+            'पर्सनल लिंक बणावण खातिर पाहुणां रो नाम लिखो सा।'
+          );
+          return;
+        }
+
+        const baseUrl = window.location.href.split('?')[0];
+        const shareUrl = `${baseUrl}?guest=${encodeURIComponent(guestVal)}`;
+        generatedLinkPreview.textContent = shareUrl;
+        generatedLinkPreview.classList.remove('hidden');
+
+        // Iframe-safe copy using document.execCommand('copy')
+        const tempInput = document.createElement('textarea');
+        tempInput.value = shareUrl;
+        tempInput.setAttribute('readonly', '');
+        tempInput.style.position = 'fixed';
+        tempInput.style.opacity = '0';
+        document.body.appendChild(tempInput);
+        tempInput.select();
+        try {
+          document.execCommand('copy');
+        } catch (err) {}
+        document.body.removeChild(tempInput);
+
+        playTempleBell(0.6);
+        showToast(
+          `🔗 Personalized link copied for ${guestVal}!`,
+          `🔗 ${guestVal} के लिए पर्सनल निमंत्रण लिंक कॉपी हो गया!`,
+          `🔗 ${guestVal} खातिर पर्सनल लिंक कॉपी हो गयो सा!`
+        );
+      });
+
+      /* ---------------------------------------------------------------
+         14. HTML5 CANVAS ENGINE: BLUSH ROSE PETALS, BILVA LEAVES & STARDUST
+         --------------------------------------------------------------- */
+      const canvas = document.getElementById('celebration-canvas');
+      const ctx = canvas.getContext('2d');
+      let width = 0;
+      let height = 0;
+
+      function resizeCanvas() {
+        width = canvas.width = window.innerWidth;
+        height = canvas.height = window.innerHeight;
+      }
+      window.addEventListener('resize', resizeCanvas);
+      resizeCanvas();
+
+      const ambientParticles = [];
+      const burstParticles = [];
+
+      const rosePetalColors = ['#F8D7E0', '#F3C4D3', '#E598AE', '#F6C6B4', '#C97A92'];
+      const bilvaLeafColors = ['#6F9A72', '#84AD85', '#58815B'];
+      const goldStardustColors = ['#E8CFA6', '#D9A78B', '#C88A70', '#FFFBF8'];
+
+      function createAmbient(startTop = false) {
+        const isStar = Math.random() < 0.48;
+        return {
+          type: isStar ? 'star' : 'petal',
+          x: Math.random() * width,
+          y: startTop ? -22 : Math.random() * height,
+          vx: (Math.random() - 0.5) * 0.4,
+          vy: isStar ? -(0.14 + Math.random() * 0.28) : (0.45 + Math.random() * 0.7),
+          size: isStar ? (1.2 + Math.random() * 2) : (5.5 + Math.random() * 6),
+          rotation: Math.random() * Math.PI * 2,
+          vRot: (Math.random() - 0.5) * 0.025,
+          sway: Math.random() * Math.PI * 2,
+          alpha: isStar ? (0.3 + Math.random() * 0.5) : (0.48 + Math.random() * 0.38),
+          color: isStar
+            ? goldStardustColors[Math.floor(Math.random() * goldStardustColors.length)]
+            : rosePetalColors[Math.floor(Math.random() * rosePetalColors.length)],
+        };
+      }
+
+      const ambientCount = window.innerWidth < 600 ? 28 : 46;
+      for (let i = 0; i < ambientCount; i++) {
+        ambientParticles.push(createAmbient(false));
+      }
+
+      function triggerCelebration(ox, oy, count = 65, includeBilva = false) {
+        for (let i = 0; i < count; i++) {
+          const angle = Math.random() * Math.PI * 2;
+          const speed = 2.4 + Math.random() * 7.2;
+          const r = Math.random();
+          let pType = 'petal';
+          let pColor = rosePetalColors[Math.floor(Math.random() * rosePetalColors.length)];
+
+          if (includeBilva && r < 0.26) {
+            pType = 'bilva';
+            pColor = bilvaLeafColors[Math.floor(Math.random() * bilvaLeafColors.length)];
+          } else if (r > 0.72) {
+            pType = 'shimmer';
+            pColor = goldStardustColors[Math.floor(Math.random() * goldStardustColors.length)];
+          }
+
+          burstParticles.push({
+            type: pType,
+            x: ox,
+            y: oy,
+            vx: Math.cos(angle) * speed,
+            vy: Math.sin(angle) * speed - 3.0,
+            gravity: pType === 'shimmer' ? 0.11 : 0.068,
+            drag: 0.975,
+            size: pType === 'shimmer' ? (3.5 + Math.random() * 4) : (6 + Math.random() * 6.5),
+            rotation: Math.random() * Math.PI * 2,
+            vRot: (Math.random() - 0.5) * 0.14,
+            alpha: 1,
+            decay: 0.008 + Math.random() * 0.008,
+            color: pColor,
+          });
+        }
+      }
+
+      function drawPetal(p) {
+        ctx.save();
+        ctx.translate(p.x, p.y);
+        ctx.rotate(p.rotation);
+        ctx.globalAlpha = Math.max(0, p.alpha);
+        ctx.fillStyle = p.color;
+        ctx.beginPath();
+        ctx.moveTo(0, -p.size);
+        ctx.bezierCurveTo(p.size * 0.9, -p.size * 0.45, p.size * 0.8, p.size * 0.65, 0, p.size);
+        ctx.bezierCurveTo(-p.size * 0.8, p.size * 0.65, -p.size * 0.9, -p.size * 0.45, 0, -p.size);
+        ctx.fill();
+        ctx.restore();
+      }
+
+      function drawBilvaLeaf(p) {
+        ctx.save();
+        ctx.translate(p.x, p.y);
+        ctx.rotate(p.rotation);
+        ctx.globalAlpha = Math.max(0, p.alpha);
+        ctx.fillStyle = p.color;
+        const s = p.size * 0.72;
+        const drawLobe = (rot) => {
+          ctx.save();
+          ctx.rotate(rot);
+          ctx.beginPath();
+          ctx.moveTo(0, 0);
+          ctx.bezierCurveTo(s * 0.65, -s * 0.4, s * 0.55, -s * 1.15, 0, -s * 1.35);
+          ctx.bezierCurveTo(-s * 0.55, -s * 1.15, -s * 0.65, -s * 0.4, 0, 0);
+          ctx.fill();
+          ctx.restore();
+        };
+        drawLobe(0);
+        drawLobe(-1.05);
+        drawLobe(1.05);
+        ctx.restore();
+      }
+
+      function drawStar(p) {
+        ctx.save();
+        ctx.globalAlpha = Math.max(0, p.alpha * (0.6 + 0.4 * Math.sin(p.sway)));
+        ctx.fillStyle = p.color;
+        ctx.shadowBlur = 7;
+        ctx.shadowColor = '#C88A70';
+        ctx.beginPath();
+        ctx.arc(p.x, p.y, p.size, 0, Math.PI * 2);
+        ctx.fill();
+        ctx.restore();
+      }
+
+      function drawShimmer(p) {
+        ctx.save();
+        ctx.translate(p.x, p.y);
+        ctx.rotate(p.rotation);
+        ctx.globalAlpha = Math.max(0, p.alpha);
+        ctx.fillStyle = p.color;
+        ctx.fillRect(-p.size / 2, -p.size * 0.35, p.size, p.size * 0.7);
+        ctx.restore();
+      }
+
+      function animateCanvas() {
+        ctx.clearRect(0, 0, width, height);
+
+        for (let i = 0; i < ambientParticles.length; i++) {
+          const p = ambientParticles[i];
+          p.sway += 0.022;
+          p.x += p.vx + Math.sin(p.sway) * 0.28;
+          p.y += p.vy;
+          p.rotation += p.vRot;
+
+          if (p.type === 'petal') {
+            drawPetal(p);
+            if (p.y > height + 25) ambientParticles[i] = createAmbient(true);
+          } else {
+            drawStar(p);
+            if (p.y < -15) {
+              p.y = height + 15;
+              p.x = Math.random() * width;
+            }
+          }
+        }
+
+        for (let i = burstParticles.length - 1; i >= 0; i--) {
+          const p = burstParticles[i];
+          p.vx *= p.drag;
+          p.vy = p.vy * p.drag + p.gravity;
+          p.x += p.vx;
+          p.y += p.vy;
+          p.rotation += p.vRot;
+          p.alpha -= p.decay;
+
+          if (p.alpha <= 0) {
+            burstParticles.splice(i, 1);
+            continue;
+          }
+          if (p.type === 'petal') drawPetal(p);
+          else if (p.type === 'bilva') drawBilvaLeaf(p);
+          else drawShimmer(p);
+        }
+
+        requestAnimationFrame(animateCanvas);
+      }
+
+      window.addEventListener('load', () => {
+        initGuestPersonalization();
+        updateControls();
+        initQRCodes();
+        animateCanvas();
+      });
+    })();
+  </script>
+</body>
+</html>
