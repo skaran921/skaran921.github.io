@@ -1827,33 +1827,33 @@
       }
 
       function playShivaChant() {
-        showMantraBanner();
-        triggerAuraRipple();
-        playTempleBell(0.95);
-        if (isMuted) return;
+        // showMantraBanner();
+        // triggerAuraRipple();
+        // playTempleBell(0.95);
+        // if (isMuted) return;
 
-        const customAudio = document.getElementById('customChantAudio');
-        if (customAudio && customAudio.getAttribute('src')) {
-          customAudio.currentTime = 0;
-          customAudio.play().catch(() => {});
-          return;
-        }
+        // const customAudio = document.getElementById('customChantAudio');
+        // if (customAudio && customAudio.getAttribute('src')) {
+        //   customAudio.currentTime = 0;
+        //   customAudio.play().catch(() => {});
+        //   return;
+        // }
 
-        if ('speechSynthesis' in window) {
-          try {
-            window.speechSynthesis.cancel();
-            isSpeakingInvite = false;
-            updateSpeakButtonsUI();
-            const utter = new SpeechSynthesisUtterance('ॐ नमः पार्वती पतये, हर हर महादेव');
-            utter.lang = 'hi-IN';
-            utter.rate = 0.78;
-            utter.pitch = 0.88;
-            const voices = window.speechSynthesis.getVoices();
-            const hiVoice = voices.find((v) => v.lang && v.lang.toLowerCase().includes('hi'));
-            if (hiVoice) utter.voice = hiVoice;
-            window.speechSynthesis.speak(utter);
-          } catch (err) {}
-        }
+        // if ('speechSynthesis' in window) {
+        //   try {
+        //     window.speechSynthesis.cancel();
+        //     isSpeakingInvite = false;
+        //     updateSpeakButtonsUI();
+        //     const utter = new SpeechSynthesisUtterance('ॐ नमः पार्वती पतये, हर हर महादेव');
+        //     utter.lang = 'hi-IN';
+        //     utter.rate = 0.78;
+        //     utter.pitch = 0.88;
+        //     const voices = window.speechSynthesis.getVoices();
+        //     const hiVoice = voices.find((v) => v.lang && v.lang.toLowerCase().includes('hi'));
+        //     if (hiVoice) utter.voice = hiVoice;
+        //     window.speechSynthesis.speak(utter);
+        //   } catch (err) {}
+        // }
       }
 
       /* --------------------------------------------------------------------- */
