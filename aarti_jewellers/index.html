@@ -1,0 +1,3084 @@
+<!DOCTYPE html>
+<html lang="en" class="dark scroll-smooth">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Aarti Jewellers | Pure 916 Gold, Rajasthani Bridal &amp; Live Rates — Ajeetsar, Sardarshahar</title>
+  <meta name="description" content="Aarti Jewellers, Village Ajeetsar, Sardarshahar, Churu (331504). Live 24K, 22K, 18K Gold & 999 Silver rates, BIS 916 Hallmarked Rajasthani bridal jewellery & custom creations." />
+
+  <!-- Google Fonts: Cormorant Garamond, Plus Jakarta Sans & Noto Sans Devanagari -->
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,500;0,600;0,700;1,500;1,600&family=Noto+Sans+Devanagari:wght@400;500;600;700&family=Plus+Jakarta+Sans:wght@300;400;500;600;700&display=swap" rel="stylesheet" />
+
+  <!-- Font Awesome 6 -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css" />
+
+  <!-- Tailwind CSS CDN -->
+  <script src="https://cdn.tailwindcss.com"></script>
+
+  <!-- Tailwind Luxury Theme Configuration -->
+  <script>
+    tailwind.config = {
+      darkMode: 'class',
+      theme: {
+        extend: {
+          fontFamily: {
+            serif: ['"Cormorant Garamond"', '"Noto Sans Devanagari"', 'Georgia', 'serif'],
+            sans: ['"Plus Jakarta Sans"', '"Noto Sans Devanagari"', 'system-ui', 'sans-serif'],
+          },
+          colors: {
+            gold: {
+              50: '#FDFBF3',
+              100: '#FBF4DE',
+              200: '#F5E4B2',
+              300: '#EBD084',
+              400: '#D4AF37',
+              500: '#C29B2E',
+              600: '#9E7B1E',
+              700: '#7A5D14',
+            },
+            obsidian: {
+              950: '#07080B',
+              900: '#0D0F14',
+              800: '#141720',
+              700: '#1D222E',
+            },
+            ivory: {
+              50: '#FAF7F2',
+              100: '#F3ECE1',
+              200: '#E8DDCC',
+            },
+          },
+          boxShadow: {
+            'gold-glow': '0 12px 40px -10px rgba(212, 175, 55, 0.38)',
+            'luxury-card': '0 22px 55px -18px rgba(0, 0, 0, 0.32)',
+          },
+        },
+      },
+    };
+  </script>
+
+  <!-- Custom Luxury Styles & Smooth Animations -->
+  <style>
+    body {
+      font-family: 'Plus Jakarta Sans', 'Noto Sans Devanagari', sans-serif;
+      overflow-x: hidden;
+    }
+
+    h1, h2, h3, h4, .font-luxury {
+      font-family: 'Cormorant Garamond', 'Noto Sans Devanagari', Georgia, serif;
+    }
+
+    /* Devanagari typographic harmony when Hindi/Rajasthani is active */
+    html[lang="hi"] body,
+    html[lang="raj"] body {
+      line-height: 1.65;
+    }
+
+    html[lang="hi"] .font-luxury,
+    html[lang="raj"] .font-luxury {
+      font-family: 'Noto Sans Devanagari', 'Cormorant Garamond', sans-serif;
+      letter-spacing: -0.01em;
+    }
+
+    /* Champagne Gold Shimmer Button */
+    .btn-shimmer {
+      position: relative;
+      overflow: hidden;
+      background: linear-gradient(135deg, #D4AF37 0%, #F5E4B2 48%, #B88E24 100%);
+      background-size: 200% auto;
+      transition: all 0.4s cubic-bezier(0.22, 1, 0.36, 1);
+    }
+
+    .btn-shimmer:hover {
+      background-position: right center;
+      transform: translateY(-2px);
+      box-shadow: 0 14px 32px -6px rgba(212, 175, 55, 0.5);
+    }
+
+    .btn-shimmer::after {
+      content: '';
+      position: absolute;
+      top: 0;
+      left: -120%;
+      width: 65%;
+      height: 100%;
+      background: linear-gradient(90deg, transparent, rgba(255, 255, 255, 0.48), transparent);
+      transform: skewX(-24deg);
+      transition: left 0.75s ease;
+    }
+
+    .btn-shimmer:hover::after {
+      left: 145%;
+    }
+
+    /* Metallic Champagne Gold Text */
+    .text-gold-gradient {
+      background: linear-gradient(135deg, #F7E8B7 0%, #D4AF37 52%, #A98122 100%);
+      -webkit-background-clip: text;
+      -webkit-text-fill-color: transparent;
+      background-clip: text;
+    }
+
+    /* Glassmorphism Surface */
+    .glass-luxury {
+      backdrop-filter: blur(18px);
+      -webkit-backdrop-filter: blur(18px);
+    }
+
+    /* Smooth Scroll Reveal */
+    .reveal, .reveal-left, .reveal-right {
+      opacity: 0;
+      transition: opacity 0.8s cubic-bezier(0.22, 1, 0.36, 1), transform 0.8s cubic-bezier(0.22, 1, 0.36, 1);
+      will-change: opacity, transform;
+    }
+    .reveal { transform: translateY(28px); }
+    .reveal-left { transform: translateX(-28px); }
+    .reveal-right { transform: translateX(28px); }
+
+    .reveal.visible,
+    .reveal-left.visible,
+    .reveal-right.visible {
+      opacity: 1;
+      transform: translate(0, 0);
+    }
+
+    /* Live Marquee Ticker */
+    @keyframes tickerScroll {
+      0% { transform: translateX(0); }
+      100% { transform: translateX(-50%); }
+    }
+
+    .ticker-track {
+      display: flex;
+      width: max-content;
+      animation: tickerScroll 34s linear infinite;
+    }
+
+    .ticker-track:hover {
+      animation-play-state: paused;
+    }
+
+    /* Subtle Float */
+    @keyframes floatSlow {
+      0%, 100% { transform: translateY(0px); }
+      50% { transform: translateY(-9px); }
+    }
+
+    .animate-float {
+      animation: floatSlow 5.5s ease-in-out infinite;
+    }
+
+    /* Rate Flash Pulse */
+    @keyframes rateFlash {
+      0% { color: #34D399; transform: scale(1.04); }
+      100% { transform: scale(1); }
+    }
+
+    .rate-updated {
+      animation: rateFlash 0.75s ease-out;
+    }
+
+    /* Range Slider Styling */
+    input[type="range"] {
+      accent-color: #D4AF37;
+    }
+
+    /* Luxury Custom Scrollbar */
+    ::-webkit-scrollbar { width: 8px; }
+    ::-webkit-scrollbar-track { background: #0D0F14; }
+    ::-webkit-scrollbar-thumb { background: #C29B2E; border-radius: 9999px; }
+
+    /* Extra bottom padding on mobile so sticky bar never overlaps footer */
+    @media (max-width: 639px) {
+      body { padding-bottom: 68px; }
+    }
+  </style>
+</head>
+
+<body class="bg-ivory-50 text-slate-900 dark:bg-obsidian-900 dark:text-ivory-50 transition-colors duration-500 antialiased selection:bg-gold-400 selection:text-obsidian-950">
+
+  <!-- ===================================================================== -->
+  <!-- 1. TOP REAL-TIME BULLION MARQUEE TICKER                               -->
+  <!-- ===================================================================== -->
+  <div class="bg-obsidian-950 text-ivory-50 border-b border-gold-400/20 text-xs sm:text-[13px] py-2 relative z-50 overflow-hidden">
+    <div class="max-w-7xl mx-auto px-3 sm:px-6 flex items-center justify-between gap-3">
+
+      <!-- Pulsing LIVE Badge -->
+      <div class="flex items-center gap-2 shrink-0 bg-obsidian-800/95 border border-emerald-500/35 px-2.5 py-1 rounded-full">
+        <span class="relative flex h-2 w-2">
+          <span class="animate-ping absolute inline-flex h-full w-full rounded-full bg-emerald-400 opacity-80"></span>
+          <span class="relative inline-flex rounded-full h-2 w-2 bg-emerald-500"></span>
+        </span>
+        <span class="font-bold tracking-wider text-[10px] sm:text-[11px] uppercase text-emerald-400" data-i18n="live_badge">LIVE</span>
+        <span class="hidden md:inline text-slate-400 text-[11px]" id="ticker-time">--:-- IST</span>
+      </div>
+
+      <!-- Infinite Scrolling Bullion Strip -->
+      <div class="overflow-hidden flex-1">
+        <div class="ticker-track flex items-center gap-7 whitespace-nowrap" id="ticker-content">
+          <!-- Populated dynamically via JS -->
+        </div>
+      </div>
+
+      <!-- Quick Jump to Estimator -->
+      <a href="#estimator" class="hidden lg:inline-flex items-center gap-1.5 text-gold-300 hover:text-gold-200 font-medium text-xs shrink-0 transition-colors">
+        <i class="fa-solid fa-calculator text-[11px]"></i>
+        <span data-i18n="nav_estimator">Price Estimator</span>
+      </a>
+    </div>
+  </div>
+
+  <!-- ===================================================================== -->
+  <!-- 2. STICKY GLASSMORPHISM NAVBAR WITH CUSTOM SVG LOGO & LANG SWITCHER   -->
+  <!-- ===================================================================== -->
+  <header id="navbar" class="sticky top-0 z-40 glass-luxury bg-ivory-50/88 dark:bg-obsidian-900/82 border-b border-gold-400/20 transition-all duration-300">
+    <div class="max-w-7xl mx-auto px-3 sm:px-6 lg:px-8">
+      <div class="flex items-center justify-between h-[76px] sm:h-20 gap-2">
+
+        <!-- Bespoke Geometric Luxury SVG Logo + Brand Wordmark -->
+        <a href="#home" class="flex items-center gap-2.5 sm:gap-3 group shrink-0">
+          <div class="w-11 h-11 sm:w-12 sm:h-12 rounded-2xl bg-obsidian-950 border border-gold-400/45 shadow-gold-glow flex items-center justify-center p-1.5 transition-transform duration-300 group-hover:scale-105">
+            <!-- Custom Geometric Monogram SVG: Faceted Diamond + Architectural 'A' + Royal Rajasthani Jewel -->
+            <svg viewBox="0 0 64 64" fill="none" xmlns="http://www.w3.org/2000/svg" class="w-full h-full" aria-hidden="true">
+              <defs>
+                <linearGradient id="ajGoldNav" x1="8" y1="6" x2="56" y2="58" gradientUnits="userSpaceOnUse">
+                  <stop offset="0%" stop-color="#FAF0C8" />
+                  <stop offset="48%" stop-color="#D4AF37" />
+                  <stop offset="100%" stop-color="#9A721A" />
+                </linearGradient>
+                <linearGradient id="ajGoldSoft" x1="32" y1="4" x2="32" y2="60" gradientUnits="userSpaceOnUse">
+                  <stop offset="0%" stop-color="#F6E5B1" stop-opacity="0.95" />
+                  <stop offset="100%" stop-color="#C29B2E" stop-opacity="0.35" />
+                </linearGradient>
+              </defs>
+              <!-- Outer Faceted Diamond Frame -->
+              <polygon points="32,4 58,28 32,60 6,28" stroke="url(#ajGoldNav)" stroke-width="2.2" fill="none" />
+              <!-- Inner Royal Crown Facet Line -->
+              <polyline points="14,28 32,12 50,28" stroke="url(#ajGoldSoft)" stroke-width="1.2" fill="none" />
+              <!-- Rajasthani Crown Jewel (Bindi Diamond) at Apex -->
+              <polygon points="32,10 35.5,14.5 32,19 28.5,14.5" fill="url(#ajGoldNav)" />
+              <!-- Architectural Luxury 'A' Monogram -->
+              <path d="M21 44 L32 21 L43 44" stroke="url(#ajGoldNav)" stroke-width="3" stroke-linecap="round" stroke-linejoin="round" />
+              <!-- Elegant Curved Rajasthani Arch Crossbar -->
+              <path d="M25.5 36.5 Q32 33 38.5 36.5" stroke="url(#ajGoldNav)" stroke-width="2.2" stroke-linecap="round" fill="none" />
+              <!-- Bottom Gem Accent -->
+              <circle cx="32" cy="51.5" r="2" fill="url(#ajGoldNav)" />
+            </svg>
+          </div>
+          <div class="leading-tight">
+            <span class="block font-luxury text-xl sm:text-2xl font-bold tracking-wide text-slate-900 dark:text-ivory-50" data-i18n="brand_name">
+              Aarti <span class="text-gold-500 dark:text-gold-400">Jewellers</span>
+            </span>
+            <span class="block text-[9.5px] sm:text-[10.5px] uppercase tracking-[0.2em] text-slate-500 dark:text-gold-300/80 font-medium" data-i18n="brand_sub">
+              Ajeetsar • Sardarshahar
+            </span>
+          </div>
+        </a>
+
+        <!-- Desktop Navigation -->
+        <nav class="hidden xl:flex items-center gap-7 text-sm font-medium">
+          <a href="#home" class="text-slate-700 dark:text-slate-200 hover:text-gold-500 dark:hover:text-gold-400 transition-colors" data-i18n="nav_home">Home</a>
+          <a href="#live-rates" class="text-slate-700 dark:text-slate-200 hover:text-gold-500 dark:hover:text-gold-400 transition-colors" data-i18n="nav_rates">Live Rates</a>
+          <a href="#collections" class="text-slate-700 dark:text-slate-200 hover:text-gold-500 dark:hover:text-gold-400 transition-colors" data-i18n="nav_collections">Collections</a>
+          <a href="#craftsmanship" class="text-slate-700 dark:text-slate-200 hover:text-gold-500 dark:hover:text-gold-400 transition-colors" data-i18n="nav_heritage">Heritage</a>
+          <a href="#visit-us" class="text-slate-700 dark:text-slate-200 hover:text-gold-500 dark:hover:text-gold-400 transition-colors" data-i18n="nav_visit">Visit Us</a>
+        </nav>
+
+        <!-- Right Controls: Language Switcher, Theme Toggle, Call CTA & Mobile Menu -->
+        <div class="flex items-center gap-2 sm:gap-2.5">
+
+          <!-- Trilingual Switcher (EN | हिन्दी | राजस्थानी) -->
+          <div class="inline-flex items-center p-1 rounded-xl bg-ivory-100 dark:bg-obsidian-800 border border-gold-400/30" role="group" aria-label="Language Switcher">
+            <button type="button" data-lang="en" class="lang-btn px-2 sm:px-2.5 py-1.5 rounded-lg text-[11px] sm:text-xs font-semibold transition-all duration-200">EN</button>
+            <button type="button" data-lang="hi" class="lang-btn px-2 sm:px-2.5 py-1.5 rounded-lg text-[11px] sm:text-xs font-semibold transition-all duration-200">हिन्दी</button>
+            <button type="button" data-lang="raj" class="lang-btn px-2 sm:px-2.5 py-1.5 rounded-lg text-[11px] sm:text-xs font-semibold transition-all duration-200">राजस्थानी</button>
+          </div>
+
+          <!-- Light/Dark Theme Toggle -->
+          <button
+            id="theme-toggle"
+            type="button"
+            aria-label="Toggle Light and Dark Theme"
+            class="w-9 h-9 sm:w-10 sm:h-10 rounded-xl border border-gold-400/30 bg-white/80 dark:bg-obsidian-800/85 text-slate-800 dark:text-gold-300 hover:border-gold-400 flex items-center justify-center transition-all duration-300 hover:scale-105 shrink-0"
+          >
+            <i id="theme-icon" class="fa-solid fa-sun text-sm sm:text-base"></i>
+          </button>
+
+          <!-- Desktop Call Now CTA -->
+          <a
+            href="tel:+9198XXXXXXXX"
+            class="hidden md:inline-flex items-center gap-2 px-4 py-2.5 rounded-xl btn-shimmer text-obsidian-950 font-semibold text-xs lg:text-sm shadow-md shrink-0"
+          >
+            <i class="fa-solid fa-phone-volume text-xs"></i>
+            <span data-i18n="btn_call">Call Now</span>
+          </a>
+
+          <!-- Mobile Drawer Toggle -->
+          <button
+            id="mobile-menu-btn"
+            type="button"
+            aria-label="Open Navigation Menu"
+            class="xl:hidden w-9 h-9 sm:w-10 sm:h-10 rounded-xl border border-gold-400/30 bg-white/80 dark:bg-obsidian-800/85 text-slate-800 dark:text-gold-300 flex items-center justify-center shrink-0"
+          >
+            <i id="mobile-menu-icon" class="fa-solid fa-bars text-base"></i>
+          </button>
+        </div>
+      </div>
+    </div>
+
+    <!-- Smooth Mobile Slide-Down Drawer -->
+    <div id="mobile-drawer" class="xl:hidden hidden border-t border-gold-400/20 bg-ivory-50/95 dark:bg-obsidian-900/95 glass-luxury">
+      <div class="px-5 py-6 space-y-3.5 max-w-7xl mx-auto">
+        <a href="#home" class="mobile-nav-link flex items-center justify-between py-2 text-base font-medium text-slate-800 dark:text-ivory-50 hover:text-gold-500">
+          <span data-i18n="nav_home">Home</span><i class="fa-solid fa-chevron-right text-xs text-gold-400/60"></i>
+        </a>
+        <a href="#live-rates" class="mobile-nav-link flex items-center justify-between py-2 text-base font-medium text-slate-800 dark:text-ivory-50 hover:text-gold-500">
+          <span data-i18n="nav_rates">Live Rates</span><i class="fa-solid fa-chevron-right text-xs text-gold-400/60"></i>
+        </a>
+        <a href="#estimator" class="mobile-nav-link flex items-center justify-between py-2 text-base font-medium text-slate-800 dark:text-ivory-50 hover:text-gold-500">
+          <span data-i18n="nav_estimator">Price Estimator</span><i class="fa-solid fa-chevron-right text-xs text-gold-400/60"></i>
+        </a>
+        <a href="#collections" class="mobile-nav-link flex items-center justify-between py-2 text-base font-medium text-slate-800 dark:text-ivory-50 hover:text-gold-500">
+          <span data-i18n="nav_collections">Collections</span><i class="fa-solid fa-chevron-right text-xs text-gold-400/60"></i>
+        </a>
+        <a href="#craftsmanship" class="mobile-nav-link flex items-center justify-between py-2 text-base font-medium text-slate-800 dark:text-ivory-50 hover:text-gold-500">
+          <span data-i18n="nav_heritage">Heritage</span><i class="fa-solid fa-chevron-right text-xs text-gold-400/60"></i>
+        </a>
+        <a href="#visit-us" class="mobile-nav-link flex items-center justify-between py-2 text-base font-medium text-slate-800 dark:text-ivory-50 hover:text-gold-500">
+          <span data-i18n="nav_visit">Visit Us</span><i class="fa-solid fa-chevron-right text-xs text-gold-400/60"></i>
+        </a>
+        <div class="pt-4 border-t border-gold-400/20 grid grid-cols-2 gap-3">
+          <a href="tel:+9198XXXXXXXX" class="text-center py-3 rounded-xl btn-shimmer text-obsidian-950 font-semibold text-xs sm:text-sm">
+            <i class="fa-solid fa-phone mr-1.5"></i> +91 XXXXX XXXXX
+          </a>
+          <a href="https://wa.me/9198XXXXXXXX?text=Hello%20Aarti%20Jewellers%2C%20I%20would%20like%20to%20inquire%20about%20gold%20jewellery." target="_blank" rel="noopener" class="text-center py-3 rounded-xl border border-emerald-500/40 bg-emerald-500/10 text-emerald-600 dark:text-emerald-400 font-semibold text-xs sm:text-sm">
+            <i class="fa-brands fa-whatsapp mr-1.5"></i> <span data-i18n="btn_whatsapp">WhatsApp</span>
+          </a>
+        </div>
+      </div>
+    </div>
+  </header>
+
+  <!-- ===================================================================== -->
+  <!-- 3. ULTRA-MODERN LUXURY HERO SECTION                                   -->
+  <!-- ===================================================================== -->
+  <section id="home" class="relative min-h-[86vh] flex items-center overflow-hidden bg-obsidian-950 text-ivory-50">
+    <!-- Atmospheric Background Image & Vignette -->
+    <div class="absolute inset-0 z-0">
+      <img
+        src="https://images.unsplash.com/photo-1601121141461-9d6647bca1ed?auto=format&fit=crop&w=2000&q=80"
+        alt="Aarti Jewellers Royal Bridal Gold"
+        onerror="this.src='https://placehold.co/1920x1080/0D0F14/D4AF37?text=Aarti+Jewellers'"
+        class="w-full h-full object-cover object-center opacity-30 scale-105"
+      />
+      <div class="absolute inset-0 bg-gradient-to-r from-obsidian-950 via-obsidian-950/92 to-obsidian-950/60"></div>
+      <div class="absolute inset-0 bg-gradient-to-t from-obsidian-950 via-transparent to-obsidian-950/40"></div>
+      <div class="absolute -top-24 -left-24 w-96 h-96 bg-gold-400/20 rounded-full blur-[130px] pointer-events-none"></div>
+      <div class="absolute bottom-0 right-0 w-[28rem] h-[28rem] bg-gold-500/15 rounded-full blur-[140px] pointer-events-none"></div>
+    </div>
+
+    <div class="relative z-10 max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-16 sm:py-24 w-full">
+      <div class="grid lg:grid-cols-12 gap-12 items-center">
+
+        <!-- Hero Copy -->
+        <div class="lg:col-span-7 space-y-6 sm:space-y-7">
+          <!-- Royal Greeting + BIS 916 Pill -->
+          <div class="reveal inline-flex flex-wrap items-center gap-2.5 px-4 py-2 rounded-full bg-gold-400/10 border border-gold-400/40 glass-luxury">
+            <!-- Mini Emblem SVG -->
+            <svg viewBox="0 0 24 24" class="w-4 h-4 shrink-0" fill="none" aria-hidden="true">
+              <polygon points="12,2 22,11 12,22 2,11" stroke="#D4AF37" stroke-width="1.8" />
+              <circle cx="12" cy="11" r="2.2" fill="#F5E4B2" />
+            </svg>
+            <span class="text-xs sm:text-sm font-medium tracking-wider text-gold-200" data-i18n="hero_pill">
+              Khamma Ghani • 100% BIS 916 HUID Hallmarked Purity
+            </span>
+          </div>
+
+          <!-- Main Display Headline -->
+          <h1 class="reveal font-luxury text-4xl sm:text-5xl lg:text-6xl xl:text-[4.15rem] font-bold leading-[1.12] tracking-tight text-ivory-50" style="transition-delay: 80ms;" data-i18n="hero_title">
+            Timeless Rajasthani Heritage, Crafted in <span class="text-gold-gradient italic">Pure Gold</span>
+          </h1>
+
+          <!-- Subheadline -->
+          <p class="reveal text-sm sm:text-lg text-slate-300 max-w-2xl leading-relaxed font-light" style="transition-delay: 160ms;" data-i18n="hero_subtitle">
+            Welcome to Aarti Jewellers — Village Ajeetsar, Sardarshahar (Churu). Experience authentic Rajputi bridal gold, contemporary diamond artistry, and pure 999 silverware backed by real-time transparent bullion rates.
+          </p>
+
+          <!-- Action CTAs -->
+          <div class="reveal flex flex-wrap items-center gap-3.5 sm:gap-4 pt-1" style="transition-delay: 240ms;">
+            <a href="#live-rates" class="px-6 sm:px-7 py-3.5 sm:py-4 rounded-xl btn-shimmer text-obsidian-950 font-semibold text-sm sm:text-base inline-flex items-center gap-2.5 shadow-gold-glow">
+              <i class="fa-solid fa-chart-line text-sm"></i>
+              <span data-i18n="hero_cta_rates">Check Live Gold Rates</span>
+            </a>
+            <a href="#collections" class="px-6 sm:px-7 py-3.5 sm:py-4 rounded-xl border border-gold-400/50 bg-obsidian-900/65 hover:bg-gold-400/15 text-gold-200 font-semibold text-sm sm:text-base inline-flex items-center gap-2.5 glass-luxury transition-all duration-300">
+              <span data-i18n="hero_cta_collections">Explore Collections</span>
+              <i class="fa-solid fa-arrow-right text-xs"></i>
+            </a>
+          </div>
+
+          <!-- 3 Trust Highlights -->
+          <div class="reveal grid grid-cols-1 sm:grid-cols-3 gap-4 pt-6 border-t border-gold-400/20" style="transition-delay: 320ms;">
+            <div class="flex items-center gap-3">
+              <div class="w-10 h-10 rounded-xl bg-gold-400/15 border border-gold-400/30 flex items-center justify-center text-gold-400 shrink-0">
+                <i class="fa-solid fa-certificate"></i>
+              </div>
+              <div>
+                <p class="text-sm font-semibold text-ivory-50" data-i18n="trust_1_t">BIS 916 Hallmarked</p>
+                <p class="text-xs text-slate-400" data-i18n="trust_1_s">Certified HUID Gold</p>
+              </div>
+            </div>
+            <div class="flex items-center gap-3">
+              <div class="w-10 h-10 rounded-xl bg-gold-400/15 border border-gold-400/30 flex items-center justify-center text-gold-400 shrink-0">
+                <i class="fa-solid fa-scale-balanced"></i>
+              </div>
+              <div>
+                <p class="text-sm font-semibold text-ivory-50" data-i18n="trust_2_t">Real-Time Billing</p>
+                <p class="text-xs text-slate-400" data-i18n="trust_2_s">Zero Hidden Charges</p>
+              </div>
+            </div>
+            <div class="flex items-center gap-3">
+              <div class="w-10 h-10 rounded-xl bg-gold-400/15 border border-gold-400/30 flex items-center justify-center text-gold-400 shrink-0">
+                <i class="fa-solid fa-crown"></i>
+              </div>
+              <div>
+                <p class="text-sm font-semibold text-ivory-50" data-i18n="trust_3_t">Rajputi &amp; Modern</p>
+                <p class="text-xs text-slate-400" data-i18n="trust_3_s">Custom Bridal Craft</p>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Hero Right Showcase Card with Monogram Emblem -->
+        <div class="lg:col-span-5 hidden lg:block reveal-right">
+          <div class="relative animate-float">
+            <div class="rounded-3xl p-2 bg-gradient-to-br from-gold-400/45 via-gold-400/15 to-transparent glass-luxury border border-gold-400/35 shadow-luxury-card">
+              <div class="relative rounded-2xl overflow-hidden aspect-[4/5]">
+                <img
+                  src="https://images.unsplash.com/photo-1599643478518-a784e5dc4c8f?auto=format&fit=crop&w=900&q=80"
+                  alt="Rajwada 22K Gold Bridal Necklace"
+                  onerror="this.src='https://placehold.co/600x750/141720/D4AF37?text=Royal+Bridal+Gold'"
+                  class="w-full h-full object-cover"
+                />
+                <div class="absolute inset-0 bg-gradient-to-t from-obsidian-950 via-transparent to-obsidian-950/20"></div>
+
+                <!-- Floating Monogram Seal -->
+                <div class="absolute top-4 right-4 w-14 h-14 rounded-2xl bg-obsidian-950/85 glass-luxury border border-gold-400/50 p-2 shadow-xl">
+                  <svg viewBox="0 0 64 64" fill="none" xmlns="http://www.w3.org/2000/svg" class="w-full h-full" aria-hidden="true">
+                    <polygon points="32,4 58,28 32,60 6,28" stroke="#D4AF37" stroke-width="2.4" />
+                    <polygon points="32,10 35.5,14.5 32,19 28.5,14.5" fill="#F5E4B2" />
+                    <path d="M21 44 L32 21 L43 44" stroke="#F5E4B2" stroke-width="3" stroke-linecap="round" stroke-linejoin="round" />
+                    <path d="M25.5 36.5 Q32 33 38.5 36.5" stroke="#D4AF37" stroke-width="2.2" stroke-linecap="round" />
+                  </svg>
+                </div>
+
+                <!-- Bottom Featured Caption -->
+                <div class="absolute bottom-5 left-5 right-5 p-4 rounded-2xl bg-obsidian-950/85 glass-luxury border border-gold-400/35 flex items-center justify-between gap-3">
+                  <div>
+                    <p class="text-[11px] uppercase tracking-widest text-gold-400 font-semibold" data-i18n="hero_card_tag">Signature Bridal Edit</p>
+                    <p class="font-luxury text-lg text-ivory-50" data-i18n="hero_card_title">Rajwada 22K Aad &amp; Haar</p>
+                  </div>
+                  <a href="#collections" aria-label="View Bridal Collection" class="w-10 h-10 rounded-full bg-gold-400 text-obsidian-950 flex items-center justify-center hover:scale-110 transition-transform shrink-0">
+                    <i class="fa-solid fa-arrow-up-right-from-square text-xs"></i>
+                  </a>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- ===================================================================== -->
+  <!-- 4. REAL-TIME LIVE BULLION RATES & MANDI ADJUSTMENT DESK               -->
+  <!-- ===================================================================== -->
+  <section id="live-rates" class="py-16 sm:py-24 lg:py-28 relative bg-ivory-50 dark:bg-obsidian-900">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+
+      <!-- Section Header + Live Controls -->
+      <div class="flex flex-col lg:flex-row lg:items-end justify-between gap-6 mb-10 reveal">
+        <div>
+          <span class="inline-flex items-center gap-2 text-xs font-semibold uppercase tracking-[0.2em] text-gold-600 dark:text-gold-400 mb-2.5">
+            <i class="fa-solid fa-coins"></i> <span data-i18n="rates_eyebrow">Real-Time Bullion Desk</span>
+          </span>
+          <h2 class="font-luxury text-3xl sm:text-4xl lg:text-5xl font-bold text-slate-900 dark:text-ivory-50" data-i18n="rates_heading">
+            Today's Live <span class="text-gold-500 dark:text-gold-400">Gold &amp; Silver Rates</span>
+          </h2>
+          <p class="mt-2.5 text-slate-600 dark:text-slate-400 max-w-xl text-sm sm:text-base" data-i18n="rates_sub">
+            Live international spot prices converted to Indian bullion parity for Ajeetsar &amp; Sardarshahar. Auto-refreshes every 60 seconds.
+          </p>
+        </div>
+
+        <!-- Status, Countdown, Refresh & Mandi Adjust Controls -->
+        <div class="flex flex-wrap items-center gap-2.5 sm:gap-3">
+          <!-- API Status + Timestamp + 60s Countdown -->
+          <div class="px-3.5 py-2 rounded-xl bg-white dark:bg-obsidian-800 border border-gold-400/25 text-xs text-slate-600 dark:text-slate-300 flex flex-wrap items-center gap-2">
+            <span id="api-status-dot" class="inline-block w-2 h-2 rounded-full bg-emerald-500 animate-pulse"></span>
+            <span id="api-status-label" class="font-semibold text-emerald-600 dark:text-emerald-400">Live Spot</span>
+            <span class="text-slate-400">•</span>
+            <span id="rates-timestamp" class="font-medium text-slate-900 dark:text-ivory-50">--:-- IST</span>
+            <span class="text-slate-400">•</span>
+            <span class="text-[11px] text-slate-500 dark:text-slate-400"><i class="fa-regular fa-clock mr-1 text-gold-500"></i><span id="refresh-countdown">60</span>s</span>
+          </div>
+
+          <!-- Manual Refresh Button -->
+          <button
+            id="refresh-rates-btn"
+            type="button"
+            class="px-4 py-2 rounded-xl bg-obsidian-900 dark:bg-gold-400/15 hover:bg-obsidian-800 dark:hover:bg-gold-400/25 text-gold-300 border border-gold-400/40 font-semibold text-xs sm:text-sm inline-flex items-center gap-2 transition-all duration-300 active:scale-95"
+          >
+            <i id="refresh-icon" class="fa-solid fa-arrows-rotate"></i>
+            <span data-i18n="btn_refresh">Refresh Rates</span>
+          </button>
+
+          <!-- Subtle Mandi Rate Adjust Button for Shop Owner -->
+          <button
+            id="open-mandi-btn"
+            type="button"
+            class="px-3.5 py-2 rounded-xl bg-white dark:bg-obsidian-800 hover:border-gold-400 text-slate-700 dark:text-slate-300 border border-gold-400/25 font-medium text-xs inline-flex items-center gap-1.5 transition-all duration-300"
+          >
+            <i class="fa-solid fa-sliders text-gold-500"></i>
+            <span data-i18n="btn_mandi">Mandi / Shop Rate</span>
+          </button>
+        </div>
+      </div>
+
+      <!-- Modern Live Market Bar + Weight Unit Switcher -->
+      <div class="reveal flex flex-col sm:flex-row sm:items-center justify-between gap-3 mb-6 p-3.5 rounded-2xl bg-white/80 dark:bg-obsidian-800/75 border border-gold-400/25 glass-luxury">
+        <div class="flex flex-wrap items-center gap-x-4 gap-y-1.5 text-xs text-slate-600 dark:text-slate-300">
+          <span class="inline-flex items-center gap-1.5 font-semibold text-gold-600 dark:text-gold-400">
+            <i class="fa-solid fa-globe"></i> <span data-i18n="spot_feed_lbl">Market Feed:</span>
+          </span>
+          <span id="spot-xau-pill" class="font-medium">XAU: $3,625/oz</span>
+          <span class="text-gold-400/40">•</span>
+          <span id="spot-xag-pill" class="font-medium">XAG: $42.00/oz</span>
+          <span class="text-gold-400/40">•</span>
+          <span id="spot-fx-pill" class="font-medium">USD/INR: ₹92.88</span>
+        </div>
+
+        <!-- Weight Unit Switcher (10g | 1g | 1 Tola) -->
+        <div class="inline-flex items-center gap-1 p-1 rounded-xl bg-ivory-100 dark:bg-obsidian-900 border border-gold-400/25 self-start sm:self-auto" role="group" aria-label="Gold Weight Unit">
+          <button type="button" data-unit="10g" class="unit-btn px-3 py-1 rounded-lg text-xs font-semibold bg-gold-400 text-obsidian-950 shadow-sm transition-all">10g</button>
+          <button type="button" data-unit="1g" class="unit-btn px-3 py-1 rounded-lg text-xs font-semibold text-slate-600 dark:text-slate-300 hover:text-gold-500 transition-all">1g</button>
+          <button type="button" data-unit="tola" class="unit-btn px-3 py-1 rounded-lg text-xs font-semibold text-slate-600 dark:text-slate-300 hover:text-gold-500 transition-all">1 Tola</button>
+        </div>
+      </div>
+
+      <!-- 4 Glassmorphic Live Bullion Rate Cards -->
+      <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-5 sm:gap-6 mb-8">
+
+        <!-- 24K Pure Gold Card -->
+        <div class="reveal group rounded-2xl p-6 bg-white dark:bg-obsidian-800/85 glass-luxury border border-gold-400/30 hover:border-gold-400 shadow-lg hover:shadow-gold-glow transition-all duration-300 relative overflow-hidden">
+          <div class="absolute top-0 right-0 w-24 h-24 bg-gold-400/10 rounded-bl-full pointer-events-none"></div>
+          <div class="flex items-center justify-between mb-4">
+            <span class="px-3 py-1 rounded-full text-xs font-semibold bg-gold-400/15 text-gold-700 dark:text-gold-300 border border-gold-400/30" data-i18n="card_24k_tag">
+              24K Gold • 99.9%
+            </span>
+            <span class="text-[11px] font-semibold text-emerald-600 dark:text-emerald-400 flex items-center gap-1">
+              <i class="fa-solid fa-arrow-trend-up text-[10px]"></i> +0.94%
+            </span>
+          </div>
+          <p class="text-xs uppercase tracking-wider text-slate-500 dark:text-slate-400">
+            <span data-i18n="card_24k_sub">Pure Investment Gold</span> (<span class="gold-unit-label">10g</span>)
+          </p>
+          <p id="rate-24k" class="font-luxury text-3xl sm:text-4xl font-bold text-slate-900 dark:text-ivory-50 mt-1.5">₹--</p>
+          <div class="mt-4 pt-3 border-t border-slate-200 dark:border-obsidian-700 flex items-center justify-between text-xs text-slate-500 dark:text-slate-400">
+            <span data-i18n="per_1g">Per 1 Gram:</span>
+            <strong id="rate-24k-1g" class="text-slate-800 dark:text-gold-300 font-semibold">₹--</strong>
+          </div>
+        </div>
+
+        <!-- 22K 916 Hallmark Gold Card (Highlighted) -->
+        <div class="reveal group rounded-2xl p-6 bg-gradient-to-b from-gold-400/18 to-white dark:from-gold-400/18 dark:to-obsidian-800/95 glass-luxury border-2 border-gold-400 shadow-gold-glow transition-all duration-300 relative overflow-hidden" style="transition-delay: 80ms;">
+          <div class="flex items-center justify-between mb-4">
+            <span class="px-3 py-1 rounded-full text-xs font-bold bg-gold-400 text-obsidian-950" data-i18n="card_22k_tag">
+              22K • 916 Hallmark
+            </span>
+            <span class="text-[11px] font-semibold text-emerald-600 dark:text-emerald-400 flex items-center gap-1">
+              <i class="fa-solid fa-arrow-trend-up text-[10px]"></i> +0.94%
+            </span>
+          </div>
+          <p class="text-xs uppercase tracking-wider text-slate-600 dark:text-gold-200/85">
+            <span data-i18n="card_22k_sub">Bridal &amp; Jewellery Gold</span> (<span class="gold-unit-label">10g</span>)
+          </p>
+          <p id="rate-22k" class="font-luxury text-3xl sm:text-4xl font-bold text-slate-900 dark:text-ivory-50 mt-1.5">₹--</p>
+          <div class="mt-4 pt-3 border-t border-gold-400/30 flex items-center justify-between text-xs text-slate-600 dark:text-slate-300">
+            <span data-i18n="per_1g">Per 1 Gram:</span>
+            <strong id="rate-22k-1g" class="text-slate-900 dark:text-gold-300 font-semibold">₹--</strong>
+          </div>
+        </div>
+
+        <!-- 18K Gold Card -->
+        <div class="reveal group rounded-2xl p-6 bg-white dark:bg-obsidian-800/85 glass-luxury border border-gold-400/30 hover:border-gold-400 shadow-lg hover:shadow-gold-glow transition-all duration-300 relative overflow-hidden" style="transition-delay: 160ms;">
+          <div class="absolute top-0 right-0 w-24 h-24 bg-gold-400/10 rounded-bl-full pointer-events-none"></div>
+          <div class="flex items-center justify-between mb-4">
+            <span class="px-3 py-1 rounded-full text-xs font-semibold bg-gold-400/15 text-gold-700 dark:text-gold-300 border border-gold-400/30" data-i18n="card_18k_tag">
+              18K Gold • 750 Fine
+            </span>
+            <span class="text-[11px] font-semibold text-emerald-600 dark:text-emerald-400 flex items-center gap-1">
+              <i class="fa-solid fa-arrow-trend-up text-[10px]"></i> +0.95%
+            </span>
+          </div>
+          <p class="text-xs uppercase tracking-wider text-slate-500 dark:text-slate-400">
+            <span data-i18n="card_18k_sub">Diamond &amp; Daily Wear</span> (<span class="gold-unit-label">10g</span>)
+          </p>
+          <p id="rate-18k" class="font-luxury text-3xl sm:text-4xl font-bold text-slate-900 dark:text-ivory-50 mt-1.5">₹--</p>
+          <div class="mt-4 pt-3 border-t border-slate-200 dark:border-obsidian-700 flex items-center justify-between text-xs text-slate-500 dark:text-slate-400">
+            <span data-i18n="per_1g">Per 1 Gram:</span>
+            <strong id="rate-18k-1g" class="text-slate-800 dark:text-gold-300 font-semibold">₹--</strong>
+          </div>
+        </div>
+
+        <!-- 999 Pure Silver Card -->
+        <div class="reveal group rounded-2xl p-6 bg-white dark:bg-obsidian-800/85 glass-luxury border border-slate-300 dark:border-slate-600/50 hover:border-slate-400 shadow-lg transition-all duration-300 relative overflow-hidden" style="transition-delay: 240ms;">
+          <div class="absolute top-0 right-0 w-24 h-24 bg-slate-400/10 rounded-bl-full pointer-events-none"></div>
+          <div class="flex items-center justify-between gap-2 mb-3">
+            <span class="px-3 py-1 rounded-full text-xs font-semibold bg-slate-200 dark:bg-slate-700 text-slate-800 dark:text-slate-200" data-i18n="card_silver_tag">
+              Silver • 999 Fine
+            </span>
+            <!-- Silver Unit Mini Switcher (1 Kg | 10g | 1g) -->
+            <div class="inline-flex items-center p-0.5 rounded-lg bg-ivory-100 dark:bg-obsidian-900 border border-slate-300/60 dark:border-slate-600/60" role="group" aria-label="Silver Weight Unit">
+              <button type="button" data-silver-unit="1kg" class="silver-unit-btn px-1.5 py-0.5 rounded-md text-[10px] font-bold bg-slate-700 text-white dark:bg-slate-200 dark:text-obsidian-950 transition-all">1kg</button>
+              <button type="button" data-silver-unit="10g" class="silver-unit-btn px-1.5 py-0.5 rounded-md text-[10px] font-semibold text-slate-600 dark:text-slate-300 hover:text-slate-900 dark:hover:text-white transition-all">10g</button>
+              <button type="button" data-silver-unit="1g" class="silver-unit-btn px-1.5 py-0.5 rounded-md text-[10px] font-semibold text-slate-600 dark:text-slate-300 hover:text-slate-900 dark:hover:text-white transition-all">1g</button>
+            </div>
+          </div>
+          <p class="text-xs uppercase tracking-wider text-slate-500 dark:text-slate-400">
+            <span data-i18n="card_silver_sub">Pure Chandi Rate</span> (<span id="silver-unit-label">1 Kg</span>)
+          </p>
+          <p id="rate-silver-kg" class="font-luxury text-3xl sm:text-4xl font-bold text-slate-900 dark:text-ivory-50 mt-1.5">₹--</p>
+          <div class="mt-4 pt-3 border-t border-slate-200 dark:border-obsidian-700 flex items-center justify-between gap-2 text-xs text-slate-500 dark:text-slate-400">
+            <span id="rate-silver-sub1" class="font-medium">10g: <strong id="rate-silver-10g" class="text-slate-800 dark:text-slate-200 font-semibold">₹--</strong></span>
+            <span class="text-slate-300 dark:text-slate-600">•</span>
+            <span id="rate-silver-sub2" class="font-medium">1g: <strong id="rate-silver-1g" class="text-slate-800 dark:text-slate-200 font-semibold">₹--</strong></span>
+          </div>
+        </div>
+
+      </div>
+
+      <!-- Market Parity Disclaimer -->
+      <p class="text-xs text-center text-slate-500 dark:text-slate-400 mb-10" data-i18n="rates_disclaimer">
+        Indicative live Indian bullion parity rates (excluding 3% GST &amp; making charges). Final invoice rates are confirmed at Aarti Jewellers, Ajeetsar.
+      </p>
+
+      <!-- MODERN COMPONENT: 10-DAY CHURU / RAJASTHAN PRICE TREND ANALYTICS -->
+      <div class="reveal rounded-3xl p-6 sm:p-8 bg-white dark:bg-obsidian-800/85 border border-gold-400/25 shadow-lg mb-12">
+        <div class="flex flex-col sm:flex-row sm:items-center justify-between gap-4 mb-6">
+          <div>
+            <span class="text-[11px] font-semibold uppercase tracking-[0.2em] text-gold-600 dark:text-gold-400" data-i18n="trend_eyebrow">Churu / Rajasthan Sarafa Analytics</span>
+            <h3 class="font-luxury text-2xl sm:text-3xl font-bold text-slate-900 dark:text-ivory-50 mt-0.5" data-i18n="trend_heading">10-Day Price Trend</h3>
+          </div>
+          <div class="inline-flex items-center gap-1 p-1 rounded-xl bg-ivory-100 dark:bg-obsidian-900 border border-gold-400/25 self-start sm:self-auto">
+            <button type="button" data-chart="24k" class="chart-tab-btn px-3 py-1.5 rounded-lg text-xs font-semibold bg-gold-400 text-obsidian-950 transition-all">24K (10g)</button>
+            <button type="button" data-chart="22k" class="chart-tab-btn px-3 py-1.5 rounded-lg text-xs font-semibold text-slate-600 dark:text-slate-300 hover:text-gold-500 transition-all">22K (10g)</button>
+            <button type="button" data-chart="silver" class="chart-tab-btn px-3 py-1.5 rounded-lg text-xs font-semibold text-slate-600 dark:text-slate-300 hover:text-gold-500 transition-all">Silver (1kg)</button>
+          </div>
+        </div>
+
+        <div class="grid lg:grid-cols-12 gap-6 items-center">
+          <!-- Responsive Interactive SVG Area Chart -->
+          <div class="lg:col-span-9 relative rounded-2xl bg-ivory-50/70 dark:bg-obsidian-900/75 border border-gold-400/15 p-4">
+            <div id="trend-chart-container" class="w-full overflow-hidden"></div>
+            <div id="trend-tooltip" class="hidden pointer-events-none absolute top-3 right-3 px-3 py-1.5 rounded-xl bg-obsidian-950/95 text-ivory-50 border border-gold-400/40 text-xs font-semibold shadow-lg"></div>
+          </div>
+
+          <!-- 10-Day High / Low / Today Summary -->
+          <div class="lg:col-span-3 grid grid-cols-3 lg:grid-cols-1 gap-3">
+            <div class="p-3.5 rounded-2xl bg-ivory-50 dark:bg-obsidian-900/80 border border-gold-400/20">
+              <p class="text-[11px] uppercase tracking-wider text-slate-500 dark:text-slate-400" data-i18n="trend_high">10-Day High</p>
+              <p id="trend-high-val" class="font-luxury text-lg sm:text-xl font-bold text-emerald-600 dark:text-emerald-400 mt-0.5">₹--</p>
+            </div>
+            <div class="p-3.5 rounded-2xl bg-ivory-50 dark:bg-obsidian-900/80 border border-gold-400/20">
+              <p class="text-[11px] uppercase tracking-wider text-slate-500 dark:text-slate-400" data-i18n="trend_low">10-Day Low</p>
+              <p id="trend-low-val" class="font-luxury text-lg sm:text-xl font-bold text-amber-600 dark:text-amber-400 mt-0.5">₹--</p>
+            </div>
+            <div class="p-3.5 rounded-2xl bg-gold-400/10 border border-gold-400/35">
+              <p class="text-[11px] uppercase tracking-wider text-gold-700 dark:text-gold-300" data-i18n="trend_today">Today's Rate</p>
+              <p id="trend-today-val" class="font-luxury text-lg sm:text-xl font-bold text-slate-900 dark:text-ivory-50 mt-0.5">₹--</p>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- =================================================================== -->
+      <!-- 5. INTERACTIVE JEWELLERY PRICE ESTIMATOR                            -->
+      <!-- =================================================================== -->
+      <div id="estimator" class="reveal rounded-3xl p-6 sm:p-8 lg:p-10 bg-white dark:bg-obsidian-800/90 border border-gold-400/30 shadow-luxury-card scroll-mt-24">
+        <div class="grid lg:grid-cols-12 gap-8 items-center">
+
+          <!-- Left: Controls -->
+          <div class="lg:col-span-7 space-y-6">
+            <div>
+              <span class="text-xs font-semibold uppercase tracking-[0.2em] text-gold-600 dark:text-gold-400" data-i18n="est_eyebrow">Transparent Pricing Tool</span>
+              <h3 class="font-luxury text-2xl sm:text-3xl font-bold text-slate-900 dark:text-ivory-50 mt-1" data-i18n="est_heading">
+                Live Jewellery Price Estimator
+              </h3>
+              <p class="text-sm text-slate-600 dark:text-slate-400 mt-1" data-i18n="est_sub">
+                Synced directly to today's live bullion rates. Estimate your custom ornament with making charges and 3% GST.
+              </p>
+            </div>
+
+            <div class="grid sm:grid-cols-2 gap-5">
+              <!-- Metal Selector -->
+              <div>
+                <label for="calc-metal" class="block text-xs font-semibold uppercase tracking-wider text-slate-600 dark:text-slate-300 mb-2" data-i18n="est_metal_lbl">
+                  Select Metal &amp; Purity
+                </label>
+                <select
+                  id="calc-metal"
+                  class="w-full px-4 py-3.5 rounded-xl bg-ivory-50 dark:bg-obsidian-900 border border-gold-400/30 text-slate-900 dark:text-ivory-50 text-sm font-medium focus:outline-none focus:border-gold-400"
+                >
+                  <option value="22k" selected data-i18n="opt_22k">22K Gold (916 Hallmark)</option>
+                  <option value="24k" data-i18n="opt_24k">24K Gold (99.9% Pure)</option>
+                  <option value="18k" data-i18n="opt_18k">18K Gold (750 Fine)</option>
+                  <option value="silver" data-i18n="opt_silver">Silver (999 Fine)</option>
+                </select>
+              </div>
+
+              <!-- Weight Input -->
+              <div>
+                <label for="calc-weight" class="block text-xs font-semibold uppercase tracking-wider text-slate-600 dark:text-slate-300 mb-2" data-i18n="est_weight_lbl">
+                  Weight (in Grams)
+                </label>
+                <div class="relative">
+                  <input
+                    id="calc-weight"
+                    type="number"
+                    min="0.5"
+                    step="0.5"
+                    value="10"
+                    class="w-full px-4 py-3.5 pr-12 rounded-xl bg-ivory-50 dark:bg-obsidian-900 border border-gold-400/30 text-slate-900 dark:text-ivory-50 text-sm font-semibold focus:outline-none focus:border-gold-400"
+                  />
+                  <span class="absolute right-4 top-1/2 -translate-y-1/2 text-xs font-semibold text-gold-500">gm</span>
+                </div>
+              </div>
+            </div>
+
+            <!-- Making Charges Slider -->
+            <div>
+              <div class="flex items-center justify-between mb-2">
+                <label for="calc-making" class="text-xs font-semibold uppercase tracking-wider text-slate-600 dark:text-slate-300" data-i18n="est_making_lbl">
+                  Making Charges (%)
+                </label>
+                <span class="px-2.5 py-0.5 rounded-lg bg-gold-400/15 text-gold-700 dark:text-gold-300 font-bold text-xs" id="calc-making-label">10%</span>
+              </div>
+              <input id="calc-making" type="range" min="0" max="25" step="1" value="10" class="w-full h-2 rounded-lg cursor-pointer" />
+              <div class="flex justify-between text-[11px] text-slate-400 mt-1.5">
+                <span data-i18n="est_mk_0">0% (Coins/Bars)</span>
+                <span data-i18n="est_mk_10">10% (Standard)</span>
+                <span data-i18n="est_mk_25">25% (Heavy Bridal)</span>
+              </div>
+            </div>
+          </div>
+
+          <!-- Right: Live Breakdown Card -->
+          <div class="lg:col-span-5 rounded-2xl p-6 bg-obsidian-950 text-ivory-50 border border-gold-400/35 relative overflow-hidden">
+            <div class="absolute -top-10 -right-10 w-32 h-32 bg-gold-400/15 rounded-full blur-2xl pointer-events-none"></div>
+            <p class="text-xs uppercase tracking-[0.2em] text-gold-400 font-semibold mb-4" data-i18n="est_box_title">Estimated Breakdown</p>
+
+            <div class="space-y-3 text-sm">
+              <div class="flex justify-between items-center text-slate-300">
+                <span><span data-i18n="est_row_metal">Metal Value</span> (<span id="est-rate-info">22K</span>)</span>
+                <span id="est-base" class="font-semibold text-ivory-50">₹--</span>
+              </div>
+              <div class="flex justify-between items-center text-slate-300">
+                <span><span data-i18n="est_row_making">Making Charges</span> (<span id="est-making-pct">10%</span>)</span>
+                <span id="est-making" class="font-semibold text-ivory-50">₹--</span>
+              </div>
+              <div class="flex justify-between items-center text-slate-300">
+                <span data-i18n="est_row_gst">GST (3% Mandatory)</span>
+                <span id="est-gst" class="font-semibold text-ivory-50">₹--</span>
+              </div>
+              <div class="pt-4 mt-2 border-t border-gold-400/30 flex justify-between items-baseline gap-2">
+                <span class="text-sm font-medium text-gold-200" data-i18n="est_row_total">Final Estimate</span>
+                <span id="est-total" class="font-luxury text-3xl font-bold text-gold-400">₹--</span>
+              </div>
+            </div>
+
+            <a
+              id="est-whatsapp-btn"
+              href="https://wa.me/9198XXXXXXXX"
+              target="_blank"
+              rel="noopener"
+              class="mt-6 w-full py-3.5 rounded-xl btn-shimmer text-obsidian-950 font-semibold text-sm flex items-center justify-center gap-2"
+            >
+              <i class="fa-brands fa-whatsapp text-base"></i>
+              <span data-i18n="est_wa_btn">Lock Estimate on WhatsApp</span>
+            </a>
+          </div>
+
+        </div>
+      </div>
+
+    </div>
+  </section>
+
+  <!-- ===================================================================== -->
+  <!-- 6. SIGNATURE COLLECTIONS WITH QUICK VIEW & WISHLIST SHORTLIST         -->
+  <!-- ===================================================================== -->
+  <section id="collections" class="py-16 sm:py-24 lg:py-28 bg-ivory-100/60 dark:bg-obsidian-950/60 border-y border-gold-400/15">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+
+      <!-- Header + Wishlist Shortlist Button -->
+      <div class="flex flex-col md:flex-row md:items-end justify-between gap-6 mb-10 reveal">
+        <div>
+          <span class="inline-flex items-center gap-2 text-xs font-semibold uppercase tracking-[0.2em] text-gold-600 dark:text-gold-400 mb-2">
+            <i class="fa-solid fa-gem"></i> <span data-i18n="col_eyebrow">Curated Creations</span>
+          </span>
+          <h2 class="font-luxury text-3xl sm:text-4xl lg:text-5xl font-bold text-slate-900 dark:text-ivory-50" data-i18n="col_heading">
+            Signature <span class="text-gold-500 dark:text-gold-400">Collections</span>
+          </h2>
+          <p class="mt-2.5 text-slate-600 dark:text-slate-400 max-w-2xl text-sm sm:text-base" data-i18n="col_sub">
+            Discover authentic Rajasthani Bridal Aad, Borla &amp; Bangdi alongside sleek modern gold rings and pure 999 silverware.
+          </p>
+        </div>
+
+        <!-- Shortlist / Wishlist WhatsApp Action -->
+        <button
+          id="send-wishlist-btn"
+          type="button"
+          class="self-start md:self-auto px-4 py-2.5 rounded-xl bg-white dark:bg-obsidian-800 border border-gold-400/35 hover:border-gold-400 text-slate-800 dark:text-ivory-50 text-xs sm:text-sm font-semibold inline-flex items-center gap-2.5 shadow-sm transition-all"
+        >
+          <i class="fa-solid fa-heart text-rose-500"></i>
+          <span data-i18n="wishlist_btn">Shortlisted</span>
+          <span id="wishlist-count" class="px-2 py-0.5 rounded-full bg-gold-400 text-obsidian-950 text-xs font-bold">0</span>
+        </button>
+      </div>
+
+      <!-- Category Filter Pills -->
+      <div class="reveal flex flex-wrap items-center gap-2.5 mb-10">
+        <button type="button" data-filter="all" class="filter-btn active px-4 py-2 rounded-full text-xs sm:text-sm font-semibold bg-gold-400 text-obsidian-950 shadow-md transition-all" data-i18n="flt_all">All</button>
+        <button type="button" data-filter="bridal" class="filter-btn px-4 py-2 rounded-full text-xs sm:text-sm font-semibold bg-white dark:bg-obsidian-800 text-slate-700 dark:text-slate-300 border border-gold-400/25 hover:border-gold-400 transition-all" data-i18n="flt_bridal">Bridal Aad &amp; Borla</button>
+        <button type="button" data-filter="necklaces" class="filter-btn px-4 py-2 rounded-full text-xs sm:text-sm font-semibold bg-white dark:bg-obsidian-800 text-slate-700 dark:text-slate-300 border border-gold-400/25 hover:border-gold-400 transition-all" data-i18n="flt_necklaces">22K Necklaces</button>
+        <button type="button" data-filter="bangles" class="filter-btn px-4 py-2 rounded-full text-xs sm:text-sm font-semibold bg-white dark:bg-obsidian-800 text-slate-700 dark:text-slate-300 border border-gold-400/25 hover:border-gold-400 transition-all" data-i18n="flt_bangles">Rajasthani Bangdi</button>
+        <button type="button" data-filter="rings" class="filter-btn px-4 py-2 rounded-full text-xs sm:text-sm font-semibold bg-white dark:bg-obsidian-800 text-slate-700 dark:text-slate-300 border border-gold-400/25 hover:border-gold-400 transition-all" data-i18n="flt_rings">Solitaire Rings</button>
+        <button type="button" data-filter="silverware" class="filter-btn px-4 py-2 rounded-full text-xs sm:text-sm font-semibold bg-white dark:bg-obsidian-800 text-slate-700 dark:text-slate-300 border border-gold-400/25 hover:border-gold-400 transition-all" data-i18n="flt_silver">999 Silverware</button>
+      </div>
+
+      <!-- Responsive Product Grid (Populated via JS) -->
+      <div id="collections-grid" class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-6"></div>
+
+    </div>
+  </section>
+
+  <!-- ===================================================================== -->
+  <!-- 7. HERITAGE BENTO GRID + INTERACTIVE OLD GOLD EXCHANGE CALCULATOR     -->
+  <!-- ===================================================================== -->
+  <section id="craftsmanship" class="py-16 sm:py-24 lg:py-28 bg-ivory-50 dark:bg-obsidian-900">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+
+      <div class="text-center max-w-3xl mx-auto mb-14 reveal">
+        <span class="inline-flex items-center gap-2 text-xs font-semibold uppercase tracking-[0.2em] text-gold-600 dark:text-gold-400 mb-2">
+          <i class="fa-solid fa-shield-halved"></i> <span data-i18n="her_eyebrow">The Aarti Promise</span>
+        </span>
+        <h2 class="font-luxury text-3xl sm:text-4xl lg:text-5xl font-bold text-slate-900 dark:text-ivory-50" data-i18n="her_heading">
+          Craftsmanship Built on <span class="text-gold-500 dark:text-gold-400">Generational Trust</span>
+        </h2>
+        <p class="mt-3 text-slate-600 dark:text-slate-400 text-sm sm:text-base" data-i18n="her_sub">
+          Every ornament at Aarti Jewellers carries our hallmark guarantee of purity, artistry, and lifelong value.
+        </p>
+      </div>
+
+      <!-- 4 Pillars Bento Cards -->
+      <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-5 mb-12">
+        <div class="reveal p-6 rounded-3xl bg-white dark:bg-obsidian-800/85 border border-gold-400/25 hover:border-gold-400 transition-all shadow-md">
+          <div class="w-12 h-12 rounded-2xl bg-gold-400/15 text-gold-500 flex items-center justify-center text-xl mb-4">
+            <i class="fa-solid fa-stamp"></i>
+          </div>
+          <h3 class="font-luxury text-xl font-bold text-slate-900 dark:text-ivory-50 mb-2" data-i18n="her_1_t">BIS 916 HUID Hallmark</h3>
+          <p class="text-xs sm:text-sm text-slate-600 dark:text-slate-400 leading-relaxed" data-i18n="her_1_d">Every gold ornament is laser-etched with a government-certified 6-digit HUID hallmark for guaranteed purity.</p>
+        </div>
+
+        <div class="reveal p-6 rounded-3xl bg-white dark:bg-obsidian-800/85 border border-gold-400/25 hover:border-gold-400 transition-all shadow-md" style="transition-delay: 80ms;">
+          <div class="w-12 h-12 rounded-2xl bg-gold-400/15 text-gold-500 flex items-center justify-center text-xl mb-4">
+            <i class="fa-solid fa-rotate"></i>
+          </div>
+          <h3 class="font-luxury text-xl font-bold text-slate-900 dark:text-ivory-50 mb-2" data-i18n="her_2_t">100% Buyback &amp; Exchange</h3>
+          <p class="text-xs sm:text-sm text-slate-600 dark:text-slate-400 leading-relaxed" data-i18n="her_2_d">Upgrade your designs anytime with honest old-gold valuation and full prevailing gold rate on hallmarked pieces.</p>
+        </div>
+
+        <div class="reveal p-6 rounded-3xl bg-white dark:bg-obsidian-800/85 border border-gold-400/25 hover:border-gold-400 transition-all shadow-md" style="transition-delay: 160ms;">
+          <div class="w-12 h-12 rounded-2xl bg-gold-400/15 text-gold-500 flex items-center justify-center text-xl mb-4">
+            <i class="fa-solid fa-crown"></i>
+          </div>
+          <h3 class="font-luxury text-xl font-bold text-slate-900 dark:text-ivory-50 mb-2" data-i18n="her_3_t">Rajasthani &amp; Modern Craft</h3>
+          <p class="text-xs sm:text-sm text-slate-600 dark:text-slate-400 leading-relaxed" data-i18n="her_3_d">From classic Rajputi Aad, Timaniya &amp; Borla to minimalist Italian-finish chains, custom-crafted by master karigars.</p>
+        </div>
+
+        <div class="reveal p-6 rounded-3xl bg-white dark:bg-obsidian-800/85 border border-gold-400/25 hover:border-gold-400 transition-all shadow-md" style="transition-delay: 240ms;">
+          <div class="w-12 h-12 rounded-2xl bg-gold-400/15 text-gold-500 flex items-center justify-center text-xl mb-4">
+            <i class="fa-solid fa-file-invoice"></i>
+          </div>
+          <h3 class="font-luxury text-xl font-bold text-slate-900 dark:text-ivory-50 mb-2" data-i18n="her_4_t">Transparent Live Billing</h3>
+          <p class="text-xs sm:text-sm text-slate-600 dark:text-slate-400 leading-relaxed" data-i18n="her_4_d">Clear itemized GST invoice detailing net gold weight, stone weight, live gold rate, and fair making charges.</p>
+        </div>
+      </div>
+
+      <!-- MODERN COMPONENT: OLD GOLD EXCHANGE ESTIMATOR + STATS -->
+      <div class="reveal grid lg:grid-cols-12 gap-6 items-stretch">
+        <!-- Old Gold Exchange Widget -->
+        <div class="lg:col-span-7 rounded-3xl p-6 sm:p-8 bg-gradient-to-br from-obsidian-950 via-obsidian-900 to-obsidian-950 text-ivory-50 border border-gold-400/35 shadow-luxury-card">
+          <div class="flex items-center justify-between gap-3 mb-5">
+            <div>
+              <span class="text-[11px] font-semibold uppercase tracking-[0.2em] text-gold-400" data-i18n="exch_eyebrow">Instant Valuation</span>
+              <h3 class="font-luxury text-2xl sm:text-3xl font-bold text-ivory-50 mt-0.5" data-i18n="exch_heading">Old Gold Exchange Calculator</h3>
+            </div>
+            <span class="px-3 py-1 rounded-full bg-emerald-500/15 text-emerald-400 border border-emerald-500/30 text-xs font-semibold">100% Value</span>
+          </div>
+
+          <div class="grid sm:grid-cols-2 gap-4 mb-5">
+            <div>
+              <label for="exch-purity" class="block text-xs text-slate-400 mb-1.5" data-i18n="exch_purity_lbl">Old Gold / Silver Purity</label>
+              <select id="exch-purity" class="w-full px-4 py-3 rounded-xl bg-obsidian-800 border border-gold-400/30 text-ivory-50 text-sm font-medium focus:outline-none focus:border-gold-400">
+                <option value="22">22K Gold (916 Hallmarked)</option>
+                <option value="24">24K Gold (999 Coin/Bar)</option>
+                <option value="20">20K Gold (Traditional)</option>
+                <option value="18">18K Gold (750 Fine)</option>
+                <option value="silver999">999 Pure Silver (Chandi)</option>
+                <option value="silver925">925 Sterling Silver</option>
+              </select>
+            </div>
+            <div>
+              <label for="exch-weight" class="block text-xs text-slate-400 mb-1.5" data-i18n="exch_weight_lbl">Net Weight (Grams)</label>
+              <input id="exch-weight" type="number" min="1" step="0.5" value="15" class="w-full px-4 py-3 rounded-xl bg-obsidian-800 border border-gold-400/30 text-ivory-50 text-sm font-semibold focus:outline-none focus:border-gold-400" />
+            </div>
+          </div>
+
+          <div class="p-4 rounded-2xl bg-gold-400/10 border border-gold-400/30 flex flex-col sm:flex-row sm:items-center justify-between gap-3">
+            <div>
+              <p class="text-xs text-gold-200/80" data-i18n="exch_val_lbl">Estimated Exchange Value Today</p>
+              <p id="exch-result" class="font-luxury text-3xl font-bold text-gold-400 mt-0.5">₹--</p>
+            </div>
+            <a id="exch-wa-btn" href="https://wa.me/9198XXXXXXXX" target="_blank" rel="noopener" class="px-5 py-3 rounded-xl btn-shimmer text-obsidian-950 font-semibold text-xs sm:text-sm inline-flex items-center justify-center gap-2 shrink-0">
+              <i class="fa-brands fa-whatsapp"></i>
+              <span data-i18n="exch_cta">Book Purity Check</span>
+            </a>
+          </div>
+        </div>
+
+        <!-- Animated Heritage Stats & Bridal Callout -->
+        <div class="lg:col-span-5 rounded-3xl p-6 sm:p-8 bg-white dark:bg-obsidian-800/85 border border-gold-400/25 flex flex-col justify-between gap-6">
+          <div class="grid grid-cols-2 gap-4">
+            <div class="p-4 rounded-2xl bg-ivory-50 dark:bg-obsidian-900 border border-gold-400/20 text-center">
+              <p class="font-luxury text-3xl sm:text-4xl font-bold text-gold-500">100%</p>
+              <p class="text-xs text-slate-600 dark:text-slate-400 mt-1" data-i18n="stat_1">BIS 916 HUID Purity</p>
+            </div>
+            <div class="p-4 rounded-2xl bg-ivory-50 dark:bg-obsidian-900 border border-gold-400/20 text-center">
+              <p class="font-luxury text-3xl sm:text-4xl font-bold text-gold-500">2,500+</p>
+              <p class="text-xs text-slate-600 dark:text-slate-400 mt-1" data-i18n="stat_2">Happy Churu Families</p>
+            </div>
+            <div class="p-4 rounded-2xl bg-ivory-50 dark:bg-obsidian-900 border border-gold-400/20 text-center">
+              <p class="font-luxury text-3xl sm:text-4xl font-bold text-gold-500">500+</p>
+              <p class="text-xs text-slate-600 dark:text-slate-400 mt-1" data-i18n="stat_3">Bridal &amp; Modern Designs</p>
+            </div>
+            <div class="p-4 rounded-2xl bg-ivory-50 dark:bg-obsidian-900 border border-gold-400/20 text-center">
+              <p class="font-luxury text-3xl sm:text-4xl font-bold text-gold-500">0%</p>
+              <p class="text-xs text-slate-600 dark:text-slate-400 mt-1" data-i18n="stat_4">Hidden Deductions</p>
+            </div>
+          </div>
+
+          <div class="p-4 rounded-2xl bg-gold-400/10 border border-gold-400/30 flex items-center justify-between gap-3">
+            <div>
+              <p class="text-xs font-bold text-slate-900 dark:text-ivory-50" data-i18n="bridal_banner_t">Wedding Season Bridal Lounge</p>
+              <p class="text-[11px] text-slate-600 dark:text-slate-400" data-i18n="bridal_banner_s">Custom Rajputi Aad, Borla &amp; Timaniya orders open.</p>
+            </div>
+            <a href="#visit-us" class="px-4 py-2 rounded-xl bg-obsidian-950 dark:bg-gold-400 text-gold-300 dark:text-obsidian-950 text-xs font-semibold shrink-0 hover:opacity-90 transition">
+              <span data-i18n="btn_book">Book</span>
+            </a>
+          </div>
+        </div>
+      </div>
+
+    </div>
+  </section>
+
+  <!-- ===================================================================== -->
+  <!-- 8. CLIENT STORIES / TESTIMONIALS FROM SARDARSHAHAR & CHURU            -->
+  <!-- ===================================================================== -->
+  <section class="py-16 sm:py-20 bg-ivory-100/60 dark:bg-obsidian-950/60 border-y border-gold-400/15">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+      <div class="text-center max-w-2xl mx-auto mb-10 reveal">
+        <span class="text-xs font-semibold uppercase tracking-[0.2em] text-gold-600 dark:text-gold-400" data-i18n="test_eyebrow">Trusted Across Churu District</span>
+        <h2 class="font-luxury text-3xl sm:text-4xl font-bold text-slate-900 dark:text-ivory-50 mt-1" data-i18n="test_heading">
+          Words from Our <span class="text-gold-500 dark:text-gold-400">Patron Families</span>
+        </h2>
+      </div>
+
+      <div class="grid md:grid-cols-3 gap-6">
+        <div class="reveal p-6 rounded-3xl bg-white dark:bg-obsidian-800/85 border border-gold-400/20 shadow-md">
+          <div class="flex items-center gap-1 text-gold-400 text-xs mb-3">
+            <i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i>
+          </div>
+          <p class="text-sm text-slate-700 dark:text-slate-300 leading-relaxed italic" data-i18n="test_1_q">"We got our daughter's complete bridal Aad, Borla, and Bangdi crafted at Aarti Jewellers. Transparent 916 HUID billing and royal Rajasthani finish!"</p>
+          <div class="mt-4 pt-3 border-t border-slate-200 dark:border-obsidian-700">
+            <p class="text-sm font-bold text-slate-900 dark:text-ivory-50">Rajendra Singh Rathore</p>
+            <p class="text-xs text-slate-500 dark:text-slate-400">Ajeetsar, Sardarshahar</p>
+          </div>
+        </div>
+
+        <div class="reveal p-6 rounded-3xl bg-white dark:bg-obsidian-800/85 border border-gold-400/20 shadow-md" style="transition-delay: 80ms;">
+          <div class="flex items-center gap-1 text-gold-400 text-xs mb-3">
+            <i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i>
+          </div>
+          <p class="text-sm text-slate-700 dark:text-slate-300 leading-relaxed italic" data-i18n="test_2_q">"Very honest old gold exchange value. They showed live gold rates clearly on the counter and gave a proper GST invoice with exact net weight."</p>
+          <div class="mt-4 pt-3 border-t border-slate-200 dark:border-obsidian-700">
+            <p class="text-sm font-bold text-slate-900 dark:text-ivory-50">Sunita Sharma</p>
+            <p class="text-xs text-slate-500 dark:text-slate-400">Sardarshahar, Churu</p>
+          </div>
+        </div>
+
+        <div class="reveal p-6 rounded-3xl bg-white dark:bg-obsidian-800/85 border border-gold-400/20 shadow-md" style="transition-delay: 160ms;">
+          <div class="flex items-center gap-1 text-gold-400 text-xs mb-3">
+            <i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i>
+          </div>
+          <p class="text-sm text-slate-700 dark:text-slate-300 leading-relaxed italic" data-i18n="test_3_q">"Best shop in the area for both modern lightweight daily-wear rings and pure 999 silver puja articles. Warm hospitality every time."</p>
+          <div class="mt-4 pt-3 border-t border-slate-200 dark:border-obsidian-700">
+            <p class="text-sm font-bold text-slate-900 dark:text-ivory-50">Mahendra Kumar Soni</p>
+            <p class="text-xs text-slate-500 dark:text-slate-400">Churu District</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===================================================================== -->
+  <!-- 9. VISIT OUR SHOWROOM (EXACT GOOGLE MAP & APPOINTMENT FORM)           -->
+  <!-- ===================================================================== -->
+  <section id="visit-us" class="py-16 sm:py-24 lg:py-28 bg-ivory-50 dark:bg-obsidian-900">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+
+      <div class="text-center max-w-2xl mx-auto mb-12 reveal">
+        <span class="inline-flex items-center gap-2 text-xs font-semibold uppercase tracking-[0.2em] text-gold-600 dark:text-gold-400 mb-2">
+          <i class="fa-solid fa-location-dot"></i> <span data-i18n="vis_eyebrow">Showroom &amp; Appointments</span>
+        </span>
+        <h2 class="font-luxury text-3xl sm:text-4xl lg:text-5xl font-bold text-slate-900 dark:text-ivory-50" data-i18n="vis_heading">
+          Visit <span class="text-gold-500 dark:text-gold-400">Aarti Jewellers</span>
+        </h2>
+        <p class="mt-2.5 text-slate-600 dark:text-slate-400 text-sm sm:text-base" data-i18n="vis_sub">
+          Visit our showroom in Village Ajeetsar, Sardarshahar, or book a private bridal consultation.
+        </p>
+      </div>
+
+      <div class="grid lg:grid-cols-12 gap-8 items-start">
+
+        <!-- Left: Showroom Info + Exact Interactive Google Map -->
+        <div class="lg:col-span-7 space-y-6 reveal-left">
+          <div class="grid sm:grid-cols-2 gap-4">
+            <!-- Address Card -->
+            <div class="p-5 rounded-2xl bg-white dark:bg-obsidian-800/85 border border-gold-400/25 shadow-md sm:col-span-2">
+              <div class="flex items-start justify-between gap-3">
+                <div class="flex items-start gap-3.5">
+                  <div class="w-10 h-10 rounded-xl bg-gold-400/15 text-gold-500 flex items-center justify-center shrink-0 mt-0.5">
+                    <i class="fa-solid fa-store"></i>
+                  </div>
+                  <div>
+                    <p class="text-xs font-semibold uppercase tracking-wider text-gold-600 dark:text-gold-400" data-i18n="vis_addr_t">Showroom Address</p>
+                    <p class="text-sm sm:text-base font-medium text-slate-900 dark:text-ivory-50 mt-1" data-i18n="vis_addr_val">
+                      Aarti Jewellers, Village: Ajeetsar, Sardarshahar, District Churu, Rajasthan — 331504
+                    </p>
+                  </div>
+                </div>
+                <button id="copy-address-btn" type="button" title="Copy Address" class="px-3 py-1.5 rounded-lg bg-ivory-100 dark:bg-obsidian-900 border border-gold-400/30 text-xs font-semibold text-slate-700 dark:text-gold-300 hover:border-gold-400 shrink-0">
+                  <i class="fa-regular fa-copy mr-1"></i> <span data-i18n="btn_copy">Copy</span>
+                </button>
+              </div>
+            </div>
+
+            <!-- Mobile / WhatsApp Placeholder -->
+            <div class="p-5 rounded-2xl bg-white dark:bg-obsidian-800/85 border border-gold-400/25 shadow-md">
+              <p class="text-xs font-semibold uppercase tracking-wider text-gold-600 dark:text-gold-400 mb-1" data-i18n="vis_mob_lbl">Mobile / WhatsApp</p>
+              <a href="tel:+9198XXXXXXXX" class="font-luxury text-xl font-bold text-slate-900 dark:text-ivory-50 hover:text-gold-500 transition">+91 XXXXX XXXXX</a>
+              <p class="text-[11px] text-slate-500 dark:text-slate-400 mt-1">Direct Showroom Desk</p>
+            </div>
+
+            <!-- Store Timings -->
+            <div class="p-5 rounded-2xl bg-white dark:bg-obsidian-800/85 border border-gold-400/25 shadow-md">
+              <p class="text-xs font-semibold uppercase tracking-wider text-gold-600 dark:text-gold-400 mb-1" data-i18n="vis_hrs_lbl">Store Timings</p>
+              <p class="font-luxury text-xl font-bold text-slate-900 dark:text-ivory-50" data-i18n="vis_hrs_val">10:00 AM – 8:00 PM</p>
+              <p class="text-[11px] text-emerald-600 dark:text-emerald-400 font-semibold mt-1" data-i18n="vis_open_all">Open All Days</p>
+            </div>
+          </div>
+
+          <!-- Embedded Google Map Pinned to Exact Coordinates: 28.26570375937148, 74.64150752558827 -->
+          <div class="rounded-3xl overflow-hidden border border-gold-400/35 shadow-luxury-card bg-obsidian-950">
+            <div class="relative w-full h-72 sm:h-80">
+              <iframe
+                title="Aarti Jewellers Location Map - Village Ajeetsar, Sardarshahar, Churu"
+                src="https://maps.google.com/maps?q=28.26570375937148,74.64150752558827&t=&z=15&ie=UTF8&iwloc=&output=embed"
+                class="w-full h-full border-0"
+                loading="lazy"
+                referrerpolicy="no-referrer-when-downgrade"
+                allowfullscreen
+              ></iframe>
+            </div>
+            <div class="p-4 bg-obsidian-950 flex flex-wrap items-center justify-between gap-3">
+              <div class="text-xs text-slate-300">
+                <i class="fa-solid fa-location-crosshairs text-gold-400 mr-1.5"></i>
+                28.2657° N, 74.6415° E • Ajeetsar, Churu 331504
+              </div>
+              <div class="flex items-center gap-2.5">
+                <a
+                  href="https://www.google.com/maps/dir/?api=1&destination=28.26570375937148,74.64150752558827"
+                  target="_blank"
+                  rel="noopener"
+                  class="px-4 py-2 rounded-xl btn-shimmer text-obsidian-950 font-semibold text-xs inline-flex items-center gap-1.5"
+                >
+                  <i class="fa-solid fa-diamond-turn-right"></i>
+                  <span data-i18n="btn_directions">Get Directions</span>
+                </a>
+                <a
+                  href="https://wa.me/9198XXXXXXXX?text=Hello%20Aarti%20Jewellers%2C%20please%20share%20your%20showroom%20location."
+                  target="_blank"
+                  rel="noopener"
+                  class="px-4 py-2 rounded-xl bg-emerald-500/15 border border-emerald-500/40 text-emerald-400 font-semibold text-xs inline-flex items-center gap-1.5 hover:bg-emerald-500 hover:text-white transition"
+                >
+                  <i class="fa-brands fa-whatsapp"></i>
+                  <span data-i18n="btn_chat">Chat Now</span>
+                </a>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Right: Consultation & Custom Order Form -->
+        <div class="lg:col-span-5 reveal-right">
+          <form id="inquiry-form" class="p-6 sm:p-8 rounded-3xl bg-white dark:bg-obsidian-800/90 border border-gold-400/30 shadow-luxury-card space-y-5">
+            <div>
+              <h3 class="font-luxury text-2xl sm:text-3xl font-bold text-slate-900 dark:text-ivory-50" data-i18n="form_heading">Book Appointment / Custom Order</h3>
+              <p class="text-xs sm:text-sm text-slate-600 dark:text-slate-400 mt-1" data-i18n="form_sub">Planning bridal shopping or a custom Rajasthani ornament? Share your details below.</p>
+            </div>
+
+            <div>
+              <label for="inq-name" class="block text-xs font-semibold text-slate-700 dark:text-slate-300 mb-1.5" data-i18n="form_name_lbl">Your Name *</label>
+              <input id="inq-name" type="text" required placeholder="e.g. Suresh Sharma" class="w-full px-4 py-3 rounded-xl bg-ivory-50 dark:bg-obsidian-900 border border-gold-400/30 text-sm text-slate-900 dark:text-ivory-50 focus:outline-none focus:border-gold-400" />
+            </div>
+
+            <div>
+              <label for="inq-phone" class="block text-xs font-semibold text-slate-700 dark:text-slate-300 mb-1.5" data-i18n="form_phone_lbl">Mobile Number *</label>
+              <input id="inq-phone" type="tel" required placeholder="+91 98XXX XXXXX" class="w-full px-4 py-3 rounded-xl bg-ivory-50 dark:bg-obsidian-900 border border-gold-400/30 text-sm text-slate-900 dark:text-ivory-50 focus:outline-none focus:border-gold-400" />
+            </div>
+
+            <div>
+              <label for="inq-interest" class="block text-xs font-semibold text-slate-700 dark:text-slate-300 mb-1.5" data-i18n="form_int_lbl">Interested In</label>
+              <select id="inq-interest" class="w-full px-4 py-3 rounded-xl bg-ivory-50 dark:bg-obsidian-900 border border-gold-400/30 text-sm text-slate-900 dark:text-ivory-50 focus:outline-none focus:border-gold-400">
+                <option data-i18n="form_opt_1">Bridal Gold Set (Aad, Borla, Haar - 22K 916)</option>
+                <option data-i18n="form_opt_2">Custom / Made-to-Order Jewellery</option>
+                <option data-i18n="form_opt_3">Daily Wear Gold Rings / Chains / Bangles</option>
+                <option>Pure 999 Silverware &amp; Coins</option>
+                <option>Old Gold Exchange Valuation</option>
+              </select>
+            </div>
+
+            <div>
+              <label for="inq-msg" class="block text-xs font-semibold text-slate-700 dark:text-slate-300 mb-1.5" data-i18n="form_msg_lbl">Message / Preferred Date</label>
+              <textarea id="inq-msg" rows="3" placeholder="Tell us your preferred visit time or ornament weight..." class="w-full px-4 py-3 rounded-xl bg-ivory-50 dark:bg-obsidian-900 border border-gold-400/30 text-sm text-slate-900 dark:text-ivory-50 focus:outline-none focus:border-gold-400"></textarea>
+            </div>
+
+            <button type="submit" class="w-full py-3.5 rounded-xl btn-shimmer text-obsidian-950 font-semibold text-sm flex items-center justify-center gap-2 shadow-gold-glow">
+              <i class="fa-solid fa-calendar-check"></i>
+              <span data-i18n="form_submit">Request Consultation</span>
+            </button>
+          </form>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- ===================================================================== -->
+  <!-- 10. LUXURY FOOTER + FLOATING FAB + MOBILE BOTTOM QUICK BAR            -->
+  <!-- ===================================================================== -->
+  <footer class="bg-obsidian-950 text-slate-300 border-t border-gold-400/20 pt-14 pb-10">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+      <div class="grid md:grid-cols-12 gap-10 pb-10 border-b border-gold-400/15">
+        <div class="md:col-span-5 space-y-4">
+          <div class="flex items-center gap-3">
+            <div class="w-11 h-11 rounded-2xl bg-obsidian-900 border border-gold-400/45 p-1.5">
+              <svg viewBox="0 0 64 64" fill="none" xmlns="http://www.w3.org/2000/svg" class="w-full h-full" aria-hidden="true">
+                <polygon points="32,4 58,28 32,60 6,28" stroke="#D4AF37" stroke-width="2.2" />
+                <polygon points="32,10 35.5,14.5 32,19 28.5,14.5" fill="#F5E4B2" />
+                <path d="M21 44 L32 21 L43 44" stroke="#F5E4B2" stroke-width="3" stroke-linecap="round" stroke-linejoin="round" />
+                <path d="M25.5 36.5 Q32 33 38.5 36.5" stroke="#D4AF37" stroke-width="2.2" stroke-linecap="round" />
+              </svg>
+            </div>
+            <div>
+              <p class="font-luxury text-2xl font-bold text-ivory-50" data-i18n="brand_name">Aarti <span class="text-gold-400">Jewellers</span></p>
+              <p class="text-[11px] uppercase tracking-[0.2em] text-gold-300/80" data-i18n="brand_sub">Ajeetsar • Sardarshahar</p>
+            </div>
+          </div>
+          <p class="text-xs sm:text-sm text-slate-400 leading-relaxed max-w-md" data-i18n="footer_desc">
+            Your trusted destination for 100% BIS 916 HUID Hallmarked Gold, authentic Rajputi Bridal Ornaments, and Pure 999 Silverware in Village Ajeetsar, Sardarshahar, Churu.
+          </p>
+        </div>
+
+        <div class="md:col-span-3 space-y-2.5 text-sm">
+          <p class="text-xs font-semibold uppercase tracking-widest text-gold-400 mb-3" data-i18n="footer_links">Quick Links</p>
+          <a href="#home" class="block hover:text-gold-400 transition" data-i18n="nav_home">Home</a>
+          <a href="#live-rates" class="block hover:text-gold-400 transition" data-i18n="nav_rates">Live Rates</a>
+          <a href="#estimator" class="block hover:text-gold-400 transition" data-i18n="nav_estimator">Price Estimator</a>
+          <a href="#collections" class="block hover:text-gold-400 transition" data-i18n="nav_collections">Collections</a>
+          <a href="#visit-us" class="block hover:text-gold-400 transition" data-i18n="nav_visit">Visit Us</a>
+        </div>
+
+        <div class="md:col-span-4 space-y-2.5 text-sm">
+          <p class="text-xs font-semibold uppercase tracking-widest text-gold-400 mb-3" data-i18n="vis_addr_t">Showroom Address</p>
+          <p class="text-slate-400 text-xs sm:text-sm leading-relaxed" data-i18n="vis_addr_val">
+            Aarti Jewellers, Village: Ajeetsar, Sardarshahar, District Churu, Rajasthan — 331504
+          </p>
+          <p class="text-gold-300 font-semibold pt-1"><i class="fa-solid fa-phone mr-2 text-xs"></i>+91 XXXXX XXXXX</p>
+          <p class="text-xs text-slate-400"><i class="fa-regular fa-clock mr-2 text-gold-400"></i>10:00 AM – 8:00 PM (All Days)</p>
+        </div>
+      </div>
+
+      <div class="pt-6 flex flex-col sm:flex-row items-center justify-between gap-3 text-xs text-slate-500">
+        <p>© <span id="current-year">2026</span> Aarti Jewellers, Ajeetsar (Sardarshahar, Churu). All rights reserved.</p>
+        <p class="text-gold-400/80">100% BIS 916 HUID Hallmarked Jewellery</p>
+      </div>
+    </div>
+  </footer>
+
+  <!-- Floating Desktop WhatsApp Button -->
+  <a
+    href="https://wa.me/9198XXXXXXXX?text=Hello%20Aarti%20Jewellers%2C%20I%20would%20like%20to%20inquire%20about%20today's%20gold%20rates."
+    target="_blank"
+    rel="noopener"
+    aria-label="Chat on WhatsApp"
+    class="hidden sm:flex fixed bottom-6 right-6 z-40 w-14 h-14 rounded-full bg-emerald-500 hover:bg-emerald-600 text-white shadow-2xl items-center justify-center text-2xl transition-transform hover:scale-110"
+  >
+    <i class="fa-brands fa-whatsapp"></i>
+  </a>
+
+  <!-- Mobile Bottom Sticky Quick-Action Bar -->
+  <div class="sm:hidden fixed bottom-0 inset-x-0 z-40 bg-obsidian-950/95 glass-luxury border-t border-gold-400/30 px-3 py-2 grid grid-cols-3 gap-2">
+    <a href="tel:+9198XXXXXXXX" class="py-2 rounded-xl bg-obsidian-800 text-ivory-50 text-xs font-semibold flex items-center justify-center gap-1.5 border border-gold-400/25">
+      <i class="fa-solid fa-phone text-gold-400"></i> <span data-i18n="btn_call">Call</span>
+    </a>
+    <a href="#live-rates" class="py-2 rounded-xl btn-shimmer text-obsidian-950 text-xs font-bold flex items-center justify-center gap-1.5">
+      <i class="fa-solid fa-coins"></i> <span data-i18n="nav_rates">Rates</span>
+    </a>
+    <a href="https://wa.me/9198XXXXXXXX" target="_blank" rel="noopener" class="py-2 rounded-xl bg-emerald-500/20 text-emerald-400 text-xs font-semibold flex items-center justify-center gap-1.5 border border-emerald-500/35">
+      <i class="fa-brands fa-whatsapp"></i> <span data-i18n="btn_whatsapp">WhatsApp</span>
+    </a>
+  </div>
+
+  <!-- ===================================================================== -->
+  <!-- PRODUCT QUICK VIEW LIGHTBOX MODAL                                     -->
+  <!-- ===================================================================== -->
+  <div id="quickview-modal" class="fixed inset-0 z-50 hidden items-center justify-center p-4 bg-obsidian-950/85 glass-luxury" role="dialog" aria-modal="true">
+    <div class="w-full max-w-2xl rounded-3xl overflow-hidden bg-white dark:bg-obsidian-800 border border-gold-400/40 shadow-2xl grid md:grid-cols-2">
+      <div class="relative bg-obsidian-900 aspect-square md:aspect-auto">
+        <img id="qv-img" src="" alt="Jewellery Preview" class="w-full h-full object-cover" />
+        <span id="qv-purity" class="absolute top-3 left-3 px-3 py-1 rounded-full bg-obsidian-950/90 text-gold-300 border border-gold-400/50 text-xs font-bold">22K 916</span>
+      </div>
+      <div class="p-6 flex flex-col justify-between space-y-4">
+        <div>
+          <div class="flex items-start justify-between gap-2">
+            <h3 id="qv-title" class="font-luxury text-2xl font-bold text-slate-900 dark:text-ivory-50">Ornament</h3>
+            <button id="close-qv-btn" type="button" aria-label="Close Preview" class="w-8 h-8 rounded-lg bg-ivory-100 dark:bg-obsidian-900 text-slate-600 dark:text-slate-300 flex items-center justify-center">
+              <i class="fa-solid fa-xmark"></i>
+            </button>
+          </div>
+          <p id="qv-desc" class="text-xs sm:text-sm text-slate-600 dark:text-slate-400 mt-2 leading-relaxed"></p>
+          <div class="mt-4 p-3.5 rounded-2xl bg-ivory-50 dark:bg-obsidian-900 border border-gold-400/25 space-y-2 text-xs">
+            <div class="flex justify-between"><span class="text-slate-500">Approx. Weight:</span><strong id="qv-weight" class="text-slate-900 dark:text-ivory-50">--</strong></div>
+            <div class="flex justify-between"><span class="text-slate-500">Est. Live Price*:</span><strong id="qv-price" class="text-gold-600 dark:text-gold-400 text-sm">--</strong></div>
+          </div>
+        </div>
+        <div class="space-y-2.5">
+          <a id="qv-wa-btn" href="#" target="_blank" rel="noopener" class="w-full py-3 rounded-xl btn-shimmer text-obsidian-950 font-semibold text-xs sm:text-sm flex items-center justify-center gap-2">
+            <i class="fa-brands fa-whatsapp text-base"></i> <span data-i18n="inquire_wa">Inquire on WhatsApp</span>
+          </a>
+          <p class="text-[10px] text-center text-slate-400">*Indicative metal value + ~10% making + 3% GST.</p>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- ===================================================================== -->
+  <!-- MANDI / SHOP RATE ADJUST MODAL (AUTO LIVE PARITY & DIRECT OVERRIDE)   -->
+  <!-- ===================================================================== -->
+  <div id="mandi-modal" class="fixed inset-0 z-50 hidden items-center justify-center p-4 bg-obsidian-950/80 glass-luxury" role="dialog" aria-modal="true" aria-labelledby="mandi-title">
+    <div class="w-full max-w-lg rounded-3xl bg-white dark:bg-obsidian-800 border border-gold-400/40 shadow-2xl p-5 sm:p-7 space-y-5 max-h-[90vh] overflow-y-auto">
+      <div class="flex items-start justify-between gap-4">
+        <div>
+          <span class="text-[11px] uppercase tracking-widest text-gold-600 dark:text-gold-400 font-semibold">Sardarshahar / Churu Sarafa</span>
+          <h3 id="mandi-title" class="font-luxury text-2xl font-bold text-slate-900 dark:text-ivory-50 mt-0.5" data-i18n="mandi_title">Mandi / Shop Rate Adjust</h3>
+        </div>
+        <button id="close-mandi-btn" type="button" aria-label="Close Modal" class="w-9 h-9 rounded-xl bg-ivory-100 dark:bg-obsidian-900 text-slate-600 dark:text-slate-300 hover:text-gold-400 flex items-center justify-center shrink-0">
+          <i class="fa-solid fa-xmark"></i>
+        </button>
+      </div>
+
+      <!-- Two-Tab Switcher -->
+      <div class="grid grid-cols-2 gap-1.5 p-1 rounded-2xl bg-ivory-100 dark:bg-obsidian-900 border border-gold-400/25" role="tablist">
+        <button
+          id="tab-btn-auto"
+          type="button"
+          role="tab"
+          aria-selected="true"
+          class="mandi-tab-btn py-2.5 px-3 rounded-xl text-xs font-semibold transition-all bg-gold-400 text-obsidian-950 shadow-sm"
+          data-tab="auto"
+          data-i18n="mandi_tab_auto"
+        >
+          Auto Live Parity
+        </button>
+        <button
+          id="tab-btn-manual"
+          type="button"
+          role="tab"
+          aria-selected="false"
+          class="mandi-tab-btn py-2.5 px-3 rounded-xl text-xs font-semibold transition-all text-slate-600 dark:text-slate-300 hover:text-gold-500"
+          data-tab="manual"
+          data-i18n="mandi_tab_manual"
+        >
+          Direct Counter Rate
+        </button>
+      </div>
+
+      <!-- TAB 1: AUTO LIVE PARITY -->
+      <div id="mandi-panel-auto" class="space-y-4">
+        <p class="text-xs text-slate-600 dark:text-slate-400 leading-relaxed" data-i18n="mandi_desc">
+          Fine-tune the live spot rate with India customs/parity % and a local Sardarshahar/Churu ₹ offset. Saved automatically on this device.
+        </p>
+
+        <div class="grid sm:grid-cols-2 gap-4">
+          <!-- Gold Parity % Slider -->
+          <div class="p-3.5 rounded-2xl bg-ivory-50 dark:bg-obsidian-900/80 border border-gold-400/20">
+            <div class="flex items-center justify-between mb-1.5">
+              <label for="parity-gold-pct" class="text-[11px] font-semibold text-slate-700 dark:text-slate-300" data-i18n="parity_gold_lbl">Gold Duty/Parity %</label>
+              <span id="parity-gold-val" class="text-xs font-bold text-gold-600 dark:text-gold-400">+18.1%</span>
+            </div>
+            <input id="parity-gold-pct" type="range" min="0" max="50" step="0.1" value="18.1" class="w-full h-1.5 rounded-lg cursor-pointer" />
+          </div>
+
+          <!-- Silver Parity % Slider -->
+          <div class="p-3.5 rounded-2xl bg-ivory-50 dark:bg-obsidian-900/80 border border-gold-400/20">
+            <div class="flex items-center justify-between mb-1.5">
+              <label for="parity-silver-pct" class="text-[11px] font-semibold text-slate-700 dark:text-slate-300" data-i18n="parity_silver_lbl">Silver India Factor %</label>
+              <span id="parity-silver-val" class="text-xs font-bold text-gold-600 dark:text-gold-400">+9.5%</span>
+            </div>
+            <input id="parity-silver-pct" type="range" min="0" max="25" step="0.5" value="9.5" class="w-full h-1.5 rounded-lg cursor-pointer" />
+          </div>
+        </div>
+
+        <div class="grid sm:grid-cols-2 gap-4">
+          <div>
+            <label for="mandi-gold-offset" class="block text-xs font-semibold text-slate-700 dark:text-slate-300 mb-1.5" data-i18n="mandi_gold_lbl">
+              24K Gold Local Offset (₹ / 10g)
+            </label>
+            <input id="mandi-gold-offset" type="number" step="50" value="0" class="w-full px-4 py-3 rounded-xl bg-ivory-50 dark:bg-obsidian-900 border border-gold-400/30 text-sm font-semibold text-slate-900 dark:text-ivory-50 focus:outline-none focus:border-gold-400" />
+          </div>
+          <div>
+            <label for="mandi-silver-offset" class="block text-xs font-semibold text-slate-700 dark:text-slate-300 mb-1.5" data-i18n="mandi_silver_lbl">
+              999 Silver Local Offset (₹ / 1kg)
+            </label>
+            <input id="mandi-silver-offset" type="number" step="100" value="0" class="w-full px-4 py-3 rounded-xl bg-ivory-50 dark:bg-obsidian-900 border border-gold-400/30 text-sm font-semibold text-slate-900 dark:text-ivory-50 focus:outline-none focus:border-gold-400" />
+          </div>
+        </div>
+
+        <div class="flex items-center gap-3 pt-1">
+          <button id="save-mandi-btn" type="button" class="flex-1 py-3 rounded-xl btn-shimmer text-obsidian-950 font-semibold text-sm" data-i18n="mandi_save">
+            Apply Live Parity
+          </button>
+          <button id="reset-mandi-btn" type="button" class="px-4 py-3 rounded-xl border border-gold-400/30 text-slate-700 dark:text-slate-300 hover:border-gold-400 text-xs font-semibold" data-i18n="mandi_reset">
+            Reset
+          </button>
+        </div>
+      </div>
+
+      <!-- TAB 2: DIRECT COUNTER RATE OVERRIDE -->
+      <div id="mandi-panel-manual" class="hidden space-y-4">
+        <div class="flex items-center justify-between gap-3 p-3.5 rounded-2xl bg-gold-400/10 border border-gold-400/35">
+          <div>
+            <p class="text-xs font-bold text-slate-900 dark:text-ivory-50" data-i18n="manual_toggle_title">Use Manual Shop Rates</p>
+            <p class="text-[11px] text-slate-600 dark:text-slate-400" data-i18n="manual_toggle_sub">Display your exact daily counter rates across all cards &amp; calculator.</p>
+          </div>
+          <label class="relative inline-flex items-center cursor-pointer shrink-0">
+            <input id="manual-override-toggle" type="checkbox" class="sr-only peer" />
+            <div class="w-11 h-6 bg-slate-300 dark:bg-obsidian-950 peer-focus:outline-none rounded-full peer peer-checked:after:translate-x-full peer-checked:after:border-white after:content-[''] after:absolute after:top-[2px] after:left-[2px] after:bg-white after:rounded-full after:h-5 after:w-5 after:transition-all peer-checked:bg-gold-400"></div>
+          </label>
+        </div>
+
+        <div class="grid sm:grid-cols-2 gap-3.5">
+          <div>
+            <label for="manual-24k" class="block text-xs font-semibold text-slate-700 dark:text-slate-300 mb-1" data-i18n="manual_24k_lbl">24K Gold (₹ / 10g)</label>
+            <input id="manual-24k" type="number" step="10" min="10000" value="127900" class="w-full px-3.5 py-2.5 rounded-xl bg-ivory-50 dark:bg-obsidian-900 border border-gold-400/30 text-sm font-semibold text-slate-900 dark:text-ivory-50 focus:outline-none focus:border-gold-400" />
+          </div>
+          <div>
+            <label for="manual-22k" class="block text-xs font-semibold text-slate-700 dark:text-slate-300 mb-1" data-i18n="manual_22k_lbl">22K Gold 916 (₹ / 10g)</label>
+            <input id="manual-22k" type="number" step="10" min="10000" value="117240" class="w-full px-3.5 py-2.5 rounded-xl bg-ivory-50 dark:bg-obsidian-900 border border-gold-400/30 text-sm font-semibold text-slate-900 dark:text-ivory-50 focus:outline-none focus:border-gold-400" />
+          </div>
+          <div>
+            <label for="manual-18k" class="block text-xs font-semibold text-slate-700 dark:text-slate-300 mb-1" data-i18n="manual_18k_lbl">18K Gold 750 (₹ / 10g)</label>
+            <input id="manual-18k" type="number" step="10" min="10000" value="95930" class="w-full px-3.5 py-2.5 rounded-xl bg-ivory-50 dark:bg-obsidian-900 border border-gold-400/30 text-sm font-semibold text-slate-900 dark:text-ivory-50 focus:outline-none focus:border-gold-400" />
+          </div>
+          <div>
+            <label for="manual-silver" class="block text-xs font-semibold text-slate-700 dark:text-slate-300 mb-1" data-i18n="manual_silver_lbl">999 Silver (₹ / 1kg)</label>
+            <input id="manual-silver" type="number" step="100" min="10000" value="175000" class="w-full px-3.5 py-2.5 rounded-xl bg-ivory-50 dark:bg-obsidian-900 border border-gold-400/30 text-sm font-semibold text-slate-900 dark:text-ivory-50 focus:outline-none focus:border-gold-400" />
+          </div>
+          <div class="sm:col-span-2">
+            <label for="manual-silver-10g" class="block text-xs font-semibold text-slate-700 dark:text-slate-300 mb-1" data-i18n="manual_silver_10g_lbl">999 Silver (₹ / 10g — auto-synced with 1kg)</label>
+            <input id="manual-silver-10g" type="number" step="1" min="100" value="1750" class="w-full px-3.5 py-2.5 rounded-xl bg-ivory-50 dark:bg-obsidian-900 border border-gold-400/30 text-sm font-semibold text-slate-900 dark:text-ivory-50 focus:outline-none focus:border-gold-400" />
+          </div>
+        </div>
+
+        <button id="auto-calc-purity-btn" type="button" class="text-[11px] font-semibold text-gold-600 dark:text-gold-400 hover:underline inline-flex items-center gap-1.5">
+          <i class="fa-solid fa-wand-magic-sparkles"></i>
+          <span data-i18n="manual_autocalc">Auto-calculate 22K &amp; 18K from 24K</span>
+        </button>
+
+        <div class="flex items-center gap-3 pt-1">
+          <button id="save-manual-btn" type="button" class="flex-1 py-3 rounded-xl btn-shimmer text-obsidian-950 font-semibold text-sm" data-i18n="manual_save">
+            Save Shop Counter Rates
+          </button>
+          <button id="clear-manual-btn" type="button" class="px-4 py-3 rounded-xl border border-gold-400/30 text-slate-700 dark:text-slate-300 hover:border-gold-400 text-xs font-semibold" data-i18n="mandi_reset">
+            Reset
+          </button>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- ===================================================================== -->
+  <!-- CUSTOM LUXURY TOAST NOTIFICATION                                      -->
+  <!-- ===================================================================== -->
+  <div id="toast" role="status" aria-live="polite" class="fixed bottom-20 sm:bottom-6 left-1/2 -translate-x-1/2 z-50 pointer-events-none opacity-0 translate-y-4 transition-all duration-300 w-[92%] max-w-md">
+    <div class="flex items-center gap-3 px-5 py-3.5 rounded-2xl bg-obsidian-950/95 text-ivory-50 border border-gold-400/50 shadow-2xl glass-luxury">
+      <i id="toast-icon" class="fa-solid fa-circle-check text-emerald-400 text-lg shrink-0"></i>
+      <span id="toast-message" class="text-xs sm:text-sm font-medium">Updated</span>
+    </div>
+  </div>
+
+  <!-- ===================================================================== -->
+  <!-- JAVASCRIPT: TRILINGUAL ENGINE, REAL-TIME BULLION API, ESTIMATOR, UI   -->
+  <!-- ===================================================================== -->
+  <script>
+    (function () {
+      'use strict';
+
+      /* -------------------------------------------------------------------
+         1. CONFIGURATION & STATE
+      ------------------------------------------------------------------- */
+      const STORE_WHATSAPP = '9198XXXXXXXX';
+      const TROY_OZ_TO_GRAM = 31.1034768;
+      const STORAGE_KEY_RATES = 'aarti-rate-settings-v4';
+      const DEFAULT_GOLD_PARITY = 18.1;  // Calibrated to Jaipur/Churu retail vs XAU/USD spot
+      const DEFAULT_SILVER_PARITY = 9.5; // Realistic India bullion/retail factor (~1.095x: 6% duty + ~3.5% local parity)
+
+      // Verified Churu, Rajasthan / India retail bullion baseline (fallback when offline)
+      const CHURU_BASELINE = {
+        gold24k: 127900,  // ₹1,27,900 per 10g (₹12,790 / g)
+        gold22k: 117240,  // ₹1,17,240 per 10g (₹11,724 / g)
+        gold18k: 95930,   // ₹95,930 per 10g  (₹9,593 / g)
+        silverKg: 175000, // ₹1,75,000 per 1kg (₹1,750 / 10g | ₹175 / g)
+      };
+
+      // 10-day relative trend ratios (anchored dynamically to today's live rate so scale always matches)
+      const TREND_HISTORY = {
+        labels: ['Day 1', 'Day 2', 'Day 3', 'Day 4', 'Day 5', 'Day 6', 'Day 7', 'Day 8', 'Day 9', 'Today'],
+        '24k': [137770, 136950, 136200, 133410, 130840, 125720, 125230, 125230, 126710, 127900],
+        '22k': [126290, 125540, 124850, 122290, 119940, 115240, 114790, 114790, 116150, 117240],
+        // Silver relative daily factors (anchored to live sKg in renderRates)
+        silverFactors: [1.032, 1.024, 1.018, 1.011, 0.996, 0.988, 0.991, 0.994, 0.998, 1.0],
+        silver: [180600, 179200, 178150, 176900, 174300, 172900, 173400, 173950, 174650, 175000],
+      };
+
+      let currentLang = 'en';
+      let currentFilter = 'all';
+      let currentUnit = '10g';       // Gold unit: '10g' | '1g' | 'tola'
+      let currentSilverUnit = '1kg'; // Silver unit: '1kg' | '10g' | '1g'
+      let currentChartMetal = '24k';
+      let countdownSec = 60;
+      let countdownInterval = null;
+      let isLiveApiActive = false;
+      const wishlistIds = new Set();
+
+      // Raw international spot data from API (null until valid live sync)
+      let rawSpot = null; // { xauUsd, xagUsd, usdInr }
+
+      // Persistent shop rate settings (Auto Live Parity + Direct Counter Override)
+      const rateSettings = {
+        goldParityPct: DEFAULT_GOLD_PARITY,
+        silverParityPct: DEFAULT_SILVER_PARITY,
+        goldOffset10g: 0,     // Local Sardarshahar/Churu ₹ offset per 10g
+        silverOffsetKg: 0,    // Local Sardarshahar/Churu ₹ offset per 1kg
+        manualEnabled: false,
+        manual24k: CHURU_BASELINE.gold24k,
+        manual22k: CHURU_BASELINE.gold22k,
+        manual18k: CHURU_BASELINE.gold18k,
+        manualSilverKg: CHURU_BASELINE.silverKg,
+      };
+
+      /* -------------------------------------------------------------------
+         2. COMPLETE TRILINGUAL DICTIONARY (EN | हिन्दी | राजस्थानी)
+      ------------------------------------------------------------------- */
+      const TRANSLATIONS = {
+        en: {
+          live_badge: 'LIVE',
+          brand_name: 'Aarti <span class="text-gold-500 dark:text-gold-400">Jewellers</span>',
+          brand_sub: 'Ajeetsar • Sardarshahar',
+          nav_home: 'Home',
+          nav_rates: 'Live Rates',
+          nav_estimator: 'Price Estimator',
+          nav_collections: 'Collections',
+          nav_heritage: 'Heritage',
+          nav_visit: 'Visit Us',
+          btn_call: 'Call Now',
+          btn_whatsapp: 'WhatsApp',
+          hero_pill: 'Khamma Ghani • 100% BIS 916 HUID Hallmarked Purity',
+          hero_title: 'Timeless Rajasthani Heritage, Crafted in <span class="text-gold-gradient italic">Pure Gold</span>',
+          hero_subtitle: 'Welcome to Aarti Jewellers — Village Ajeetsar, Sardarshahar (Churu). Experience authentic Rajputi bridal gold, contemporary diamond artistry, and pure 999 silverware backed by real-time transparent bullion rates.',
+          hero_cta_rates: 'Check Live Gold Rates',
+          hero_cta_collections: 'Explore Collections',
+          trust_1_t: 'BIS 916 Hallmarked',
+          trust_1_s: 'Certified HUID Gold',
+          trust_2_t: 'Real-Time Billing',
+          trust_2_s: 'Zero Hidden Charges',
+          trust_3_t: 'Rajputi & Modern',
+          trust_3_s: 'Custom Bridal Craft',
+          hero_card_tag: 'Signature Bridal Edit',
+          hero_card_title: 'Rajwada 22K Aad & Haar',
+          rates_eyebrow: 'Real-Time Bullion Desk',
+          rates_heading: 'Today\'s Live <span class="text-gold-500 dark:text-gold-400">Gold &amp; Silver Rates</span>',
+          rates_sub: 'Live international spot prices converted to Indian bullion parity for Ajeetsar & Sardarshahar. Auto-refreshes every 60 seconds.',
+          btn_refresh: 'Refresh Rates',
+          btn_mandi: 'Mandi / Shop Rate',
+          card_24k_tag: '24K Gold • 99.9%',
+          card_24k_sub: 'Pure Investment Gold',
+          card_22k_tag: '22K • 916 Hallmark',
+          card_22k_sub: 'Bridal & Jewellery Gold',
+          card_18k_tag: '18K Gold • 750 Fine',
+          card_18k_sub: 'Diamond & Daily Wear',
+          card_silver_tag: 'Silver • 999 Fine',
+          card_silver_sub: 'Pure Chandi Rate',
+          spot_feed_lbl: 'Market Feed:',
+          trend_eyebrow: 'Churu / Rajasthan Sarafa Analytics',
+          trend_heading: '10-Day Price Trend',
+          trend_high: '10-Day High',
+          trend_low: '10-Day Low',
+          trend_today: 'Today\'s Rate',
+          wishlist_btn: 'Shortlisted',
+          exch_eyebrow: 'Instant Valuation',
+          exch_heading: 'Old Gold & Silver Exchange',
+          exch_purity_lbl: 'Old Gold / Silver Purity',
+          exch_weight_lbl: 'Net Weight (Grams)',
+          exch_val_lbl: 'Estimated Exchange Value Today',
+          exch_cta: 'Book Purity Check',
+          stat_1: 'BIS 916 HUID Purity',
+          stat_2: 'Happy Churu Families',
+          stat_3: 'Bridal & Modern Designs',
+          stat_4: 'Hidden Deductions',
+          bridal_banner_t: 'Wedding Season Bridal Lounge',
+          bridal_banner_s: 'Custom Rajputi Aad, Borla & Timaniya orders open.',
+          btn_book: 'Book',
+          test_eyebrow: 'Trusted Across Churu District',
+          test_heading: 'Words from Our <span class="text-gold-500 dark:text-gold-400">Patron Families</span>',
+          btn_copy: 'Copy',
+          form_msg_lbl: 'Message / Preferred Date',
+          form_submit: 'Request Consultation',
+          footer_links: 'Quick Links',
+          footer_desc: 'Your trusted destination for 100% BIS 916 HUID Hallmarked Gold, authentic Rajputi Bridal Ornaments, and Pure 999 Silverware in Village Ajeetsar, Sardarshahar, Churu.',
+          per_1g: 'Per 1 Gram:',
+          per_10g: 'Per 10 Grams:',
+          rates_disclaimer: 'Indicative live Indian bullion parity rates (excluding 3% GST & making charges). Final invoice rates are confirmed at Aarti Jewellers, Ajeetsar.',
+          est_eyebrow: 'Transparent Pricing Tool',
+          est_heading: 'Live Jewellery Price Estimator',
+          est_sub: 'Synced directly to today\'s live bullion rates. Estimate your custom ornament with making charges and 3% GST.',
+          est_metal_lbl: 'Select Metal & Purity',
+          opt_22k: '22K Gold (916 Hallmark)',
+          opt_24k: '24K Gold (99.9% Pure)',
+          opt_18k: '18K Gold (750 Fine)',
+          opt_silver: 'Silver (999 Fine)',
+          est_weight_lbl: 'Weight (in Grams)',
+          est_making_lbl: 'Making Charges (%)',
+          est_mk_0: '0% (Coins/Bars)',
+          est_mk_10: '10% (Standard)',
+          est_mk_25: '25% (Heavy Bridal)',
+          est_box_title: 'Estimated Breakdown',
+          est_row_metal: 'Metal Value',
+          est_row_making: 'Making Charges',
+          est_row_gst: 'GST (3% Mandatory)',
+          est_row_total: 'Final Estimate',
+          est_wa_btn: 'Lock Estimate on WhatsApp',
+          col_eyebrow: 'Curated Creations',
+          col_heading: 'Signature <span class="text-gold-500 dark:text-gold-400">Collections</span>',
+          col_sub: 'Discover authentic Rajasthani Bridal Aad, Borla & Bangdi alongside sleek modern gold rings and pure 999 silverware.',
+          flt_all: 'All',
+          flt_bridal: 'Bridal Aad & Borla',
+          flt_necklaces: '22K Necklaces',
+          flt_bangles: 'Rajasthani Bangdi',
+          flt_rings: 'Solitaire Rings',
+          flt_silver: '999 Silverware',
+          inquire_wa: 'Inquire on WhatsApp',
+          her_eyebrow: 'The Aarti Promise',
+          her_heading: 'Craftsmanship Built on <span class="text-gold-500 dark:text-gold-400">Generational Trust</span>',
+          her_sub: 'Every ornament at Aarti Jewellers carries our hallmark guarantee of purity, artistry, and lifelong value.',
+          her_1_t: 'BIS 916 HUID Hallmark',
+          her_1_d: 'Every gold ornament is laser-etched with a government-certified 6-digit HUID hallmark for guaranteed purity.',
+          her_2_t: '100% Buyback & Exchange',
+          her_2_d: 'Upgrade your designs anytime with honest old-gold valuation and full prevailing gold rate on hallmarked pieces.',
+          her_3_t: 'Rajasthani & Modern Craft',
+          her_3_d: 'From classic Rajputi Aad, Timaniya & Borla to minimalist Italian-finish chains, custom-crafted by master karigars.',
+          her_4_t: 'Transparent Live Billing',
+          her_4_d: 'Clear itemized GST invoice detailing net gold weight, stone weight, live gold rate, and fair making charges.',
+          vis_eyebrow: 'Showroom & Appointments',
+          vis_heading: 'Visit <span class="text-gold-500 dark:text-gold-400">Aarti Jewellers</span>',
+          vis_sub: 'Visit our showroom in Village Ajeetsar, Sardarshahar, or book a private bridal consultation.',
+          vis_addr_t: 'Showroom Address',
+          vis_addr_val: 'Aarti Jewellers, Village: Ajeetsar, Sardarshahar, District Churu, Rajasthan — 331504',
+          vis_mob_lbl: 'Mobile / WhatsApp',
+          vis_hrs_lbl: 'Store Timings',
+          vis_hrs_val: '10:00 AM – 8:00 PM',
+          vis_open_all: 'Open All Days',
+          btn_directions: 'Get Directions',
+          btn_chat: 'Chat Now',
+          form_heading: 'Book Appointment / Custom Order',
+          form_sub: 'Planning bridal shopping or a custom Rajasthani ornament? Share your details below.',
+          form_name_lbl: 'Your Name *',
+          form_phone_lbl: 'Mobile Number *',
+          form_int_lbl: 'Interested In',
+          form_opt_1: 'Bridal Gold Set (Aad, Borla, Haar - 22K 916)',
+          form_opt_2: 'Custom / Made-to-Order Jewellery',
+          form_opt_3: 'Daily Wear Gold Rings / Chains / Bangles',
+          mandi_title: 'Mandi / Shop Rate Adjust',
+          mandi_tab_auto: 'Auto Live Parity',
+          mandi_tab_manual: 'Direct Counter Rate',
+          mandi_desc: 'Fine-tune the live spot rate with India customs/parity % and a local Sardarshahar/Churu ₹ offset. Saved automatically on this device.',
+          parity_gold_lbl: 'Gold Duty/Parity %',
+          parity_silver_lbl: 'Silver Duty/Parity %',
+          mandi_gold_lbl: '24K Gold Local Offset (₹ / 10g)',
+          mandi_silver_lbl: '999 Silver Local Offset (₹ / 1kg)',
+          mandi_save: 'Apply Live Parity',
+          mandi_reset: 'Reset',
+          manual_toggle_title: 'Use Manual Shop Rates',
+          manual_toggle_sub: 'Display your exact daily counter rates across all cards & calculator.',
+          manual_24k_lbl: '24K Gold (₹ / 10g)',
+          manual_22k_lbl: '22K Gold 916 (₹ / 10g)',
+          manual_18k_lbl: '18K Gold 750 (₹ / 10g)',
+          manual_silver_lbl: '999 Silver (₹ / 1kg)',
+          manual_silver_10g_lbl: '999 Silver (₹ / 10g — auto-synced with 1kg)',
+          manual_autocalc: 'Auto-calculate 22K & 18K from 24K',
+          manual_save: 'Save Shop Counter Rates',
+          status_live: 'LIVE SPOT + INDIA PARITY',
+          status_fallback: 'CHURU SARAFA RATE',
+          status_custom: 'CUSTOM SHOP RATE',
+          toast_refreshed: 'Live gold & silver rates updated!',
+          toast_mandi_saved: 'Local Sardarshahar mandi parity applied.',
+          toast_manual_saved: 'Custom shop counter rates saved & activated.',
+          toast_mandi_reset: 'Reset to default live India parity & Churu baseline.',
+          toast_form_ok: 'Thank you! Your consultation request at Aarti Jewellers is received.',
+        },
+
+        hi: {
+          live_badge: 'लाइव',
+          brand_name: 'आरती <span class="text-gold-500 dark:text-gold-400">ज्वैलर्स</span>',
+          brand_sub: 'अजीतसर • सरदारशहर',
+          nav_home: 'होम',
+          nav_rates: 'लाइव भाव',
+          nav_estimator: 'कीमत कैलकुलेटर',
+          nav_collections: 'कलेक्शन',
+          nav_heritage: 'हमारी शुद्धता',
+          nav_visit: 'शोरूम पता',
+          btn_call: 'कॉल करें',
+          btn_whatsapp: 'व्हाट्सएप',
+          hero_pill: 'खम्मा घणी • 100% BIS 916 HUID हॉलमार्क शुद्धता',
+          hero_title: 'राजस्थानी शाही परंपरा, <span class="text-gold-gradient">शुद्ध सोने</span> में गढ़ी कलाकृति',
+          hero_subtitle: 'आरती ज्वैलर्स — ग्राम अजीतसर, सरदारशहर (चूरू) में आपका स्वागत है। प्रामाणिक राजपूती दुल्हन आभूषण, आधुनिक डायमंड गहने और शुद्ध 999 चांदी, पारदर्शी लाइव मार्केट भाव के साथ।',
+          hero_cta_rates: 'आज के लाइव भाव देखें',
+          hero_cta_collections: 'कलेक्शन देखें',
+          trust_1_t: 'BIS 916 हॉलमार्क',
+          trust_1_s: 'प्रमाणित HUID शुद्धता',
+          trust_2_t: 'पारदर्शी लाइव बिलिंग',
+          trust_2_s: 'कोई छिपा शुल्क नहीं',
+          trust_3_t: 'राजपूती व आधुनिक',
+          trust_3_s: 'कस्टम ब्राइडल कारीगरी',
+          hero_card_tag: 'खास दुल्हन कलेक्शन',
+          hero_card_title: 'रजवाड़ा 22K आड़ व हार सेट',
+          rates_eyebrow: 'रियल-टाइम सराफा डेस्क',
+          rates_heading: 'आज के <span class="text-gold-500 dark:text-gold-400">ताजा सोना-चांदी भाव</span>',
+          rates_sub: 'अजीतसर और सरदारशहर के लिए अंतर्राष्ट्रीय लाइव स्पॉट भाव का भारतीय बाजार रूपांतरण। हर 60 सेकंड में स्वतः अपडेट।',
+          btn_refresh: 'भाव रिफ्रेश करें',
+          btn_mandi: 'मंडी / शॉप भाव',
+          card_24k_tag: '24K सोना • 99.9%',
+          card_24k_sub: 'शुद्ध निवेश सोना',
+          card_22k_tag: '22K • 916 हॉलमार्क',
+          card_22k_sub: 'आभूषण का मानक सोना',
+          card_18k_tag: '18K सोना • 750 फाइन',
+          card_18k_sub: 'डायमंड व हल्के गहने',
+          card_silver_tag: 'चांदी • 999 शुद्ध',
+          card_silver_sub: 'शुद्ध चांदी का भाव',
+          spot_feed_lbl: 'लाइव मार्केट:',
+          trend_eyebrow: 'चूरू / राजस्थान सराफा विश्लेषण',
+          trend_heading: 'पिछले 10 दिनों के भाव का रुझान',
+          trend_high: '10 दिन उच्चतम',
+          trend_low: '10 दिन न्यूनतम',
+          trend_today: 'आज का भाव',
+          wishlist_btn: 'पसंदीदा सूची',
+          exch_eyebrow: 'तुरंत मूल्यांकन',
+          exch_heading: 'पुराना सोना व चांदी एक्सचेंज',
+          exch_purity_lbl: 'पुराने सोने / चांदी की शुद्धता',
+          exch_weight_lbl: 'शुद्ध वजन (ग्राम में)',
+          exch_val_lbl: 'आज का अनुमानित एक्सचेंज मूल्य',
+          exch_cta: 'शुद्धता जांच बुक करें',
+          stat_1: 'BIS 916 HUID शुद्धता',
+          stat_2: 'संतुष्ट परिवार (चूरू)',
+          stat_3: 'ब्राइडल व मॉडर्न डिज़ाइन',
+          stat_4: 'कोई छिपी कटौती नहीं',
+          bridal_banner_t: 'शादी सीजन ब्राइडल लाउंज',
+          bridal_banner_s: 'कस्टम राजपूती आड़, बोरला व तिमणिया ऑर्डर चालू हैं।',
+          btn_book: 'बुक करें',
+          test_eyebrow: 'चूरू जिले का विश्वास',
+          test_heading: 'हमारे <span class="text-gold-500 dark:text-gold-400">ग्राहकों के विचार</span>',
+          btn_copy: 'कॉपी',
+          form_msg_lbl: 'संदेश / आने की तारीख',
+          form_submit: 'अपॉइंटमेंट भेजें',
+          footer_links: 'त्वरित लिंक',
+          footer_desc: 'ग्राम अजीतसर, सरदारशहर (चूरू) में 100% BIS 916 HUID हॉलमार्क सोना, पारंपरिक राजपूती दुल्हन गहने और शुद्ध 999 चांदी का विश्वसनीय शोरूम।',
+          per_1g: 'प्रति 1 ग्राम:',
+          per_10g: 'प्रति 10 ग्राम:',
+          rates_disclaimer: 'ये सांकेतिक लाइव भारतीय सराफा भाव हैं (3% GST व मेकिंग चार्ज अतिरिक्त)। अंतिम बिल का भाव आरती ज्वैलर्स, अजीतसर शोरूम पर तय होगा।',
+          est_eyebrow: 'पारदर्शी मूल्य अनुमान',
+          est_heading: 'लाइव आभूषण कीमत कैलकुलेटर',
+          est_sub: 'आज के लाइव भाव से जुड़ा कैलकुलेटर। वजन, मेकिंग चार्ज और 3% GST सहित अपने गहने का तुरंत अनुमान जानें।',
+          est_metal_lbl: 'धातु व शुद्धता चुनें',
+          opt_22k: '22K सोना (916 हॉलमार्क)',
+          opt_24k: '24K सोना (99.9% शुद्ध)',
+          opt_18k: '18K सोना (750 फाइन)',
+          opt_silver: 'चांदी (999 शुद्ध)',
+          est_weight_lbl: 'वजन (ग्राम में)',
+          est_making_lbl: 'मेकिंग चार्ज (%)',
+          est_mk_0: '0% (सिक्के/बार)',
+          est_mk_10: '10% (सामान्य)',
+          est_mk_25: '25% (हैवी ब्राइडल)',
+          est_box_title: 'अनुमानित बिल विवरण',
+          est_row_metal: 'धातु की कीमत',
+          est_row_making: 'मेकिंग चार्ज',
+          est_row_gst: 'GST (3% अनिवार्य)',
+          est_row_total: 'कुल अनुमानित कीमत',
+          est_wa_btn: 'व्हाट्सएप पर कोटेशन पाएं',
+          col_eyebrow: 'चुनिंदा डिज़ाइन',
+          col_heading: 'हमारा खास <span class="text-gold-500 dark:text-gold-400">कलेक्शन</span>',
+          col_sub: 'पारंपरिक राजस्थानी आड़, बोरला और बांगड़ी से लेकर आधुनिक गोल्ड रिंग्स और शुद्ध 999 चांदी के आभूषण।',
+          flt_all: 'सभी',
+          flt_bridal: 'ब्राइडल आड़ व बोरला',
+          flt_necklaces: '22K नेकलेस',
+          flt_bangles: 'राजस्थानी बांगड़ी',
+          flt_rings: 'सॉलिटेयर रिंग्स',
+          flt_silver: '999 चांदी के बर्तन',
+          inquire_wa: 'व्हाट्सएप पर पूछें',
+          her_eyebrow: 'आरती ज्वैलर्स का वादा',
+          her_heading: 'पीढ़ियों के <span class="text-gold-500 dark:text-gold-400">विश्वास की कारीगरी</span>',
+          her_sub: 'आरती ज्वैलर्स का हर आभूषण शुद्धता, बेजोड़ कारीगरी और जीवनभर के भरोसे की गारंटी के साथ आता है।',
+          her_1_t: 'BIS 916 HUID हॉलमार्क',
+          her_1_d: 'हर सोने के गहने पर भारत सरकार द्वारा प्रमाणित 6-अंकीय HUID हॉलमार्क मुहर लगी होती है।',
+          her_2_t: '100% बायबैक व एक्सचेंज',
+          her_2_d: 'पुराने सोने की ईमानदार जांच और हॉलमार्क गहनों पर प्रचलित बाजार भाव से पूरा एक्सचेंज मूल्य।',
+          her_3_t: 'राजस्थानी व आधुनिक कला',
+          her_3_d: 'पारंपरिक राजपूती आड़, तिमणिया, बोरला से लेकर मॉडर्न इटालियन चेन तक, कुशल कारीगरों द्वारा निर्मित।',
+          her_4_t: 'पारदर्शी लाइव बिलिंग',
+          her_4_d: 'शुद्ध वजन, नग का वजन, लाइव रेट और उचित मेकिंग चार्ज के साथ स्पष्ट पक्का GST बिल।',
+          vis_eyebrow: 'शोरूम व अपॉइंटमेंट',
+          vis_heading: '<span class="text-gold-500 dark:text-gold-400">आरती ज्वैलर्स</span> पधारें',
+          vis_sub: 'ग्राम अजीतसर, सरदारशहर स्थित हमारे शोरूम पर पधारें या ब्राइडल शॉपिंग के लिए अपॉइंटमेंट बुक करें।',
+          vis_addr_t: 'शोरूम का पता',
+          vis_addr_val: 'आरती ज्वैलर्स, ग्राम: अजीतसर, सरदारशहर, जिला चूरू, राजस्थान — 331504',
+          vis_mob_lbl: 'मोबाइल / व्हाट्सएप',
+          vis_hrs_lbl: 'शोरूम समय',
+          vis_hrs_val: 'सुबह 10:00 – रात 8:00 बजे',
+          vis_open_all: 'प्रतिदिन खुला',
+          btn_directions: 'रास्ता देखें (मैप)',
+          btn_chat: 'चैट करें',
+          form_heading: 'अपॉइंटमेंट / कस्टम ऑर्डर बुक करें',
+          form_sub: 'शादी की खरीदारी या मनपसंद गहना बनवाना चाहते हैं? नीचे विवरण भरें।',
+          form_name_lbl: 'आपका नाम *',
+          form_phone_lbl: 'मोबाइल नंबर *',
+          form_int_lbl: 'आप किसमें रुचि रखते हैं',
+          form_opt_1: 'ब्राइडल गोल्ड सेट (आड़, बोरला, हार - 22K 916)',
+          form_opt_2: 'कस्टम / ऑर्डर पर आभूषण निर्माण',
+          form_opt_3: 'रोज़ाना पहनने की अंगूठी / चेन / चूड़ियां',
+          mandi_title: 'मंडी / शॉप भाव समायोजन',
+          mandi_tab_auto: 'ऑटो लाइव पैरिटी',
+          mandi_tab_manual: 'सीधा काउंटर भाव',
+          mandi_desc: 'भारतीय कस्टम/पैरिटी % और सरदारशहर/चूरू मंडी के लोकल अंतर (+ या -) को सेट करें। यह इसी डिवाइस पर सेव रहेगा।',
+          parity_gold_lbl: 'सोना ड्यूटी/पैरिटी %',
+          parity_silver_lbl: 'चांदी ड्यूटी/पैरिटी %',
+          mandi_gold_lbl: '24K सोना लोकल अंतर (₹ / 10 ग्राम)',
+          mandi_silver_lbl: '999 चांदी लोकल अंतर (₹ / 1 किग्रा)',
+          mandi_save: 'लाइव पैरिटी लागू करें',
+          mandi_reset: 'रीसेट',
+          manual_toggle_title: 'मैन्युअल शॉप भाव चालू करें',
+          manual_toggle_sub: 'सभी कार्ड और कैलकुलेटर पर अपने आज के पक्के दुकान भाव दिखाएं।',
+          manual_24k_lbl: '24K सोना (₹ / 10 ग्राम)',
+          manual_22k_lbl: '22K सोना 916 (₹ / 10 ग्राम)',
+          manual_18k_lbl: '18K सोना 750 (₹ / 10 ग्राम)',
+          manual_silver_lbl: '999 चांदी (₹ / 1 किग्रा)',
+          manual_silver_10g_lbl: '999 चांदी (₹ / 10 ग्राम — 1 किग्रा से लिंक)',
+          manual_autocalc: '24K से 22K व 18K स्वतः निकालें',
+          manual_save: 'दुकान के भाव सेव करें',
+          status_live: 'लाइव स्पॉट + भारत पैरिटी',
+          status_fallback: 'चूरू सराफा भाव',
+          status_custom: 'कस्टम शॉप भाव',
+          toast_refreshed: 'आज के लाइव सोना-चांदी भाव अपडेट हो गए!',
+          toast_mandi_saved: 'सरदारशहर लोकल मंडी पैरिटी लागू कर दी गई।',
+          toast_manual_saved: 'आपके कस्टम दुकान भाव सेव और लागू हो गए।',
+          toast_mandi_reset: 'डिफ़ॉल्ट लाइव पैरिटी व चूरू भाव पर रीसेट किया गया।',
+          toast_form_ok: 'धन्यवाद! आरती ज्वैलर्स में आपका अनुरोध प्राप्त हो गया है।',
+        },
+
+        raj: {
+          live_badge: 'ताजा लाइव',
+          brand_name: 'आरती <span class="text-gold-500 dark:text-gold-400">ज्वैलर्स</span>',
+          brand_sub: 'अजीतसर • सरदारशहर',
+          nav_home: 'मुख्य पन्नो',
+          nav_rates: 'आज रा भाव',
+          nav_estimator: 'भाव हिसाब',
+          nav_collections: 'म्हारा गहणा',
+          nav_heritage: 'भरोसो व शुद्धता',
+          nav_visit: 'शोरूम पधारो',
+          btn_call: 'फोन करो',
+          btn_whatsapp: 'व्हाट्सएप',
+          hero_pill: 'खम्मा घणी सा • 100% BIS 916 हॉलमार्क खरो सोनो',
+          hero_title: 'राजस्थानी रजवाड़ी ठाठ, <span class="text-gold-gradient">खरा सोना</span> सूं घड़्योड़ा गहणा',
+          hero_subtitle: 'आरती ज्वैलर्स — गांव अजीतसर, सरदारशहर (चूरू) में आपरो घणो-घणो स्वागत है सा। ब्याव-शादी रा असली राजपूती गहणा, नयी डिज़ाइन रा हार अर शुद्ध 999 चांदी, एकदम सही अर ताजा भाव सूं।',
+          hero_cta_rates: 'आज रा ताजा भाव देखो',
+          hero_cta_collections: 'गहणा देखो',
+          trust_1_t: '916 हॉलमार्क सोनो',
+          trust_1_s: 'सरकारी HUID मोहर',
+          trust_2_t: 'साफ-सुथरो हिसाब',
+          trust_2_s: 'कोनी कोई छुप्यो खर्चा',
+          trust_3_t: 'राजपूती अर मॉडर्न',
+          trust_3_s: 'मनपसंद ऑर्डर कारीगरी',
+          hero_card_tag: 'ब्याव-शादी रो खास सेट',
+          hero_card_title: 'रजवाड़ी 22K आड़ अर हार',
+          rates_eyebrow: 'ताजा सराफा बाजार',
+          rates_heading: 'आज रा <span class="text-gold-500 dark:text-gold-400">ताजा सोना-चांदी रा भाव</span>',
+          rates_sub: 'अजीतसर अर सरदारशहर वास्ते आज रा लाइव मंडी भाव। हर 60 सेकंड में अपने आप ताजा होवे।',
+          btn_refresh: 'भाव ताजा करो',
+          btn_mandi: 'मंडी / दुकान भाव',
+          card_24k_tag: '24K खरो सोनो • 99.9%',
+          card_24k_sub: 'एकदम शुद्ध सोनो',
+          card_22k_tag: '22K • 916 हॉलमार्क',
+          card_22k_sub: 'गहणां रो असली सोनो',
+          card_18k_tag: '18K सोनो • 750 फाइन',
+          card_18k_sub: 'हीरा अर हल्का गहणा',
+          card_silver_tag: 'चांदी • 999 शुद्ध',
+          card_silver_sub: 'खरी चांदी रो भाव',
+          spot_feed_lbl: 'ताजा बाजार:',
+          trend_eyebrow: 'चूरू / राजस्थान सराफा ग्राफ',
+          trend_heading: '10 दिनां रा भाव रो उतार-चढ़ाव',
+          trend_high: '10 दिन ऊंचो भाव',
+          trend_low: '10 दिन नीचो भाव',
+          trend_today: 'आज रो भाव',
+          wishlist_btn: 'पसंद रा गहणा',
+          exch_eyebrow: 'तुरंत हिसाब',
+          exch_heading: 'जुणो सोनो अर चांदी बदली',
+          exch_purity_lbl: 'जुणा सोना / चांदी री शुद्धता',
+          exch_weight_lbl: 'वजन (ग्राम में)',
+          exch_val_lbl: 'आज रो अंदाज़न बदली मोल',
+          exch_cta: 'जांच वास्ते बुक करो',
+          stat_1: 'BIS 916 HUID खरोपन',
+          stat_2: 'खुश परिवार (चूरू)',
+          stat_3: 'ब्याव अर नयी डिज़ाइन',
+          stat_4: 'कोई कटौती कोनी',
+          bridal_banner_t: 'ब्याव-शादी रो खास लाउंज',
+          bridal_banner_s: 'राजपूती आड़, बोरला अर तिमणिया रा ऑर्डर चालू है।',
+          btn_book: 'बुक करो',
+          test_eyebrow: 'चूरू जिले रो भरोसो',
+          test_heading: 'म्हारे <span class="text-gold-500 dark:text-gold-400">परिवारां रा विचार</span>',
+          btn_copy: 'कॉपी',
+          form_msg_lbl: 'संदेश / आवण री तारीख',
+          form_submit: 'अनुरोध भेजो',
+          footer_links: 'मुख्य लिंक',
+          footer_desc: 'गांव अजीतसर, सरदारशहर (चूरू) में 100% BIS 916 HUID हॉलमार्क सोनो, राजपूती ब्याव रा गहणा अर खरी 999 चांदी रो भरोसेमंद शोरूम।',
+          per_1g: '1 ग्राम रो भाव:',
+          per_10g: '10 ग्राम रो भाव:',
+          rates_disclaimer: 'ये आज रा ताजा अंदाज़न सराफा भाव है सा (3% GST अर घड़ाई अलग सूं)। पक्को भाव आरती ज्वैलर्स, अजीतसर शोरूम माथे तय होसी।',
+          est_eyebrow: 'सीधो अर साफ हिसाब',
+          est_heading: 'गहणां री कीमत रो हिसाब लगाओ',
+          est_sub: 'आज रा ताजा भाव सूं जुड़्यो कैलकुलेटर। वजन, घड़ाई अर 3% GST जोड़ र तुरंत अंदाज़ो लगाओ।',
+          est_metal_lbl: 'सोनो या चांदी चुनो',
+          opt_22k: '22K सोनो (916 हॉलमार्क)',
+          opt_24k: '24K खरो सोनो (99.9%)',
+          opt_18k: '18K सोनो (750 फाइन)',
+          opt_silver: 'चांदी (999 खरी)',
+          est_weight_lbl: 'वजन (ग्राम में)',
+          est_making_lbl: 'घड़ाई / मेकिंग (%)',
+          est_mk_0: '0% (सिक्का/बिस्किट)',
+          est_mk_10: '10% (साधारण)',
+          est_mk_25: '25% (भारी ब्याव रा गहणा)',
+          est_box_title: 'पूरो अंदाज़न हिसाब',
+          est_row_metal: 'सोना/चांदी री कीमत',
+          est_row_making: 'घड़ाई (मेकिंग)',
+          est_row_gst: 'GST (3% सरकारी)',
+          est_row_total: 'कुल अंदाज़न रुपया',
+          est_wa_btn: 'व्हाट्सएप माथे पक्को भाव पूछो',
+          col_eyebrow: 'चुनिंदा राजस्थानी गहणा',
+          col_heading: 'म्हारा खास <span class="text-gold-500 dark:text-gold-400">गहणां रो खजानो</span>',
+          col_sub: 'ब्याव-शादी री पारंपरिक राजस्थानी आड़, बोरला, बांगड़ी अर आज रा मॉडर्न गहणा — हर पीस एकदम खरो।',
+          flt_all: 'सगळा',
+          flt_bridal: 'आड़ अर बोरला',
+          flt_necklaces: '22K हार-नेकलेस',
+          flt_bangles: 'राजस्थानी बांगड़ी',
+          flt_rings: 'अंगूठी / बींटी',
+          flt_silver: '999 चांदी रा बर्तन',
+          inquire_wa: 'व्हाट्सएप माथे पूछो',
+          her_eyebrow: 'आरती ज्वैलर्स रो वादो',
+          her_heading: 'पीढ़ियां रो <span class="text-gold-500 dark:text-gold-400">भरोसो अर खरी कारीगरी</span>',
+          her_sub: 'म्हारे शोरूम सूं लियोड़ो हर गहणो खरापन, बढ़िया कारीगरी अर उमर भर रा भरोसे री गारंटी देवे।',
+          her_1_t: 'BIS 916 HUID हॉलमार्क',
+          her_1_d: 'हर सोना रा गहणा माथे सरकारी 6-अंकीय HUID हॉलमार्क री पक्की मोहर लाग्योड़ी मिले।',
+          her_2_t: '100% वापसी अर बदली',
+          her_2_d: 'जुणो सोनो बदलवाणो होवे तो पूरी ईमानदारी सूं आज रा बाजार भाव माथे पूरो मोल मिले।',
+          her_3_t: 'राजस्थानी अर नयी कारीगरी',
+          her_3_d: 'असली राजपूती आड़, तिमणिया, बोरला सूं लेर मॉडर्न चेन-बींटी तक, माहिर कारीगरां रा हाथ सूं बण्योड़ा।',
+          her_4_t: 'एकदम साफ पक्को बिल',
+          her_4_d: 'नग रो वजन अलग, सोना रो वजन अलग अर आज रा ताजा भाव साथे पूरो पक्को GST बिल।',
+          vis_eyebrow: 'शोरूम पधारो सा',
+          vis_heading: '<span class="text-gold-500 dark:text-gold-400">आरती ज्वैलर्स</span> पधारो',
+          vis_sub: 'गांव अजीतसर, सरदारशहर म्हारे शोरूम माथे पधारो या ब्याव री खरीदारी वास्ते टाइम बुक करो।',
+          vis_addr_t: 'शोरूम रो पतो',
+          vis_addr_val: 'आरती ज्वैलर्स, गांव: अजीतसर, सरदारशहर, जिला चूरू, राजस्थान — 331504',
+          vis_mob_lbl: 'मोबाइल / व्हाट्सएप',
+          vis_hrs_lbl: 'खुलण रो टैम',
+          vis_hrs_val: 'सवेरे 10:00 – रात 8:00 बजे',
+          vis_open_all: 'रोज़ खुलो रेवे',
+          btn_directions: 'रस्तो देखो (मैप)',
+          btn_chat: 'बात करो',
+          form_heading: 'मिलण रो टैम / ऑर्डर लिखवाओ',
+          form_sub: 'ब्याव रा गहणा या मनपसंद डिज़ाइन बणवाणी है? नीचे नाम-नंबर लिख दो सा।',
+          form_name_lbl: 'आपरो शुभ नाम *',
+          form_phone_lbl: 'मोबाइल नंबर *',
+          form_int_lbl: 'कांई लेवणो या बणवाणो है',
+          form_opt_1: 'ब्याव रो गोल्ड सेट (आड़, बोरला, हार - 22K 916)',
+          form_opt_2: 'मनपसंद ऑर्डर माथे गहणो बणवाणो',
+          form_opt_3: 'रोज़ पेरण री बींटी / चेन / चूड़ियां',
+          mandi_title: 'मंडी / दुकान भाव सेट करो',
+          mandi_tab_auto: 'ऑटो लाइव भाव',
+          mandi_tab_manual: 'सीधो दुकान भाव',
+          mandi_desc: 'भारत कस्टम/पैरिटी % अर सरदारशहर/चूरू मंडी रे हिसाब सूं लोकल अंतर (+ या -) सेट करो। यो इण फोन में सेव रेसी।',
+          parity_gold_lbl: 'सोनो ड्यूटी/पैरिटी %',
+          parity_silver_lbl: 'चांदी ड्यूटी/पैरिटी %',
+          mandi_gold_lbl: '24K सोनो लोकल अंतर (₹ / 10 ग्राम)',
+          mandi_silver_lbl: '999 चांदी लोकल अंतर (₹ / 1 किलो)',
+          mandi_save: 'लाइव पैरिटी लागू करो',
+          mandi_reset: 'रीसेट',
+          manual_toggle_title: 'खुद रा दुकान भाव चालू करो',
+          manual_toggle_sub: 'सगळा कार्ड अर कैलकुलेटर माथे आज रा पक्का दुकान भाव दिखाओ।',
+          manual_24k_lbl: '24K सोनो (₹ / 10 ग्राम)',
+          manual_22k_lbl: '22K सोनो 916 (₹ / 10 ग्राम)',
+          manual_18k_lbl: '18K सोनो 750 (₹ / 10 ग्राम)',
+          manual_silver_lbl: '999 चांदी (₹ / 1 किलो)',
+          manual_silver_10g_lbl: '999 चांदी (₹ / 10 ग्राम — 1 किलो सूं जुड़्यो)',
+          manual_autocalc: '24K सूं 22K अर 18K अपने आप निकालो',
+          manual_save: 'दुकान रा भाव सेव करो',
+          status_live: 'लाइव स्पॉट + भारत पैरिटी',
+          status_fallback: 'चूरू सराफा भाव',
+          status_custom: 'कस्टम दुकान भाव',
+          toast_refreshed: 'आज रा ताजा सोना-चांदी भाव अपडेट हो गया सा!',
+          toast_mandi_saved: 'सरदारशहर लोकल मंडी पैरिटी लागू हो गयी।',
+          toast_manual_saved: 'आपरा कस्टम दुकान भाव सेव अर लागू हो गया सा।',
+          toast_mandi_reset: 'डिफ़ॉल्ट लाइव पैरिटी अर चूरू भाव माथे रीसेट कर दियो।',
+          toast_form_ok: 'घणो धन्यवाद सा! आरती ज्वैलर्स में आपरो संदेश मिल गयो है।',
+        },
+      };
+
+      /* -------------------------------------------------------------------
+         3. TRILINGUAL SIGNATURE COLLECTIONS DATA
+      ------------------------------------------------------------------- */
+      const COLLECTIONS = [
+        {
+          id: 1,
+          category: 'bridal',
+          purity: '22K 916',
+          weight: '52.0g',
+          image: 'https://images.unsplash.com/photo-1611591437281-460bfbe1220a?auto=format&fit=crop&w=800&q=80',
+          en: { name: 'Rajputi Bridal Aad & Borla Set', desc: 'Authentic Shekhawati & Marwari bridal gold Aad paired with royal Borla.' },
+          hi: { name: 'राजपूती ब्राइडल आड़ व बोरला सेट', desc: 'शेखावाटी व मारवाड़ी शैली में गढ़ी हुई शाही 22K गोल्ड आड़ और बोरला।' },
+          raj: { name: 'राजपूती ब्याव री आड़ अर बोरलो', desc: 'असली शेखावाटी अर मारवाड़ी डिज़ाइन में घड़्योड़ी 22K सोने री आड़ अर बोरलो।' },
+        },
+        {
+          id: 2,
+          category: 'necklaces',
+          purity: '22K 916',
+          weight: '34.5g',
+          image: 'https://images.unsplash.com/photo-1599643477877-530eb83abc8e?auto=format&fit=crop&w=800&q=80',
+          en: { name: 'Maharani Jadau 22K Choker', desc: 'Sculpted heritage gold choker necklace with matching handcrafted jhumkas.' },
+          hi: { name: 'महारानी जड़ाऊ 22K चोकर', desc: 'बेहतरीन पारंपरिक नक्काशी वाला गोल्ड चोकर और मैचिंग झुमके।' },
+          raj: { name: 'महारानी जड़ाऊ 22K चोकर हार', desc: 'शानदार कारीगरी वाळो गोल्ड चोकर हार अर साथे मैचिंग झुमका।' },
+        },
+        {
+          id: 3,
+          category: 'bangles',
+          purity: '22K 916',
+          weight: '28.0g',
+          image: 'https://images.unsplash.com/photo-1611652022419-a9419f74343d?auto=format&fit=crop&w=800&q=80',
+          en: { name: 'Royal Rajasthani Gold Bangdi', desc: 'Traditional hand-engraved Marwari bridal Bangdi kadas with secure clasp.' },
+          hi: { name: 'शाही राजस्थानी गोल्ड बांगड़ी', desc: 'हाथ की बारीक नक्काशी वाली पारंपरिक मारवाड़ी दुल्हन बांगड़ी कड़ा जोड़ी।' },
+          raj: { name: 'शाही राजस्थानी गोल्ड बांगड़ी', desc: 'हाथ री बारीक कारीगरी वाळी असली मारवाड़ी ब्याव री बांगड़ी जोड़ी।' },
+        },
+        {
+          id: 4,
+          category: 'rings',
+          purity: '18K 750',
+          weight: '4.6g',
+          image: 'https://images.unsplash.com/photo-1605100804763-247f67b3557e?auto=format&fit=crop&w=800&q=80',
+          en: { name: 'Solitaire Halo Diamond Ring', desc: 'Contemporary 18K gold engagement solitaire crafted for timeless brilliance.' },
+          hi: { name: 'सॉलिटेयर हेलो डायमंड रिंग', desc: 'सगाई और खास मौकों के लिए आधुनिक 18K गोल्ड सॉलिटेयर अंगूठी।' },
+          raj: { name: 'सॉलिटेयर हीरा जड़ी बींटी', desc: 'सगाई अर खास मौकां वास्ते मॉडर्न 18K सोने री चमकती बींटी।' },
+        },
+        {
+          id: 5,
+          category: 'bridal',
+          purity: '22K 916',
+          weight: '68.0g',
+          image: 'https://images.unsplash.com/photo-1535632066927-ab7c9ab60908?auto=format&fit=crop&w=800&q=80',
+          en: { name: 'Dulhan Rani Haar Ensemble', desc: 'Complete heirloom Rajasthani bridal Rani Haar with Timaniya detailing.' },
+          hi: { name: 'दुल्हन रानी हार सेट', desc: 'तिमणिया और कुंदन शैली की कारीगरी से सजा संपूर्ण दुल्हन रानी हार सेट।' },
+          raj: { name: 'दुल्हन रो शाही रानी हार', desc: 'तिमणिया अर रजवाड़ी कारीगरी सूं सज्यो पूरो ब्याव रो रानी हार।' },
+        },
+        {
+          id: 6,
+          category: 'necklaces',
+          purity: '22K 916',
+          weight: '15.2g',
+          image: 'https://images.unsplash.com/photo-1515562141207-7a88fb7ce338?auto=format&fit=crop&w=800&q=80',
+          en: { name: 'Lightweight Filigree Gold Necklace', desc: 'Graceful festive and everyday 22K gold necklace with delicate gold drops.' },
+          hi: { name: 'हल्का फिलीग्री 22K नेकलेस', desc: 'त्योहारों और रोज़ाना पहनने के लिए सुंदर व हल्का 22K गोल्ड नेकलेस।' },
+          raj: { name: 'हल्को-फुल्को 22K गोल्ड नेकलेस', desc: 'तीज-त्योहार अर रोज़ पेरण वास्ते सोवणो 22K सोने रो नेकलेस।' },
+        },
+        {
+          id: 7,
+          category: 'bangles',
+          purity: '22K 916',
+          weight: '19.5g',
+          image: 'https://images.unsplash.com/photo-1602751584552-8ba73aad10e1?auto=format&fit=crop&w=800&q=80',
+          en: { name: 'Diamond-Cut Patla Gold Bangles', desc: 'Modern sparkle-cut 22K gold bangles engineered for daily durability.' },
+          hi: { name: 'डायमंड-कट पाटला चूड़ियां', desc: 'रोज़ाना इस्तेमाल के लिए मजबूत और चमकदार 22K गोल्ड पाटला चूड़ियां।' },
+          raj: { name: 'डायमंड-कट पाटला चूड़ियां', desc: 'रोज़ पेरण वास्ते मजबूत अर चमकदार 22K सोने री पाटला चूड़ियां।' },
+        },
+        {
+          id: 8,
+          category: 'silverware',
+          purity: '999 Silver',
+          weight: '250g–500g',
+          image: 'https://images.unsplash.com/photo-1617038220319-276d3cfab638?auto=format&fit=crop&w=800&q=80',
+          en: { name: 'Pure 999 Silver Puja Thali & Payal', desc: 'Hallmarked pure chandi puja articles, bridal payal & auspicious gift coins.' },
+          hi: { name: 'शुद्ध 999 चांदी पूजा थाली व पायल', desc: 'शुद्ध चांदी की पूजा थाली, दुल्हन की पायल, बिछिया और शुभ उपहार सिक्के।' },
+          raj: { name: 'खरी 999 चांदी री थाली अर पायल', desc: 'शुद्ध चांदी री पूजा थाली, ब्याव री पायल, बिछिया अर शगुन रा सिक्का।' },
+        },
+      ];
+
+      /* -------------------------------------------------------------------
+         4. UTILITIES
+      ------------------------------------------------------------------- */
+      function formatINR(num) {
+        return '₹' + Math.round(num).toLocaleString('en-IN');
+      }
+
+      function getISTTime() {
+        try {
+          return new Date().toLocaleTimeString('en-IN', {
+            timeZone: 'Asia/Kolkata',
+            hour: '2-digit',
+            minute: '2-digit',
+            second: '2-digit',
+            hour12: true,
+          }) + ' IST';
+        } catch {
+          return new Date().toLocaleTimeString();
+        }
+      }
+
+      let toastTimer = null;
+      function showToast(message, isError = false) {
+        const toast = document.getElementById('toast');
+        const msgEl = document.getElementById('toast-message');
+        const iconEl = document.getElementById('toast-icon');
+        if (!toast || !msgEl || !iconEl) return;
+
+        msgEl.textContent = message;
+        iconEl.className = isError
+          ? 'fa-solid fa-circle-exclamation text-amber-400 text-lg shrink-0'
+          : 'fa-solid fa-circle-check text-emerald-400 text-lg shrink-0';
+
+        toast.classList.remove('opacity-0', 'translate-y-4');
+        toast.classList.add('opacity-100', 'translate-y-0');
+
+        clearTimeout(toastTimer);
+        toastTimer = setTimeout(() => {
+          toast.classList.add('opacity-0', 'translate-y-4');
+          toast.classList.remove('opacity-100', 'translate-y-0');
+        }, 3500);
+      }
+
+      function getEffectiveRates() {
+        // 1. Direct Counter Rate Override Mode
+        if (rateSettings.manualEnabled) {
+          const g24 = Math.max(10000, Math.round(rateSettings.manual24k));
+          const g22 = Math.max(10000, Math.round(rateSettings.manual22k));
+          const g18 = Math.max(10000, Math.round(rateSettings.manual18k));
+          const sKg = Math.max(10000, Math.round(rateSettings.manualSilverKg));
+          return {
+            g24,
+            g22,
+            g18,
+            sKg,
+            s10g: sKg / 100,
+            s1g: sKg / 1000,
+            mode: 'custom',
+          };
+        }
+
+        // 2. Live International Spot + India Parity + Local Churu Offset
+        let baseGold24k = CHURU_BASELINE.gold24k;
+        let baseSilverKg = CHURU_BASELINE.silverKg;
+
+        if (isLiveApiActive && rawSpot) {
+          const goldParity = 1 + (rateSettings.goldParityPct / 100);
+          const silverParity = 1 + (rateSettings.silverParityPct / 100);
+          baseGold24k = Math.round(((rawSpot.xauUsd / TROY_OZ_TO_GRAM) * 10 * rawSpot.usdInr * goldParity) / 10) * 10;
+          baseSilverKg = Math.round(((rawSpot.xagUsd / TROY_OZ_TO_GRAM) * 1000 * rawSpot.usdInr * silverParity) / 100) * 100;
+        }
+
+        const g24 = Math.max(50000, Math.round((baseGold24k + rateSettings.goldOffset10g) / 10) * 10);
+        const g22 = Math.round((g24 * 0.91667) / 10) * 10;
+        const g18 = Math.round((g24 * 0.75) / 10) * 10;
+        const sKg = Math.max(40000, Math.round((baseSilverKg + rateSettings.silverOffsetKg) / 100) * 100);
+
+        return {
+          g24,
+          g22,
+          g18,
+          sKg,
+          s10g: sKg / 100,
+          s1g: sKg / 1000,
+          mode: isLiveApiActive ? 'live' : 'fallback',
+        };
+      }
+
+      /* -------------------------------------------------------------------
+         5. REAL-TIME LIVE BULLION API FETCH (WITH STRICT VALIDATION)
+      ------------------------------------------------------------------- */
+      async function fetchLiveBullionRates(showNotification = false) {
+        const icon = document.getElementById('refresh-icon');
+        const btn = document.getElementById('refresh-rates-btn');
+        if (icon) icon.classList.add('fa-spin');
+        if (btn) btn.disabled = true;
+
+        try {
+          const [xauRes, xagRes, fxRes] = await Promise.all([
+            fetch('https://api.gold-api.com/price/XAU', { cache: 'no-store' }),
+            fetch('https://api.gold-api.com/price/XAG', { cache: 'no-store' }),
+            fetch('https://open.er-api.com/v6/latest/USD', { cache: 'no-store' }),
+          ]);
+
+          if (!xauRes.ok || !xagRes.ok || !fxRes.ok) {
+            throw new Error('Upstream bullion API response not OK');
+          }
+
+          const [xauData, xagData, fxData] = await Promise.all([
+            xauRes.json(),
+            xagRes.json(),
+            fxRes.json(),
+          ]);
+
+          const xauUsd = Number(xauData && xauData.price);
+          const xagUsd = Number(xagData && xagData.price);
+          const usdInr = Number(fxData && fxData.rates && fxData.rates.INR);
+
+          // Strict sanity validation: require valid positive numbers in realistic bounds
+          const isValid =
+            Number.isFinite(xauUsd) && xauUsd > 500 && xauUsd < 20000 &&
+            Number.isFinite(xagUsd) && xagUsd > 5 && xagUsd < 500 &&
+            Number.isFinite(usdInr) && usdInr > 40 && usdInr < 200;
+
+          if (!isValid) {
+            throw new Error('Bullion API returned out-of-range values');
+          }
+
+          rawSpot = { xauUsd, xagUsd, usdInr };
+          isLiveApiActive = true;
+        } catch (err) {
+          // Cleanly preserve verified Churu Sarafa baseline rates
+          console.warn('Using verified Churu Sarafa baseline rates:', err.message);
+          rawSpot = null;
+          isLiveApiActive = false;
+        } finally {
+          renderRates(true);
+          resetCountdown();
+          if (icon) icon.classList.remove('fa-spin');
+          if (btn) btn.disabled = false;
+          if (showNotification) {
+            showToast(TRANSLATIONS[currentLang].toast_refreshed);
+          }
+        }
+      }
+
+      function renderRates(animate = false) {
+        const { g24, g22, g18, sKg, s10g, s1g, mode } = getEffectiveRates();
+        const nowStr = getISTTime();
+        const dict = TRANSLATIONS[currentLang];
+
+        const setEl = (id, text) => {
+          const el = document.getElementById(id);
+          if (!el) return;
+          el.textContent = text;
+          if (animate) {
+            el.classList.remove('rate-updated');
+            void el.offsetWidth;
+            el.classList.add('rate-updated');
+          }
+        };
+
+        setEl('rate-24k', formatINR(g24));
+        setEl('rate-24k-1g', formatINR(g24 / 10));
+        setEl('rate-22k', formatINR(g22));
+        setEl('rate-22k-1g', formatINR(g22 / 10));
+        setEl('rate-18k', formatINR(g18));
+        setEl('rate-18k-1g', formatINR(g18 / 10));
+
+        // Silver Card: support 1kg | 10g | 1g unit switcher + always show clear secondary units
+        const silverHeadline = currentSilverUnit === '10g'
+          ? formatINR(s10g)
+          : currentSilverUnit === '1g'
+            ? '₹' + s1g.toFixed(2)
+            : formatINR(sKg);
+        const silverUnitText = currentSilverUnit === '10g'
+          ? '10g'
+          : currentSilverUnit === '1g'
+            ? '1g'
+            : '1 Kg';
+        setEl('silver-unit-label', silverUnitText);
+        setEl('rate-silver-kg', silverHeadline);
+        const sub1El = document.getElementById('rate-silver-sub1');
+        const sub2El = document.getElementById('rate-silver-sub2');
+        if (sub1El && sub2El) {
+          if (currentSilverUnit === '1kg') {
+            sub1El.innerHTML = `10g: <strong id="rate-silver-10g" class="text-slate-800 dark:text-slate-200 font-semibold">${formatINR(s10g)}</strong>`;
+            sub2El.innerHTML = `1g: <strong id="rate-silver-1g" class="text-slate-800 dark:text-slate-200 font-semibold">₹${s1g.toFixed(2)}</strong>`;
+          } else if (currentSilverUnit === '10g') {
+            sub1El.innerHTML = `1kg: <strong id="rate-silver-10g" class="text-slate-800 dark:text-slate-200 font-semibold">${formatINR(sKg)}</strong>`;
+            sub2El.innerHTML = `1g: <strong id="rate-silver-1g" class="text-slate-800 dark:text-slate-200 font-semibold">₹${s1g.toFixed(2)}</strong>`;
+          } else {
+            sub1El.innerHTML = `10g: <strong id="rate-silver-10g" class="text-slate-800 dark:text-slate-200 font-semibold">${formatINR(s10g)}</strong>`;
+            sub2El.innerHTML = `1kg: <strong id="rate-silver-1g" class="text-slate-800 dark:text-slate-200 font-semibold">${formatINR(sKg)}</strong>`;
+          }
+        }
+
+        // Apply active weight unit multiplier (10g | 1g | 1 Tola = 11.6638g)
+        const unitFactor = currentUnit === '1g' ? 0.1 : currentUnit === 'tola' ? 1.16638 : 1;
+        const unitText = currentUnit === '1g' ? '1g' : currentUnit === 'tola' ? '1 Tola' : '10g';
+        document.querySelectorAll('.gold-unit-label').forEach((el) => { el.textContent = unitText; });
+        setEl('rate-24k', formatINR(g24 * unitFactor));
+        setEl('rate-22k', formatINR(g22 * unitFactor));
+        setEl('rate-18k', formatINR(g18 * unitFactor));
+
+        // Update Live Market Feed Pills
+        if (rawSpot) {
+          setEl('spot-xau-pill', `XAU: $${rawSpot.xauUsd.toFixed(0)}/oz`);
+          setEl('spot-xag-pill', `XAG: $${rawSpot.xagUsd.toFixed(2)}/oz`);
+          setEl('spot-fx-pill', `USD/INR: ₹${rawSpot.usdInr.toFixed(2)}`);
+        }
+
+        // Sync today's point in 10-day trend history & dynamically anchor Silver series to live sKg
+        TREND_HISTORY['24k'][TREND_HISTORY['24k'].length - 1] = g24;
+        TREND_HISTORY['22k'][TREND_HISTORY['22k'].length - 1] = g22;
+        TREND_HISTORY.silver = TREND_HISTORY.silverFactors.map((f) => Math.round((sKg * f) / 100) * 100);
+        renderTrendChart(currentChartMetal);
+
+        const timeEl = document.getElementById('rates-timestamp');
+        const tickerTimeEl = document.getElementById('ticker-time');
+        if (timeEl) timeEl.textContent = nowStr;
+        if (tickerTimeEl) tickerTimeEl.textContent = nowStr;
+
+        // Clear rate-source badge: LIVE SPOT + INDIA PARITY | CHURU SARAFA RATE | CUSTOM SHOP RATE
+        const statusLabel = document.getElementById('api-status-label');
+        const statusDot = document.getElementById('api-status-dot');
+        if (statusLabel && statusDot) {
+          if (mode === 'custom') {
+            statusLabel.textContent = dict.status_custom;
+            statusLabel.className = 'font-bold text-gold-600 dark:text-gold-400';
+            statusDot.className = 'inline-block w-2 h-2 rounded-full bg-gold-400';
+          } else if (mode === 'live') {
+            statusLabel.textContent = dict.status_live;
+            statusLabel.className = 'font-bold text-emerald-600 dark:text-emerald-400';
+            statusDot.className = 'inline-block w-2 h-2 rounded-full bg-emerald-500 animate-pulse';
+          } else {
+            statusLabel.textContent = dict.status_fallback;
+            statusLabel.className = 'font-bold text-amber-600 dark:text-amber-400';
+            statusDot.className = 'inline-block w-2 h-2 rounded-full bg-amber-400';
+          }
+        }
+
+        // Update Top Marquee Ticker (clearly displays Silver per 1kg & per 10g)
+        const tickerEl = document.getElementById('ticker-content');
+        if (tickerEl) {
+          const lbl24 = currentLang === 'en' ? '24K Gold (10g)' : '24K सोना (10g)';
+          const lbl22 = currentLang === 'en' ? '22K 916 Gold (10g)' : '22K 916 सोना (10g)';
+          const lbl18 = currentLang === 'en' ? '18K Gold (10g)' : '18K सोना (10g)';
+          const lblAg = currentLang === 'en' ? '999 Silver' : '999 चांदी';
+
+          const strip = `
+            <span class="inline-flex items-center gap-1.5"><strong class="text-gold-400">${lbl24}:</strong> <span>${formatINR(g24)}</span></span>
+            <span class="text-gold-400/40">•</span>
+            <span class="inline-flex items-center gap-1.5"><strong class="text-gold-400">${lbl22}:</strong> <span>${formatINR(g22)}</span></span>
+            <span class="text-gold-400/40">•</span>
+            <span class="inline-flex items-center gap-1.5"><strong class="text-gold-400">${lbl18}:</strong> <span>${formatINR(g18)}</span></span>
+            <span class="text-gold-400/40">•</span>
+            <span class="inline-flex items-center gap-1.5"><strong class="text-slate-300">${lblAg}:</strong> <span>${formatINR(sKg)}/kg (${formatINR(s10g)}/10g)</span></span>
+            <span class="text-gold-400/40">•</span>
+          `;
+          tickerEl.innerHTML = strip + strip;
+        }
+
+        updateEstimator();
+        updateExchangeCalculator();
+      }
+
+      /* -------------------------------------------------------------------
+         5B. 10-DAY INTERACTIVE SVG PRICE TREND CHART
+      ------------------------------------------------------------------- */
+      function renderTrendChart(metal = currentChartMetal) {
+        currentChartMetal = metal;
+        const container = document.getElementById('trend-chart-container');
+        if (!container) return;
+
+        const data = TREND_HISTORY[metal] || TREND_HISTORY['24k'];
+        const labels = TREND_HISTORY.labels;
+        const minVal = Math.min(...data);
+        const maxVal = Math.max(...data);
+        const pad = Math.max((maxVal - minVal) * 0.2, 500);
+        const yMin = minVal - pad;
+        const yMax = maxVal + pad;
+
+        const highEl = document.getElementById('trend-high-val');
+        const lowEl = document.getElementById('trend-low-val');
+        const todayEl = document.getElementById('trend-today-val');
+        const isSilverChart = metal === 'silver';
+        const fmtChartVal = (val) => isSilverChart
+          ? `${formatINR(val)}/kg (${formatINR(val / 100)}/10g)`
+          : formatINR(val);
+        if (highEl) highEl.textContent = isSilverChart ? `${formatINR(maxVal)}/kg` : formatINR(maxVal);
+        if (lowEl) lowEl.textContent = isSilverChart ? `${formatINR(minVal)}/kg` : formatINR(minVal);
+        if (todayEl) todayEl.textContent = isSilverChart ? `${formatINR(data[data.length - 1])}/kg` : formatINR(data[data.length - 1]);
+
+        const W = 680;
+        const H = 200;
+        const px = 28;
+        const py = 20;
+        const plotW = W - px * 2;
+        const plotH = H - py * 2 - 22;
+
+        const pts = data.map((v, i) => {
+          const x = px + (i / (data.length - 1)) * plotW;
+          const y = py + (1 - (v - yMin) / (yMax - yMin)) * plotH;
+          return { x, y, v, lbl: labels[i] };
+        });
+
+        const linePath = pts.map((p, i) => `${i === 0 ? 'M' : 'L'}${p.x.toFixed(1)},${p.y.toFixed(1)}`).join(' ');
+        const areaPath = `${linePath} L${pts[pts.length - 1].x.toFixed(1)},${(py + plotH).toFixed(1)} L${pts[0].x.toFixed(1)},${(py + plotH).toFixed(1)} Z`;
+        const strokeCol = isSilverChart ? '#94A3B8' : '#D4AF37';
+
+        container.innerHTML = `
+          <svg viewBox="0 0 ${W} ${H}" class="w-full h-44 sm:h-52 overflow-visible" role="img" aria-label="10-Day Bullion Trend Chart">
+            <defs>
+              <linearGradient id="trendGrad" x1="0" y1="0" x2="0" y2="1">
+                <stop offset="0%" stop-color="${strokeCol}" stop-opacity="0.35" />
+                <stop offset="100%" stop-color="${strokeCol}" stop-opacity="0.02" />
+              </linearGradient>
+            </defs>
+            <path d="${areaPath}" fill="url(#trendGrad)" />
+            <path d="${linePath}" fill="none" stroke="${strokeCol}" stroke-width="3" stroke-linecap="round" stroke-linejoin="round" />
+            ${pts.map((p, idx) => `
+              <g class="trend-pt cursor-pointer" data-lbl="${p.lbl}" data-val="${fmtChartVal(p.v)}">
+                <circle cx="${p.x.toFixed(1)}" cy="${p.y.toFixed(1)}" r="${idx === pts.length - 1 ? 6 : 4}" fill="${strokeCol}" stroke="#0D0F14" stroke-width="2" />
+                <text x="${p.x.toFixed(1)}" y="${H - 4}" text-anchor="middle" fill="#94A3B8" font-size="10.5">${idx % 2 === 0 || idx === pts.length - 1 ? p.lbl : ''}</text>
+              </g>
+            `).join('')}
+          </svg>
+        `;
+
+        const tooltip = document.getElementById('trend-tooltip');
+        container.querySelectorAll('.trend-pt').forEach((g) => {
+          const showTip = () => {
+            if (!tooltip) return;
+            tooltip.textContent = `${g.dataset.lbl}: ${g.dataset.val}`;
+            tooltip.classList.remove('hidden');
+          };
+          g.addEventListener('mouseenter', showTip);
+          g.addEventListener('click', showTip);
+        });
+      }
+
+      /* -------------------------------------------------------------------
+         5C. OLD GOLD & SILVER EXCHANGE VALUE CALCULATOR
+      ------------------------------------------------------------------- */
+      function updateExchangeCalculator() {
+        const purityEl = document.getElementById('exch-purity');
+        const weightEl = document.getElementById('exch-weight');
+        const resEl = document.getElementById('exch-result');
+        const waBtn = document.getElementById('exch-wa-btn');
+        if (!purityEl || !weightEl || !resEl) return;
+
+        const { g24, s1g } = getEffectiveRates();
+        const selection = purityEl.value;
+        const wt = Math.max(0, parseFloat(weightEl.value) || 0);
+        let val = 0;
+        let descLabel = '22K old gold';
+
+        if (selection === 'silver999') {
+          val = s1g * wt;
+          descLabel = '999 pure silver';
+        } else if (selection === 'silver925') {
+          val = s1g * 0.925 * wt;
+          descLabel = '925 sterling silver';
+        } else {
+          const karat = parseFloat(selection) || 22;
+          val = (g24 / 10) * (karat / 24) * wt;
+          descLabel = `${karat}K old gold`;
+        }
+
+        resEl.textContent = formatINR(val);
+
+        if (waBtn) {
+          const msg = encodeURIComponent(`Hello Aarti Jewellers, I want to check exchange value for ${wt}g of ${descLabel} (Est: ${formatINR(val)}).`);
+          waBtn.href = `https://wa.me/${STORE_WHATSAPP}?text=${msg}`;
+        }
+      }
+
+      function resetCountdown() {
+        countdownSec = 60;
+        const el = document.getElementById('refresh-countdown');
+        if (el) el.textContent = countdownSec;
+
+        if (countdownInterval) clearInterval(countdownInterval);
+        countdownInterval = setInterval(() => {
+          countdownSec -= 1;
+          if (countdownSec <= 0) {
+            fetchLiveBullionRates(false);
+          } else if (el) {
+            el.textContent = countdownSec;
+          }
+        }, 1000);
+      }
+
+      /* -------------------------------------------------------------------
+         6. TWO-TAB MANDI / SHOP RATE ADJUST MODAL
+      ------------------------------------------------------------------- */
+      function persistRateSettings() {
+        try {
+          localStorage.setItem(STORAGE_KEY_RATES, JSON.stringify(rateSettings));
+        } catch {
+          // Ignore storage restrictions
+        }
+      }
+
+      function initMandiModal() {
+        try {
+          const saved = JSON.parse(localStorage.getItem(STORAGE_KEY_RATES) || 'null');
+          if (saved && typeof saved === 'object') {
+            if (typeof saved.goldParityPct === 'number') rateSettings.goldParityPct = saved.goldParityPct;
+            if (typeof saved.silverParityPct === 'number') rateSettings.silverParityPct = saved.silverParityPct;
+            if (typeof saved.goldOffset10g === 'number') rateSettings.goldOffset10g = saved.goldOffset10g;
+            if (typeof saved.silverOffsetKg === 'number') rateSettings.silverOffsetKg = saved.silverOffsetKg;
+            if (typeof saved.manualEnabled === 'boolean') rateSettings.manualEnabled = saved.manualEnabled;
+            if (typeof saved.manual24k === 'number') rateSettings.manual24k = saved.manual24k;
+            if (typeof saved.manual22k === 'number') rateSettings.manual22k = saved.manual22k;
+            if (typeof saved.manual18k === 'number') rateSettings.manual18k = saved.manual18k;
+            if (typeof saved.manualSilverKg === 'number') rateSettings.manualSilverKg = saved.manualSilverKg;
+          }
+        } catch {
+          // Ignore malformed localStorage
+        }
+
+        const modal = document.getElementById('mandi-modal');
+        const openBtn = document.getElementById('open-mandi-btn');
+        const closeBtn = document.getElementById('close-mandi-btn');
+
+        // Tab controls
+        const tabBtns = document.querySelectorAll('.mandi-tab-btn');
+        const panelAuto = document.getElementById('mandi-panel-auto');
+        const panelManual = document.getElementById('mandi-panel-manual');
+
+        // Tab 1 inputs
+        const goldParityInp = document.getElementById('parity-gold-pct');
+        const goldParityVal = document.getElementById('parity-gold-val');
+        const silverParityInp = document.getElementById('parity-silver-pct');
+        const silverParityVal = document.getElementById('parity-silver-val');
+        const goldOffInp = document.getElementById('mandi-gold-offset');
+        const silverOffInp = document.getElementById('mandi-silver-offset');
+        const saveAutoBtn = document.getElementById('save-mandi-btn');
+        const resetAutoBtn = document.getElementById('reset-mandi-btn');
+
+        // Tab 2 inputs
+        const manualToggle = document.getElementById('manual-override-toggle');
+        const man24Inp = document.getElementById('manual-24k');
+        const man22Inp = document.getElementById('manual-22k');
+        const man18Inp = document.getElementById('manual-18k');
+        const manSilInp = document.getElementById('manual-silver');
+        const manSil10gInp = document.getElementById('manual-silver-10g');
+        const autoCalcBtn = document.getElementById('auto-calc-purity-btn');
+        const saveManualBtn = document.getElementById('save-manual-btn');
+        const clearManualBtn = document.getElementById('clear-manual-btn');
+
+        const switchTab = (tab) => {
+          const isManual = tab === 'manual';
+          if (panelAuto) panelAuto.classList.toggle('hidden', isManual);
+          if (panelManual) panelManual.classList.toggle('hidden', !isManual);
+          tabBtns.forEach((btn) => {
+            const active = btn.dataset.tab === tab;
+            btn.setAttribute('aria-selected', String(active));
+            if (active) {
+              btn.classList.add('bg-gold-400', 'text-obsidian-950', 'shadow-sm');
+              btn.classList.remove('text-slate-600', 'dark:text-slate-300', 'hover:text-gold-500');
+            } else {
+              btn.classList.remove('bg-gold-400', 'text-obsidian-950', 'shadow-sm');
+              btn.classList.add('text-slate-600', 'dark:text-slate-300', 'hover:text-gold-500');
+            }
+          });
+        };
+
+        const syncInputsFromState = () => {
+          if (goldParityInp) goldParityInp.value = rateSettings.goldParityPct;
+          if (goldParityVal) goldParityVal.textContent = `+${Number(rateSettings.goldParityPct).toFixed(1)}%`;
+          if (silverParityInp) silverParityInp.value = rateSettings.silverParityPct;
+          if (silverParityVal) silverParityVal.textContent = `+${Number(rateSettings.silverParityPct).toFixed(1)}%`;
+          if (goldOffInp) goldOffInp.value = rateSettings.goldOffset10g;
+          if (silverOffInp) silverOffInp.value = rateSettings.silverOffsetKg;
+
+          if (manualToggle) manualToggle.checked = rateSettings.manualEnabled;
+          if (man24Inp) man24Inp.value = rateSettings.manual24k;
+          if (man22Inp) man22Inp.value = rateSettings.manual22k;
+          if (man18Inp) man18Inp.value = rateSettings.manual18k;
+          if (manSilInp) manSilInp.value = rateSettings.manualSilverKg;
+          if (manSil10gInp) manSil10gInp.value = Math.round(rateSettings.manualSilverKg / 100);
+        };
+
+        const openModal = () => {
+          syncInputsFromState();
+          switchTab(rateSettings.manualEnabled ? 'manual' : 'auto');
+          modal.classList.remove('hidden');
+          modal.classList.add('flex');
+        };
+        const closeModal = () => {
+          modal.classList.add('hidden');
+          modal.classList.remove('flex');
+        };
+
+        tabBtns.forEach((btn) => {
+          btn.addEventListener('click', () => switchTab(btn.dataset.tab));
+        });
+
+        if (goldParityInp && goldParityVal) {
+          goldParityInp.addEventListener('input', () => {
+            goldParityVal.textContent = `+${parseFloat(goldParityInp.value).toFixed(1)}%`;
+          });
+        }
+        if (silverParityInp && silverParityVal) {
+          silverParityInp.addEventListener('input', () => {
+            silverParityVal.textContent = `+${parseFloat(silverParityInp.value).toFixed(1)}%`;
+          });
+        }
+
+        // Sync Silver 1kg <-> 10g direct inputs in Tab 2
+        if (manSilInp && manSil10gInp) {
+          manSilInp.addEventListener('input', () => {
+            const kg = parseFloat(manSilInp.value) || 0;
+            manSil10gInp.value = Math.round(kg / 100);
+          });
+          manSil10gInp.addEventListener('input', () => {
+            const per10g = parseFloat(manSil10gInp.value) || 0;
+            manSilInp.value = Math.round(per10g * 100);
+          });
+        }
+
+        // Save Tab 1 (Auto Live Parity)
+        if (saveAutoBtn) {
+          saveAutoBtn.addEventListener('click', () => {
+            rateSettings.goldParityPct = parseFloat(goldParityInp.value) || 0;
+            rateSettings.silverParityPct = parseFloat(silverParityInp.value) || 0;
+            rateSettings.goldOffset10g = parseInt(goldOffInp.value, 10) || 0;
+            rateSettings.silverOffsetKg = parseInt(silverOffInp.value, 10) || 0;
+            rateSettings.manualEnabled = false;
+            persistRateSettings();
+            renderRates(true);
+            closeModal();
+            showToast(TRANSLATIONS[currentLang].toast_mandi_saved);
+          });
+        }
+
+        // Auto-calc 22K & 18K helper in Tab 2
+        if (autoCalcBtn && man24Inp && man22Inp && man18Inp) {
+          autoCalcBtn.addEventListener('click', () => {
+            const v24 = parseInt(man24Inp.value, 10) || CHURU_BASELINE.gold24k;
+            man22Inp.value = Math.round((v24 * 0.91667) / 10) * 10;
+            man18Inp.value = Math.round((v24 * 0.75) / 10) * 10;
+          });
+        }
+
+        // Save Tab 2 (Direct Counter Rate Override)
+        if (saveManualBtn) {
+          saveManualBtn.addEventListener('click', () => {
+            rateSettings.manualEnabled = Boolean(manualToggle && manualToggle.checked);
+            rateSettings.manual24k = parseInt(man24Inp.value, 10) || CHURU_BASELINE.gold24k;
+            rateSettings.manual22k = parseInt(man22Inp.value, 10) || CHURU_BASELINE.gold22k;
+            rateSettings.manual18k = parseInt(man18Inp.value, 10) || CHURU_BASELINE.gold18k;
+            rateSettings.manualSilverKg = parseInt(manSilInp.value, 10) || CHURU_BASELINE.silverKg;
+            persistRateSettings();
+            renderRates(true);
+            closeModal();
+            showToast(
+              rateSettings.manualEnabled
+                ? TRANSLATIONS[currentLang].toast_manual_saved
+                : TRANSLATIONS[currentLang].toast_mandi_saved
+            );
+          });
+        }
+
+        // Reset handler (shared for both tabs)
+        const resetAllRates = () => {
+          rateSettings.goldParityPct = DEFAULT_GOLD_PARITY;
+          rateSettings.silverParityPct = DEFAULT_SILVER_PARITY;
+          rateSettings.goldOffset10g = 0;
+          rateSettings.silverOffsetKg = 0;
+          rateSettings.manualEnabled = false;
+          rateSettings.manual24k = CHURU_BASELINE.gold24k;
+          rateSettings.manual22k = CHURU_BASELINE.gold22k;
+          rateSettings.manual18k = CHURU_BASELINE.gold18k;
+          rateSettings.manualSilverKg = CHURU_BASELINE.silverKg;
+          try {
+            localStorage.removeItem(STORAGE_KEY_RATES);
+          } catch {}
+          syncInputsFromState();
+          renderRates(true);
+          closeModal();
+          showToast(TRANSLATIONS[currentLang].toast_mandi_reset);
+        };
+
+        if (resetAutoBtn) resetAutoBtn.addEventListener('click', resetAllRates);
+        if (clearManualBtn) clearManualBtn.addEventListener('click', resetAllRates);
+      }
+
+      /* -------------------------------------------------------------------
+         7. INTERACTIVE PRICE ESTIMATOR
+      ------------------------------------------------------------------- */
+      function updateEstimator() {
+        const metalEl = document.getElementById('calc-metal');
+        const weightEl = document.getElementById('calc-weight');
+        const makingEl = document.getElementById('calc-making');
+        if (!metalEl || !weightEl || !makingEl) return;
+
+        const { g24, g22, g18, s1g } = getEffectiveRates();
+        const metal = metalEl.value;
+        const weight = Math.max(0, parseFloat(weightEl.value) || 0);
+        const makingPct = parseFloat(makingEl.value) || 0;
+
+        let perGram = g22 / 10;
+        let label = '22K';
+        if (metal === '24k') { perGram = g24 / 10; label = '24K'; }
+        else if (metal === '18k') { perGram = g18 / 10; label = '18K'; }
+        else if (metal === 'silver') { perGram = s1g; label = '999 Silver'; }
+
+        const base = perGram * weight;
+        const making = base * (makingPct / 100);
+        const sub = base + making;
+        const gst = sub * 0.03;
+        const total = sub + gst;
+
+        document.getElementById('calc-making-label').textContent = makingPct + '%';
+        document.getElementById('est-rate-info').textContent = `${label} × ${weight}g @ ₹${perGram.toFixed(metal === 'silver' ? 2 : 0)}/g`;
+        document.getElementById('est-making-pct').textContent = makingPct + '%';
+        document.getElementById('est-base').textContent = formatINR(base);
+        document.getElementById('est-making').textContent = formatINR(making);
+        document.getElementById('est-gst').textContent = formatINR(gst);
+        document.getElementById('est-total').textContent = formatINR(total);
+
+        const waMsg = encodeURIComponent(
+          `Hello Aarti Jewellers, I used your Live Price Estimator for ${weight}g of ${label} (Making: ${makingPct}%). Estimated Total: ${formatINR(total)}. Please share available designs.`
+        );
+        const waBtn = document.getElementById('est-whatsapp-btn');
+        if (waBtn) waBtn.href = `https://wa.me/${STORE_WHATSAPP}?text=${waMsg}`;
+      }
+
+      /* -------------------------------------------------------------------
+         8. RENDER COLLECTIONS IN ACTIVE LANGUAGE
+      ------------------------------------------------------------------- */
+      function renderCollections(filter = currentFilter) {
+        currentFilter = filter;
+        const grid = document.getElementById('collections-grid');
+        if (!grid) return;
+
+        const dict = TRANSLATIONS[currentLang];
+        const items = filter === 'all'
+          ? COLLECTIONS
+          : COLLECTIONS.filter((c) => c.category === filter);
+
+        grid.innerHTML = items.map((item) => {
+          const localized = item[currentLang] || item.en;
+          const isSaved = wishlistIds.has(item.id);
+          const waText = encodeURIComponent(
+            `Hello Aarti Jewellers, I am interested in "${item.en.name}" (${item.purity}, ${item.weight}). Please share the current price.`
+          );
+          const badgeCls = item.purity.includes('Silver')
+            ? 'bg-slate-900/90 text-slate-100 border-slate-400/40'
+            : 'bg-obsidian-950/90 text-gold-300 border-gold-400/50';
+
+          return `
+            <article class="group rounded-2xl overflow-hidden bg-white dark:bg-obsidian-800/90 border border-gold-400/25 hover:border-gold-400 shadow-lg hover:shadow-gold-glow transition-all duration-300 flex flex-col">
+              <div class="relative aspect-[4/3] overflow-hidden bg-obsidian-900">
+                <img
+                  src="${item.image}"
+                  alt="${localized.name}"
+                  loading="lazy"
+                  onerror="this.src='https://placehold.co/600x450/141720/D4AF37?text=${encodeURIComponent(item.en.name)}'"
+                  class="w-full h-full object-cover transition-transform duration-700 group-hover:scale-110"
+                />
+                <div class="absolute inset-0 bg-gradient-to-t from-obsidian-950/75 via-transparent to-transparent"></div>
+                <span class="absolute top-3 left-3 px-3 py-1 rounded-full text-[11px] font-semibold glass-luxury border ${badgeCls}">
+                  ${item.purity}
+                </span>
+                <button type="button" data-wish-id="${item.id}" aria-label="Shortlist Ornament" class="wish-btn absolute top-3 right-3 w-8 h-8 rounded-full bg-obsidian-950/80 glass-luxury border border-white/15 flex items-center justify-center transition-transform hover:scale-110 ${isSaved ? 'text-rose-500' : 'text-slate-300 hover:text-rose-400'}">
+                  <i class="${isSaved ? 'fa-solid' : 'fa-regular'} fa-heart text-xs"></i>
+                </button>
+                <span class="absolute bottom-3 right-3 px-2.5 py-1 rounded-lg bg-obsidian-950/85 glass-luxury text-[11px] text-ivory-50 font-medium border border-white/10">
+                  <i class="fa-solid fa-weight-scale text-gold-400 mr-1"></i>${item.weight}
+                </span>
+              </div>
+
+              <div class="p-5 flex-1 flex flex-col justify-between">
+                <div>
+                  <h3 class="font-luxury text-lg font-bold text-slate-900 dark:text-ivory-50 group-hover:text-gold-500 dark:group-hover:text-gold-400 transition-colors">
+                    ${localized.name}
+                  </h3>
+                  <p class="text-xs text-slate-600 dark:text-slate-400 mt-1.5 leading-relaxed">
+                    ${localized.desc}
+                  </p>
+                </div>
+
+                <div class="mt-5 grid grid-cols-5 gap-2">
+                  <button type="button" data-qv-id="${item.id}" class="qv-btn col-span-2 py-2.5 px-2 rounded-xl bg-ivory-100 dark:bg-obsidian-900 hover:border-gold-400 border border-gold-400/25 text-slate-800 dark:text-gold-300 font-semibold text-xs transition-all">
+                    <i class="fa-regular fa-eye mr-1"></i> View
+                  </button>
+                  <a
+                    href="https://wa.me/${STORE_WHATSAPP}?text=${waText}"
+                    target="_blank"
+                    rel="noopener"
+                    class="col-span-3 py-2.5 px-3 rounded-xl bg-emerald-500/10 hover:bg-emerald-500 text-emerald-700 dark:text-emerald-400 hover:text-white border border-emerald-500/30 font-semibold text-xs flex items-center justify-center gap-1.5 transition-all duration-300"
+                  >
+                    <i class="fa-brands fa-whatsapp text-sm"></i>
+                    <span>${dict.inquire_wa}</span>
+                  </a>
+                </div>
+              </div>
+            </article>
+          `;
+        }).join('');
+
+        // Bind Wishlist & Quick View buttons
+        grid.querySelectorAll('.wish-btn').forEach((btn) => {
+          btn.addEventListener('click', () => {
+            const id = Number(btn.dataset.wishId);
+            if (wishlistIds.has(id)) wishlistIds.delete(id);
+            else wishlistIds.add(id);
+            const cnt = document.getElementById('wishlist-count');
+            if (cnt) cnt.textContent = wishlistIds.size;
+            renderCollections(currentFilter);
+          });
+        });
+
+        grid.querySelectorAll('.qv-btn').forEach((btn) => {
+          btn.addEventListener('click', () => openQuickView(Number(btn.dataset.qvId)));
+        });
+      }
+
+      function openQuickView(id) {
+        const item = COLLECTIONS.find((c) => c.id === id);
+        const modal = document.getElementById('quickview-modal');
+        if (!item || !modal) return;
+        const loc = item[currentLang] || item.en;
+        const { g22, g18, sKg } = getEffectiveRates();
+        const numWt = parseFloat(item.weight) || 10;
+        const ratePerG = item.purity.includes('Silver') ? sKg / 1000 : item.purity.includes('18K') ? g18 / 10 : g22 / 10;
+        const estPrice = numWt * ratePerG * 1.10 * 1.03;
+
+        document.getElementById('qv-img').src = item.image;
+        document.getElementById('qv-purity').textContent = item.purity;
+        document.getElementById('qv-title').textContent = loc.name;
+        document.getElementById('qv-desc').textContent = loc.desc;
+        document.getElementById('qv-weight').textContent = item.weight;
+        document.getElementById('qv-price').textContent = formatINR(estPrice);
+        document.getElementById('qv-wa-btn').href = `https://wa.me/${STORE_WHATSAPP}?text=${encodeURIComponent(`Hello Aarti Jewellers, I want details for "${item.en.name}" (${item.purity}, ${item.weight}).`)}`;
+
+        modal.classList.remove('hidden');
+        modal.classList.add('flex');
+      }
+
+      /* -------------------------------------------------------------------
+         9. TRILINGUAL LANGUAGE ENGINE (EN | हिन्दी | राजस्थानी)
+      ------------------------------------------------------------------- */
+      function applyLanguage(lang) {
+        if (!TRANSLATIONS[lang]) lang = 'en';
+        currentLang = lang;
+        document.documentElement.lang = lang;
+
+        try {
+          localStorage.setItem('aarti-lang', lang);
+        } catch {}
+
+        const dict = TRANSLATIONS[lang];
+
+        // Update all data-i18n elements (supports rich gold highlight spans)
+        document.querySelectorAll('[data-i18n]').forEach((el) => {
+          const key = el.getAttribute('data-i18n');
+          if (dict[key] !== undefined) {
+            el.innerHTML = dict[key];
+          }
+        });
+
+        // Update active state on language buttons
+        document.querySelectorAll('.lang-btn').forEach((btn) => {
+          const isActive = btn.dataset.lang === lang;
+          if (isActive) {
+            btn.classList.add('bg-gold-400', 'text-obsidian-950', 'shadow-sm');
+            btn.classList.remove('text-slate-600', 'dark:text-slate-300', 'hover:text-gold-500');
+          } else {
+            btn.classList.remove('bg-gold-400', 'text-obsidian-950', 'shadow-sm');
+            btn.classList.add('text-slate-600', 'dark:text-slate-300', 'hover:text-gold-500');
+          }
+        });
+
+        // Re-render dynamic rate strip & collections in new language
+        renderRates(false);
+        renderCollections(currentFilter);
+      }
+
+      /* -------------------------------------------------------------------
+         10. THEME TOGGLE, FILTERS, MOBILE MENU, FORM & SCROLL REVEAL
+      ------------------------------------------------------------------- */
+      function initThemeToggle() {
+        const html = document.documentElement;
+        const btn = document.getElementById('theme-toggle');
+        const icon = document.getElementById('theme-icon');
+        if (!btn || !icon) return;
+
+        const syncIcon = () => {
+          icon.className = html.classList.contains('dark')
+            ? 'fa-solid fa-sun text-sm sm:text-base'
+            : 'fa-solid fa-moon text-sm sm:text-base';
+        };
+
+        try {
+          if (localStorage.getItem('aarti-theme') === 'light') {
+            html.classList.remove('dark');
+          } else {
+            html.classList.add('dark');
+          }
+        } catch {}
+        syncIcon();
+
+        btn.addEventListener('click', () => {
+          html.classList.toggle('dark');
+          syncIcon();
+          try {
+            localStorage.setItem('aarti-theme', html.classList.contains('dark') ? 'dark' : 'light');
+          } catch {}
+        });
+      }
+
+      function initScrollReveal() {
+        const els = document.querySelectorAll('.reveal, .reveal-left, .reveal-right');
+        if (!('IntersectionObserver' in window)) {
+          els.forEach((el) => el.classList.add('visible'));
+          return;
+        }
+        const obs = new IntersectionObserver(
+          (entries) => {
+            entries.forEach((entry) => {
+              if (entry.isIntersecting) {
+                entry.target.classList.add('visible');
+                obs.unobserve(entry.target);
+              }
+            });
+          },
+          { threshold: 0.1, rootMargin: '0px 0px -30px 0px' }
+        );
+        els.forEach((el) => obs.observe(el));
+      }
+
+      /* -------------------------------------------------------------------
+         11. BOOTSTRAP ON DOM READY
+      ------------------------------------------------------------------- */
+      document.addEventListener('DOMContentLoaded', () => {
+        try {
+          const yearEl = document.getElementById('current-year');
+          if (yearEl) yearEl.textContent = new Date().getFullYear();
+
+          initThemeToggle();
+          initMandiModal();
+
+          // Language Switcher listeners
+          document.querySelectorAll('.lang-btn').forEach((btn) => {
+            btn.addEventListener('click', () => applyLanguage(btn.dataset.lang));
+          });
+
+          // Restore saved language
+          let savedLang = 'en';
+          try {
+            savedLang = localStorage.getItem('aarti-lang') || 'en';
+          } catch {}
+          applyLanguage(savedLang);
+          // Weight Unit Switcher (10g | 1g | 1 Tola) for Gold
+          const unitBtns = document.querySelectorAll('.unit-btn');
+          unitBtns.forEach((btn) => {
+            btn.addEventListener('click', () => {
+              currentUnit = btn.dataset.unit || '10g';
+              unitBtns.forEach((b) => {
+                const active = b.dataset.unit === currentUnit;
+                b.classList.toggle('bg-gold-400', active);
+                b.classList.toggle('text-obsidian-950', active);
+                b.classList.toggle('shadow-sm', active);
+                b.classList.toggle('text-slate-600', !active);
+                b.classList.toggle('dark:text-slate-300', !active);
+              });
+              renderRates(false);
+            });
+          });
+
+          // Silver Weight Unit Switcher (1kg | 10g | 1g)
+          const silverUnitBtns = document.querySelectorAll('.silver-unit-btn');
+          silverUnitBtns.forEach((btn) => {
+            btn.addEventListener('click', () => {
+              currentSilverUnit = btn.dataset.silverUnit || '1kg';
+              silverUnitBtns.forEach((b) => {
+                const active = b.dataset.silverUnit === currentSilverUnit;
+                b.classList.toggle('bg-slate-700', active);
+                b.classList.toggle('text-white', active);
+                b.classList.toggle('dark:bg-slate-200', active);
+                b.classList.toggle('dark:text-obsidian-950', active);
+                b.classList.toggle('font-bold', active);
+                b.classList.toggle('text-slate-600', !active);
+                b.classList.toggle('dark:text-slate-300', !active);
+              });
+              renderRates(false);
+            });
+          });
+
+          // 10-Day Trend Chart Tabs
+          const chartBtns = document.querySelectorAll('.chart-tab-btn');
+          chartBtns.forEach((btn) => {
+            btn.addEventListener('click', () => {
+              const metal = btn.dataset.chart || '24k';
+              chartBtns.forEach((b) => {
+                const active = b.dataset.chart === metal;
+                b.classList.toggle('bg-gold-400', active);
+                b.classList.toggle('text-obsidian-950', active);
+                b.classList.toggle('text-slate-600', !active);
+                b.classList.toggle('dark:text-slate-300', !active);
+              });
+              renderTrendChart(metal);
+            });
+          });
+
+          // Quick View Modal close
+          const qvModal = document.getElementById('quickview-modal');
+          const qvClose = document.getElementById('close-qv-btn');
+          if (qvClose && qvModal) {
+            qvClose.addEventListener('click', () => {
+              qvModal.classList.add('hidden');
+              qvModal.classList.remove('flex');
+            });
+            qvModal.addEventListener('click', (e) => {
+              if (e.target === qvModal) {
+                qvModal.classList.add('hidden');
+                qvModal.classList.remove('flex');
+              }
+            });
+          }
+
+          // Send Shortlisted Wishlist via WhatsApp
+          const sendWishBtn = document.getElementById('send-wishlist-btn');
+          if (sendWishBtn) {
+            sendWishBtn.addEventListener('click', () => {
+              if (wishlistIds.size === 0) {
+                showToast('Tap the heart icon on any ornament to shortlist it first.', true);
+                return;
+              }
+              const names = COLLECTIONS.filter((c) => wishlistIds.has(c.id)).map((c) => `• ${c.en.name} (${c.purity})`).join('\n');
+              window.open(`https://wa.me/${STORE_WHATSAPP}?text=${encodeURIComponent(`Hello Aarti Jewellers, here are my shortlisted designs:\n${names}`)}`, '_blank', 'noopener');
+            });
+          }
+
+          // Copy Showroom Address (iFrame-safe execCommand fallback)
+          const copyBtn = document.getElementById('copy-address-btn');
+          if (copyBtn) {
+            copyBtn.addEventListener('click', () => {
+              const addr = 'Aarti Jewellers, Village: Ajeetsar, Sardarshahar, District Churu, Rajasthan - 331504';
+              const ta = document.createElement('textarea');
+              ta.value = addr;
+              document.body.appendChild(ta);
+              ta.select();
+              try {
+                document.execCommand('copy');
+                showToast('Showroom address copied!');
+              } catch {
+                showToast(addr);
+              }
+              document.body.removeChild(ta);
+            });
+          }
+
+          // Collection filter buttons
+          const filterBtns = document.querySelectorAll('.filter-btn');
+          filterBtns.forEach((btn) => {
+            btn.addEventListener('click', () => {
+              filterBtns.forEach((b) => {
+                b.classList.remove('active', 'bg-gold-400', 'text-obsidian-950', 'shadow-md');
+                b.classList.add('bg-white', 'dark:bg-obsidian-800', 'text-slate-700', 'dark:text-slate-300', 'border', 'border-gold-400/25');
+              });
+              btn.classList.add('active', 'bg-gold-400', 'text-obsidian-950', 'shadow-md');
+              btn.classList.remove('bg-white', 'dark:bg-obsidian-800', 'text-slate-700', 'dark:text-slate-300', 'border', 'border-gold-400/25');
+              renderCollections(btn.dataset.filter || 'all');
+            });
+          });
+
+          // Mobile drawer
+          const mobBtn = document.getElementById('mobile-menu-btn');
+          const mobDrawer = document.getElementById('mobile-drawer');
+          const mobIcon = document.getElementById('mobile-menu-icon');
+          if (mobBtn && mobDrawer) {
+            mobBtn.addEventListener('click', () => {
+              const isHidden = mobDrawer.classList.toggle('hidden');
+              if (mobIcon) mobIcon.className = isHidden ? 'fa-solid fa-bars text-base' : 'fa-solid fa-xmark text-lg';
+            });
+            document.querySelectorAll('.mobile-nav-link').forEach((link) => {
+              link.addEventListener('click', () => {
+                mobDrawer.classList.add('hidden');
+                if (mobIcon) mobIcon.className = 'fa-solid fa-bars text-base';
+              });
+            });
+          }
+
+          // Consultation form
+          const form = document.getElementById('inquiry-form');
+          if (form) {
+            form.addEventListener('submit', (e) => {
+              e.preventDefault();
+              showToast(TRANSLATIONS[currentLang].toast_form_ok);
+              form.reset();
+            });
+          }
+
+          // Scroll reveal & initial live bullion fetch
+          initScrollReveal();
+          fetchLiveBullionRates(false);
+        } catch (err) {
+          console.error('Aarti Jewellers init error:', err);
+        }
+      });
+    })();
+  </script>
+</body>
+</html>
